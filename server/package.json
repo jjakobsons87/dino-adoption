@@ -2,6 +2,7 @@
   "dependencies": {
     "apollo-server-express": "^3.9.0",
     "graphql": "^16.5.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.2"
   }
 }
