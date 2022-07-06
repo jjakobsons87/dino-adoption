@@ -17,7 +17,8 @@ function AdoptionPage() {
     return (
 
         <main id="dinoSale">
-            <h1 className="text-center">Availble for Adoption</h1>
+            <h1 id="mainAdoptTitle" className="text-center text-white font-weight-bold">The Dilusional Dinosaur Adoption Agency</h1>
+            <p className="text-center text-white">We're here to fullfill all of your dinosaur related needs!</p>
 
             <section id="carnivores">
 

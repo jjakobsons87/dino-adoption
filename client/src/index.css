@@ -20,9 +20,15 @@ footer {
   background-color: black;
 }
 
+#mainAdoptTitle {
+  font-family: 'Fredericka the Great', cursive;
+}
+
 .sectTitle {
+  font-family: 'Fredericka the Great', cursive;
   color: bisque;
-  margin-top: 20px;
+  text-decoration: underline;
+  margin-top: 100px;
 }
 
 .card {
