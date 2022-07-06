@@ -81,13 +81,13 @@ function AdoptionPage() {
                     <div className="col">
                         <div className="card">
                             <img
-                                src={RaptorImage}
-                                alt="Velociraptor"
+                                src={DilophImage}
+                                alt="Dilophosurus"
                                 className="card-img-top"
                             />
                     
                         <div className="card-body">
-                            <h3 id="dinoName">Velociraptor</h3>    
+                            <h3 id="dinoName">Dilophosaurus</h3>    
                             <button>Adopt me if you dare!</button>
                             </div>
                         </div>
@@ -97,7 +97,88 @@ function AdoptionPage() {
                 
             </section>
 
-            <section id="herboivoires"></section>
+            <section id="herboivoires">
+
+                <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={TRexImage}
+                                alt="Tyranasaurus Rex"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 id="dinoName">Tyranasaurus Rex</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={SpinoImage}
+                                alt="Spinosaurus"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 id="dinoName">Spinosaurus</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={RaptorImage}
+                                alt="Velociraptor"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 id="dinoName">Velociraptor</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={AlloImage}
+                                alt="Allosaurus"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 id="dinoName">Allosaurus</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={RaptorImage}
+                                alt="Velociraptor"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 id="dinoName">Velociraptor</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
 
         </main>
     )
