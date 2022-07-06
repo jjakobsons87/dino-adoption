@@ -149,13 +149,13 @@ function AdoptionPage() {
                     <div className="col">
                         <div className="card">
                             <img
-                                src={AlloImage}
-                                alt="Allosaurus"
+                                src={StegaImage}
+                                alt="Stegasaurus"
                                 className="card-img-top"
                             />
 
                         <div className="card-body">
-                            <h3 id="dinoName">Allosaurus</h3>    
+                            <h3 id="dinoName">Stegasaurus</h3>    
                             <button>Adopt me if you dare!</button>
                             </div>
                         </div>
