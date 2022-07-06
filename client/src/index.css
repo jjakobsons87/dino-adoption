@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+header {
+  height: 100px;
+  width: auto;
+  background-color: black;
+}
+
+footer {
+  height: 100px;
+  width: auto;
+  background-color: darkred;
+}
+
 .card {
   margin-left: auto;
   margin-right: auto;
