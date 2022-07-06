@@ -9,9 +9,12 @@ code {
 }
 
 header {
-  height: 100px;
-  width: auto;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
   background-color: black;
+  color: white;
 }
 
 footer {

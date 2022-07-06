@@ -17,13 +17,13 @@ function AdoptionPage() {
     return (
 
         <main id="dinoSale">
-            <h1 id="mainAdoptTitle" className="text-center text-white font-weight-bold">The Dilusional Dinosaur Adoption Agency</h1>
-            <p className="text-center text-white">We're here to fullfill all of your dinosaur related needs!</p>
+
+            <h2 className="text-center text-white">The DDAA is here to fullfill all of your Dino-Related needs!</h2>
 
             <section id="carnivores">
 
             <h2 className="sectTitle text-center">Carnivores</h2>
-            <p className="text-white text-center">Our carnivores, despite their terrifying appearances, will protect if well main-tained and trained to do. Be warned! They can be unpredictable! Adopt at your own risk!</p>
+            <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect if well main-tained and trained to do. Be warned! They can be unpredictable! Adopt at your own risk!</p>
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
@@ -124,7 +124,7 @@ function AdoptionPage() {
             <section id="herbivores">
 
                 <h2 className="sectTitle text-center">Herbivores</h2>
-                <p className="text-center text-white">Our Herbivores are, for the most part, well tempered and kind, but can become aggressve if they feel threatened. Keep a healthy relationship with them and you'll be fine!</p>
+                <p className="text-center text-white">Easy Mode for Dino-Ownership! Our Herbivores are, for the most part, well tempered and kind, but can become aggressve if they feel threatened. Keep a healthy relationship with them and you'll be fine!</p>
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
