@@ -66,13 +66,28 @@ function AdoptionPage() {
                     <div className="col">
                         <div className="card">
                             <img
-                                src={DilophImage}
-                                alt="Dilophosaurus"
+                                src={AlloImage}
+                                alt="Allosaurus"
                                 className="card-img-top"
                             />
                     
                         <div className="card-body">
-                            <h3 id="dinoName">Dilophosaurus</h3>    
+                            <h3 id="dinoName">Allosaurus</h3>    
+                            <button>Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={RaptorImage}
+                                alt="Velociraptor"
+                                className="card-img-top"
+                            />
+                    
+                        <div className="card-body">
+                            <h3 id="dinoName">Velociraptor</h3>    
                             <button>Adopt me if you dare!</button>
                             </div>
                         </div>
