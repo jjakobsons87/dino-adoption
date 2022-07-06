@@ -23,7 +23,7 @@ function AdoptionPage() {
             <section id="carnivores">
 
             <h2 className="sectTitle text-center">Carnivores</h2>
-            <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect if well main-tained and trained to do. Be warned! They can be unpredictable! Adopt at your own risk!</p>
+            <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect if well maintained and trained to do. Be warned! They can be unpredictable! Adopt at your own risk!</p>
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
