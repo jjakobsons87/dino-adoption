@@ -16,6 +16,9 @@ function AdoptionPage() {
         <main id="dinoSale">
 
             <section id="carnivores">
+
+            <h1 className="sectTitle">Carnivores</h1>
+            
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
                     <div className="col">
@@ -98,6 +101,8 @@ function AdoptionPage() {
             </section>
 
             <section id="herbivores">
+
+                <h1 className="sectTitle">Herbivores</h1>
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
