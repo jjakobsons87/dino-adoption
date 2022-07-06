@@ -4,9 +4,31 @@ const dateFormat = require('../utils/dateFormat');
 
 const dinoSchema = new Schema(
   {
-    aboutBody: {
+    bio: {
       type: String,
       required: true
+    },
+    species: {
+        type: String,
+        required: true
+    },
+    diet: {
+        type: String,
+        required: true
+    },
+    gender: {
+        type: String,
+        required: true
+    },
+    aggressiveness:  {
+        type: Number,
+        required: true
+    },
+    humanCasualties: {
+        type: Number
+    },
+    fenceRequirement: {
+        type: Number
     },
     name: {
       type: String,
