@@ -198,6 +198,21 @@ function AdoptionPage() {
                         </div>
                     </div>
 
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={PachyImage}
+                                alt="Pachycephalosaurus"
+                                className="card-img-top"
+                            />
+
+                        <div className="card-body">
+                            <h3 className="dinoName">Pachycephalosaurus</h3>    
+                            <button className="adoptBtn">I will love you forever!!</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
