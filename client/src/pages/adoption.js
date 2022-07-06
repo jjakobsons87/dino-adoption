@@ -10,6 +10,8 @@ import BrontoImage from "../assets/images/brontosaurus.jpg"
 import ParaImage from "../assets/images/parasaurilophus.jpg"
 import StegaImage from "../assets/images/stegasaurus.png"
 import TriImage from "../assets/images/Triceratops.png"
+import PteroImage from "../assets/images/pterodactyl.jpg"
+import PachyImage from "../assets/images/pachy.jpg"
 
 function AdoptionPage() {
     return (
@@ -91,6 +93,21 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 className="dinoName">Dilophosaurus</h3>    
+                            <button className="adoptBtn">Adopt me if you dare!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={PteroImage}
+                                alt="Pterodactyl"
+                                className="card-img-top"
+                            />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Pterodactyl</h3>    
                             <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
