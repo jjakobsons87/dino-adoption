@@ -1,10 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(19, 19, 19);
 }
 
 code {
@@ -21,10 +17,16 @@ header {
 footer {
   height: 100px;
   width: auto;
-  background-color: darkred;
+  background-color: black;
+}
+
+.sectTitle {
+  color: bisque;
+  margin-top: 20px;
 }
 
 .card {
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -32,11 +34,12 @@ footer {
   width: 300px;
   height: 350px;
   text-align: center;
+  border: 1px solid bisque;
 }
 
 .card-img-top {
   height: 250px;
-  width: 300px;
+  width: 290px;
 }
 
 .dinoName {
