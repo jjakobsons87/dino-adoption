@@ -38,3 +38,8 @@ footer {
   height: 250px;
   width: 300px;
 }
+
+.dinoName {
+  color: azure;
+  font-family: 'Fredericka the Great', cursive;
+}
