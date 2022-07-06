@@ -18,7 +18,7 @@ function AdoptionPage() {
             <section id="carnivores">
 
             <h1 className="sectTitle">Carnivores</h1>
-            
+
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
                     <div className="col">
@@ -31,7 +31,7 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 id="dinoName">Tyranasaurus Rex</h3>    
-                            <button>Adopt me if you dare!</button>
+                            <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 id="dinoName">Spinosaurus</h3>    
-                            <button>Adopt me if you dare!</button>
+                            <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 id="dinoName">Velociraptor</h3>    
-                            <button>Adopt me if you dare!</button>
+                            <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 id="dinoName">Allosaurus</h3>    
-                            <button>Adopt me if you dare!</button>
+                            <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ function AdoptionPage() {
                     
                         <div className="card-body">
                             <h3 id="dinoName">Dilophosaurus</h3>    
-                            <button>Adopt me if you dare!</button>
+                            <button className="adoptBtn">Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ function AdoptionPage() {
 
                         <div className="card-body">
                             <h3 id="dinoName">Ankylosaurus</h3>    
-                            <button>I will love you forever!</button>
+                            <button className="adoptBtn">I will love you forever!</button>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ function AdoptionPage() {
 
                         <div className="card-body">
                             <h3 id="dinoName">Brontosaurus</h3>    
-                            <button>I will love you forever!</button>
+                            <button className="adoptBtn">I will love you forever!</button>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ function AdoptionPage() {
 
                         <div className="card-body">
                             <h3 id="dinoName">Parasaurilohpus</h3>    
-                            <button>I will love you forever!</button>
+                            <button className="adoptBtn">I will love you forever!</button>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ function AdoptionPage() {
 
                         <div className="card-body">
                             <h3 id="dinoName">Stegasaurus</h3>    
-                            <button>I will love you forever!</button>
+                            <button className="adoptBtn">I will love you forever!</button>
                             </div>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ function AdoptionPage() {
 
                         <div className="card-body">
                             <h3 id="dinoName">Triceratops</h3>    
-                            <button>I will love you forever!!</button>
+                            <button className="adoptBtn">I will love you forever!!</button>
                             </div>
                         </div>
                     </div>
