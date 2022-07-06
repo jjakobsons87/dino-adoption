@@ -1,3 +1,4 @@
-const User = require('./User')
+const User = require('./User');
+const Dino = require('./Dino');
 
-module.exports = { Comment, User };
+module.exports = { Dino, User };
