@@ -1,5 +1,5 @@
-import AdoptionPage from "./pages/adoption";
-import Footer from "./pages/footer"
+import AdoptionPage from "./components/adoption";
+import Footer from "./components/footer"
 
 
 function App() {
