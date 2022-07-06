@@ -6,7 +6,7 @@ const typeDefs = gql`
         username: String
         email: String
         dinoCount: Int
-        dinos: [Dino]
+        myDinos: [Dino]
         favDino: [FaveDino]
         comments: [Comment]
     }
@@ -34,4 +34,19 @@ const typeDefs = gql`
         description: String
         inventory: Int
     }
+
+    type Query { 
+        me: User
+        users: [User]
+        user(username: String!): User
+        comments(username: String): [Comment]
+        comment(_id: ID!): Comment
+    }
+
+    type Auth {
+        token: ID!
+        user: User
+    }
 `;
+
+module.exports = typeDefs;
