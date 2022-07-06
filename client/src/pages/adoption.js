@@ -29,7 +29,6 @@ function AdoptionPage() {
                         <div className="card-body">
                             <h3 id="dinoName">Tyranasaurus Rex</h3>    
                             <button>Adopt me if you dare!</button>
-                            <button>Website</button>
                             </div>
                         </div>
                     </div>
@@ -45,7 +44,6 @@ function AdoptionPage() {
                         <div className="card-body">
                             <h3 id="dinoName">Spinosaurus</h3>    
                             <button>Adopt me if you dare!</button>
-                            <button>Website</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +59,21 @@ function AdoptionPage() {
                         <div className="card-body">
                             <h3 id="dinoName">Velociraptor</h3>    
                             <button>Adopt me if you dare!</button>
-                            <button>Website</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                            <img
+                                src={DilophImage}
+                                alt="Dilophosaurus"
+                                className="card-img-top"
+                            />
+                    
+                        <div className="card-body">
+                            <h3 id="dinoName">Dilophosaurus</h3>    
+                            <button>Adopt me if you dare!</button>
                             </div>
                         </div>
                     </div>
