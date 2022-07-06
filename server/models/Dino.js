@@ -20,6 +20,10 @@ const dinoSchema = new Schema(
         type: Number,
         required: true
     },
+    inventory: {
+        type: Number,
+        required: true
+    },
     addedAt: {
       type: Date,
       default: Date.now,
