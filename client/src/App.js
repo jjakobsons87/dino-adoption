@@ -1,9 +1,15 @@
 import AdoptionPage from "./pages/adoption";
+import Footer from "./pages/footer"
 
 
 function App() {
   return (
-   <AdoptionPage></AdoptionPage>
+    <div>
+      <main>
+        <AdoptionPage></AdoptionPage>
+      </main>
+      <Footer></Footer>
+    </div>
   );
 }
 
