@@ -97,7 +97,7 @@ function AdoptionPage() {
                 
             </section>
 
-            <section id="herboivoires">
+            <section id="herbivores">
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
