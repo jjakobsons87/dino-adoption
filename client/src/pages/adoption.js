@@ -18,7 +18,10 @@ function AdoptionPage() {
 
         <main id="dinoSale">
 
-            <h2 className="text-center text-white">The DDAA is here to fullfill all of your Dino-Related needs!</h2>
+            <div id="description">
+                <h2 className="text-center text-white">The DDAA is here to fullfill all of your Dino-Related needs!</h2>
+                <p className="text-center text-white">We have 2 main category selections. Carnivores and Herbivores. Choose wisely!</p>
+            </div>
 
             <section id="carnivores">
 

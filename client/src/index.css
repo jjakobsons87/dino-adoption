@@ -25,13 +25,27 @@ footer {
 
 #mainAdoptTitle {
   font-family: 'Fredericka the Great', cursive;
+  color: bisque;
 }
 
 .sectTitle {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
   text-decoration: underline;
-  margin-top: 100px;
+  margin-top: 70px;
+}
+
+#description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#carnivores {
+  margin: 0;
+  position: relative;
+  bottom: 30px;
 }
 
 .card {
