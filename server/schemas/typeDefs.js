@@ -20,7 +20,13 @@ const typeDefs = gql`
 
     type Dino {
         _id: ID
-        aboutBody: String
+        bio: String
+        species: String
+        diet: String
+        gender: String
+        aggressiveness: Int
+        humanCasualties: Int
+        fenceRequirement: Int
         name: String
         savedCount: Int
         age: Int
