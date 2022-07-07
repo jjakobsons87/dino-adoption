@@ -1,13 +1,36 @@
-import React from 'react'
+import React, { useState } from "react";
+import Nav from "./Nav";
+import Adoption from "./Adoption";
+import Profile from "./Profile";
+import Shop from "./Shop";
+import Login from "./Login";
 
 export default function Header() {
-  return (
-    <header>
+    const [currentPage, setCurrentPage] = useState("Adoption");
+
+    const renderPage = () => {
+        if (currentPage === "Adoption") {
+            return <Adoption />;
+        }
+        if (currentPage === "Profile") {
+            return <Profile />;
+        }
+        if (currentPage === "Shop") {
+            return <Shop />;
+        }
+        if (currentPage === "Login") {
+            return <Login />;
+        }
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
+    return (
         <div>
-            <h1>Delusional Dino Adoption Agency</h1>
+            <Nav
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+            />
+            {renderPage()}
         </div>
-    </header>
-  );
-};
-
-
+    );
+}
