@@ -1,17 +1,17 @@
 import React from 'react';
 
-import TRexImage from "../assets/images/trex.jpg"
-import SpinoImage from "../assets/images/spinosaurus.png"
-import RaptorImage from "../assets/images/raptor.jpg"
-import DilophImage from "../assets/images/dilophosaurus.png"
-import AlloImage from "../assets/images/allosaurus.jpg"
-import AnkylImage from "../assets/images/ankylosaurus.jpg"
-import BrontoImage from "../assets/images/brontosaurus.jpg"
-import ParaImage from "../assets/images/parasaurilophus.jpg"
-import StegaImage from "../assets/images/stegasaurus.jpg"
-import TriImage from "../assets/images/Triceratops.jpg"
-import PteroImage from "../assets/images/pterandon.jpg"
-import PachyImage from "../assets/images/pachy.jpg"
+import TRexImage from "../../assets/images/trex.jpg"
+import SpinoImage from "../../assets/images/spinosaurus.png"
+import RaptorImage from "../../assets/images/raptor.jpg"
+import DilophImage from "../../assets/images/dilophosaurus.png"
+import AlloImage from "../../assets/images/allosaurus.jpg"
+import AnkylImage from "../../assets/images/ankylosaurus.jpg"
+import BrontoImage from "../../assets/images/brontosaurus.jpg"
+import ParaImage from "../../assets/images/parasaurilophus.jpg"
+import StegaImage from "../../assets/images/stegasaurus.jpg"
+import TriImage from "../../assets/images/Triceratops.jpg"
+import PteroImage from "../../assets/images/pterandon.jpg"
+import PachyImage from "../../assets/images/pachy.jpg"
 
 function AdoptionPage() {
     return (
@@ -19,15 +19,20 @@ function AdoptionPage() {
         <main id="dinoSale">
              <h1 id="mainAdoptTitle" className="text-center font-weight-bold">The Dilusional Dinosaur Adoption Agency</h1>
 
-            <div id="description">
-                <h2 className="text-center text-white">The DDAA is here to fullfill all of your Dino-Related needs!</h2>
-                <p className="text-center text-white">We have 2 main category selections; Carnivores and Herbivores. Want to know more about a particular breed? Click on the images to visit their wikipedia pages! Above all else though.... choose wisely!</p>
+             <div id="siteDesc">
+                <div id="description">
+                    <h2 className="text-center text-white">The DDAA is here to fullfill all of your Dino-Related needs!</h2>
+                    <p className="text-center text-white">The DDAA, after much work and toil, has finally acquired the much sought after Dino-DNA, and, with the aquisition, we have also gained the ability to successfully clone our very own Dinosaurs! Who hasn't dreamed of riding a Triceratops to work, or having a Raptor rip your school bully to shreds? ...not that we recommend that, but you get the idea! Thanks to our own patented brand of genetic engineering you can own your very own dinosaur! But, be warned... this type of responsible will not come easy, and is not going to be cheap...
+                    <br></br><br></br>
+                    There are two main categories of dinosaurs to choose from: Carnivores and Herbivores. Want to know more about a specific breed? Click on the images to visit their wikipedia page! Above all else, though... choose wisely!
+                    </p>
+                </div>
             </div>
 
             <section id="carnivores">
 
             <h2 className="sectTitle text-center">Carnivores</h2>
-            <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect if well maintained and trained to do. Be warned! They can be unpredictable! Adopt at your own risk!</p>
+            <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect you if well maintained and well trained. Be warned! They can be unpredictable! Adopt at your own risk!</p>
 
                 <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
