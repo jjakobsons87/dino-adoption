@@ -1,0 +1,115 @@
+const { User, Comment, Accessory, Dino } = require('../models');
+const { AuthenticationError } = require('apollo-server-express');
+const { signToken } = require('../utils/auth');
+
+const resolvers = {
+    Query: {
+        me: async (parent, args, context) => {
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id })
+                    .select('-__v -password')
+                    .populate('comments')
+                return userData;
+            }
+            throw new AuthenticationError('Not logged in');
+        },
+                // get all users 
+        users: async () => {
+            return User.find()
+            .select('-__v -password')
+            .populate('friends')
+            .populate('thoughts');
+        },
+
+        // get all dinos 
+        dinos: async () => {
+            return Dino.find()
+            .populate('bio')
+            .populate('species')
+            .populate('diet')
+            .populate('gender')
+            .populate('aggressiveness')
+            .populate('humanCasualties')
+            .populate('fenceRequirement')
+            .populate('name')
+            .populate('savedCount')
+            .populate('age')
+            .populate('inventory')
+        },
+
+        // get dino by id
+        dino: async (parent, { _id }) => {
+            return Dino.findOne({ _id })
+            .populate('bio')
+            .populate('species')
+            .populate('diet')
+            .populate('gender')
+            .populate('aggressiveness')
+            .populate('humanCasualties')
+            .populate('fenceRequirement')
+            .populate('name')
+            .populate('savedCount')
+            .populate('age')
+            .populate('inventory')
+        },
+
+        // get all accessories 
+        accessories: async () => {
+            return Accessory.find()
+            .populate('name')
+            .populate('category')
+            .populate('price')
+            .populate('description')
+            .populate('inventory')
+        },
+
+        // get accessory by id 
+        accessory: async (parent, { _id }) => {
+            return Accessory.findOne({ _id })
+            .populate('name')
+            .populate('category')
+            .populate('price')
+            .populate('description')
+            .populate('inventory')
+        }
+    },
+
+    Mutation: { 
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
+
+            return { token, user };
+        },
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
+
+            if (!user) {
+                throw new AuthenticationError('Incorrect credentials');
+            }
+
+            const correctPw = await user.isCorrectPassword(password);
+
+            if (!correctPw) {
+                throw new AuthenticationError('Incorrect credentials');
+            }
+            const token = signToken(user);
+            return { token, user };
+        },
+
+        addComment: async (parent, { dinoId, commentBody }, context) => {
+            if (context.user) {
+                const updatedDino = await Dino.findOneAndUpdate(
+                    { _id: dinoId },
+                    { $push: { comments: { commentBody, username: context.user.username } } },
+                    { new: true, runValidators: true }
+                );
+
+                return updatedDino;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        },
+    }
+};
+
+module.exports = resolvers;
