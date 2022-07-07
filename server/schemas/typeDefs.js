@@ -13,23 +13,26 @@ const typeDefs = gql`
 
     type Comment {
         _id: ID
-        commentText: String
-        createdAt: String
+        commentBody: String
         username: String
+        createdAt: String
     }
 
     type Dino {
         _id: ID
-        dinoName: String
-        dinoType: String
-        comments: [Comment]
+        aboutBody: String
+        name: String
+        savedCount: Int
+        age: Int
         inventory: Int
+        addedAt: String
+        comments: [Comment]
     }
 
     type Accessory {
         _id: ID
-        accName: String
-        accCategory: String
+        name: String
+        category: String
         price: Int
         description: String
         inventory: Int
