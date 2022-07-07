@@ -35,7 +35,7 @@ footer {
 }
 
 #carnivores {
-  margin: 0;
+  margin-top: 125px;
   position: relative;
   bottom: 30px;
 }
@@ -84,8 +84,4 @@ footer {
 .adoptBtn[disabled] {
   cursor: default;
   opacity: .8;
-}
-
-.teamGits {
-  justify-content: space-around;
 }
