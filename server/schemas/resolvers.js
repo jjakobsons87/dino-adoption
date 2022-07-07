@@ -97,16 +97,15 @@ const resolvers = {
             return { token, user };
         },
 
-        addComment: async (parent, args, context) => {
+        addComment: async (parent, { dinoId, commentBody }, context) => {
             if (context.user) {
-                const comment = await Comment.create({ ...args, username: context.user.username });
-
-                await User.findByIdAndUpdate(
-                    { _id: context.user._id},
-                    { $push: { comments: comment._id } },
-                    { new: true }
+                const updatedDino = await Dino.findOneAndUpdate(
+                    { _id: dinoId },
+                    { $push: { comments: { commentBody, username: context.user.username } } },
+                    { new: true, runValidators: true }
                 );
-                return comment;
+
+                return updatedDino;
             }
             throw new AuthenticationError('You need to be logged in!');
         },
