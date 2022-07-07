@@ -1,3 +1,6 @@
+import AdoptionPage from "./components/Adoption/index.js";
+import Footer from "./components/Footer/index.js"
+
 import {
   ApolloProvider,
   ApolloClient,
@@ -16,26 +19,15 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </ApolloProvider>
+    <div>
+      <main>
+        <AdoptionPage></AdoptionPage>
+      </main>
+      <Footer></Footer>
+    </div>
   );
 }
 
