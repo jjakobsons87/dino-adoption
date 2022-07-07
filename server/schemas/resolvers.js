@@ -13,6 +13,13 @@ const resolvers = {
             }
             throw new AuthenticationError('Not logged in');
         },
+                // get all users 
+        users: async () => {
+            return User.find()
+            .select('-__v -password')
+            .populate('friends')
+            .populate('thoughts');
+        },
 
         // get all dinos 
         dinos: async () => {
@@ -47,7 +54,14 @@ const resolvers = {
         },
 
         // get all accessories 
-
+        accessories: async () => {
+            return Accessory.find()
+            .populate('name')
+            .populate('category')
+            .populate('price')
+            .populate('description')
+            .populate('inventory')
+        }
 
         // get accessory by id 
 
