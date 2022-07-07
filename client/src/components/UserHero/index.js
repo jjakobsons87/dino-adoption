@@ -16,4 +16,6 @@ const UserHero = () => {
             </div>
         </header>
     )
-}
+};
+
+export default UserHero;
