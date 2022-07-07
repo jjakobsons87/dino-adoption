@@ -20,6 +20,10 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
+    dinosOwned: {
+        type: Number,
+        required: true
+    },
     comments: [
       {
         type: Schema.Types.ObjectId,
