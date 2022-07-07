@@ -7,7 +7,7 @@ const typeDefs = gql`
         email: String
         dinoCount: Int
         myDinos: [Dino]
-        favDino: [FaveDino]
+        favDino: [Dino]
         comments: [Comment]
     }
 
@@ -48,10 +48,18 @@ const typeDefs = gql`
         me: User
         users: [User]
         user(username: String!): User
+        dinos: [Dino]
+        dino(_id: ID!): Dino
+        accessories: [Accessory]
+        accessory(_id: ID!): [Accessory]
         comments(username: String): [Comment]
         comment(_id: ID!): Comment
     }
 
+    type Mutation {
+        login(email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
+    }
     type Auth {
         token: ID!
         user: User

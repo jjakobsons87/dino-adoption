@@ -61,10 +61,17 @@ const resolvers = {
             .populate('price')
             .populate('description')
             .populate('inventory')
-        }
+        },
 
         // get accessory by id 
-
+        accessory: async (parent, { _id }) => {
+            return Accessory.findOne({ _id })
+            .populate('name')
+            .populate('category')
+            .populate('price')
+            .populate('description')
+            .populate('inventory')
+        }
     
     }
 };
