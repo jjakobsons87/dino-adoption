@@ -1,8 +1,10 @@
 // const faker = require('faker');
 
 const db = require('../config/connection');
-const { Thought, User } = require('../models');
+const { Accessory, Dino, User } = require('../models');
 
+
+// this will all need to change because of Faker
 db.once('open', async () => {
   await Thought.deleteMany({});
   await User.deleteMany({});
