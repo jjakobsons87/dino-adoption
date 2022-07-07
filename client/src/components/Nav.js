@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { Container, NavDropdown, Nav } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 
-export default function Nav() {
+export default function Nav({ currentPage, handlePageChange }) {
     return (
         { isSignedIn ? (
             <Navbar className="navbar" expand="lg">
