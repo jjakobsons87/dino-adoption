@@ -12,6 +12,7 @@ import "./App.css";
 // route imports
 import Profile from './pages/Profile';
 import Home from './pages/Home';
+import Accessories from './pages/Accessories';
 
 // component imports
 import Footer from "./components/Footer/index.js"
@@ -36,6 +37,10 @@ function App() {
               <Route 
                 path="/" 
                 element={<Home />} 
+              />
+               <Route 
+                path="/accessories" 
+                element={<Accessories />} 
               />
               <Route 
                 path="/profile" 
