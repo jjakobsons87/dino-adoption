@@ -1,5 +1,6 @@
 import AdoptionPage from "./components/Adoption/index.js";
 import Footer from "./components/Footer/index.js"
+import AccessoriesPage from "./components/Accessories/index.js"
 
 import {
   ApolloProvider,
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       <main>
+        <AccessoriesPage></AccessoriesPage>
         <AdoptionPage></AdoptionPage>
       </main>
       <Footer></Footer>

@@ -16,7 +16,7 @@ footer {
   border: 5px solid azure;
 }
 
-#mainAdoptTitle {
+.mainPageTitle {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
 }

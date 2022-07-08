@@ -17,7 +17,7 @@ function AdoptionPage() {
     return (
 
         <main id="dinoSale">
-             <h1 id="mainAdoptTitle" className="text-center font-weight-bold">The Dilusional Dinosaur Adoption Agency</h1>
+             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
              <div id="siteDesc">
                 <div id="description">
@@ -175,7 +175,7 @@ function AdoptionPage() {
                                     className="card-img-top"
                                 />
 
-                        <div className="card-body">
+                    <div className="card-body">
                             <h3 className="dinoName">Parasaurilohpus</h3>    
                             <button className="adoptBtn">I will love you forever!</button>
                             </div>
