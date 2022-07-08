@@ -30,6 +30,97 @@ function AccessoriesPage() {
                     </p>
                 </div>
             </div>
+
+            <div className="col">
+                        <div className="card">
+                                <img
+                                    src={TRexImage}
+                                    alt="Tyranasaurus Rex"
+                                    className="card-img-top"
+                                />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Tyranasaurus Rex</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={SpinoImage}
+                                    alt="Spinosaurus"
+                                    className="card-img-top"
+                                />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Spinosaurus</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={RaptorImage}
+                                    alt="Velociraptor"
+                                    className="card-img-top"
+                                />
+                            
+                        <div className="card-body">
+                            <h3 className="dinoName">Velociraptor</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={AlloImage}
+                                    alt="Allosaurus"
+                                    className="card-img-top"
+                                />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Allosaurus</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={DilophImage}
+                                    alt="Dilophosurus"
+                                    className="card-img-top"
+                                />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Dilophosaurus</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={PteroImage}
+                                    alt="Pteranodon"
+                                    className="card-img-top"
+                                />
+                    
+                        <div className="card-body">
+                            <h3 className="dinoName">Pteranodon</h3>    
+                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            </div>
+                        </div>
+                    </div>
+
         </main>
             )
         }
