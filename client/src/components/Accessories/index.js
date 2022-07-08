@@ -34,14 +34,14 @@ function AccessoriesPage() {
             <div className="col">
                         <div className="card">
                                 <img
-                                    src={TRexImage}
-                                    alt="Tyranasaurus Rex"
+                                    src={Harness}
+                                    alt="Harness"
                                     className="card-img-top"
                                 />
                     
-                        <div className="card-body">
-                            <h3 className="dinoName">Tyranasaurus Rex</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Dino Harness $129.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -49,14 +49,14 @@ function AccessoriesPage() {
                     <div className="col">
                         <div className="card">
                                 <img
-                                    src={SpinoImage}
+                                    src={Blanket}
                                     alt="Spinosaurus"
                                     className="card-img-top"
                                 />
                     
-                        <div className="card-body">
-                            <h3 className="dinoName">Spinosaurus</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Blanket $89.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -119,6 +119,8 @@ function AccessoriesPage() {
                             <button className="adoptBtn">Adopt me, I dare you!</button>
                             </div>
                         </div>
+
+                        
                     </div>
 
         </main>
