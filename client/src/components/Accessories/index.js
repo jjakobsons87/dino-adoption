@@ -50,7 +50,7 @@ function AccessoriesPage() {
                         <div className="card">
                                 <img
                                     src={Blanket}
-                                    alt="Spinosaurus"
+                                    alt="Blanket"
                                     className="card-img-top"
                                 />
                     
@@ -64,14 +64,14 @@ function AccessoriesPage() {
                     <div className="col">
                         <div className="card">
                                 <img
-                                    src={RaptorImage}
-                                    alt="Velociraptor"
+                                    src={ChewToy}
+                                    alt="Chew Toy"
                                     className="card-img-top"
                                 />
                             
-                        <div className="card-body">
-                            <h3 className="dinoName">Velociraptor</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Chew Toy $49.99</h3>    
+                                <button className="adoptBtn">Adopt me, I dare you!</button>
                             </div>
                         </div>
                     </div>
