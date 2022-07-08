@@ -35,93 +35,93 @@ function AccessoriesPage() {
             <div id= "accessoriesPart1" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
                 <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Harness}
-                                        alt="Harness"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Dino Harness $129.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                    <div className="card">
+                            <img
+                                src={Harness}
+                                alt="Harness"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Dino Harness $129.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Blanket}
-                                        alt="Blanket"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Blanket $89.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Blanket}
+                                alt="Blanket"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Blanket $89.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={ChewToy}
-                                        alt="Chew Toy"
-                                        className="card-img-top"
-                                    />
-                                
-                                <div className="card-body">
-                                    <h3 className="dinoName">Chew Toy $49.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={BoyHat}
-                                        alt="Boy Hat"
-                                        className="card-img-top"
-                                    />
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={ChewToy}
+                                alt="Chew Toy"
+                                className="card-img-top"
+                            />
                         
-                                <div className="card-body">
-                                    <h3 className="dinoName">Infant Boy Hat $29.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                        <div className="card-body">
+                            <h3 className="dinoName">Chew Toy $49.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={GirlHat}
-                                        alt="Girl Hat"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Infant Girl Hat $29.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={BoyHat}
+                                alt="Boy Hat"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Infant Boy Hat $29.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Sword}
-                                        alt="Sword"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Dinosword $49.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={GirlHat}
+                                alt="Girl Hat"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Infant Girl Hat $29.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Sword}
+                                alt="Sword"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Dinosword $49.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -129,143 +129,145 @@ function AccessoriesPage() {
 
             <div id= "accessoriesPart2" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">           
                         
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={LeashCollar}
-                                        alt="Leash/Collar"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Leash/Collar $99.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={LeashCollar}
+                                alt="Leash/Collar"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Leash/Collar $99.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Muzzle}
-                                        alt="Muzzle"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Muzzle $89.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Muzzle}
+                                alt="Muzzle"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Muzzle $89.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Pillow}
-                                        alt="Pillow"
-                                        className="card-img-top"
-                                    />
-                                
-                                <div className="card-body">
-                                    <h3 className="dinoName">Pillow $49.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={FoodBowl}
-                                        alt="Food Bowl"
-                                        className="card-img-top"
-                                    />
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Pillow}
+                                alt="Pillow"
+                                className="card-img-top"
+                            />
                         
-                                <div className="card-body">
-                                    <h3 className="dinoName">Food Bowl $99.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                        <div className="card-body">
+                            <h3 className="dinoName">Pillow $49.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={WaterBowl}
-                                        alt="Water Bowl"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Water Bowl $89.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={FoodBowl}
+                                alt="Food Bowl"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Food Bowl $99.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={TreatBoxes}
-                                        alt="Treat Boxes"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Treat Boxes $49.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={WaterBowl}
+                                alt="Water Bowl"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Water Bowl $89.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={TreatBoxes}
+                                alt="Treat Boxes"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Treat Boxes $49.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
             <div id= "foodTreats" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
-            <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Meat}
-                                        alt="Meat"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Variety Meat $299.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Leaves}
-                                        alt="Leaves"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Fresh Leaves $199.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
+                <div className="col">
 
-                        <div className="col">
-                            <div className="card">
-                                    <img
-                                        src={Treats}
-                                        alt="Treats"
-                                        className="card-img-top"
-                                    />
-                        
-                                <div className="card-body">
-                                    <h3 className="dinoName">Bag of Treats $49.99</h3>    
-                                    <button className="adoptBtn">Add To Cart</button>
-                                </div>
-                            </div>
+                    <div className="card">
+                            <img
+                                src={Meat}
+                                alt="Meat"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Variety Meat $299.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
                         </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Leaves}
+                                alt="Leaves"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Fresh Leaves $199.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card">
+                            <img
+                                src={Treats}
+                                alt="Treats"
+                                className="card-img-top"
+                            />
+                
+                        <div className="card-body">
+                            <h3 className="dinoName">Bag of Treats $49.99</h3>    
+                            <button className="adoptBtn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
