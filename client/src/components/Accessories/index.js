@@ -121,8 +121,143 @@ function AccessoriesPage() {
                             </div>
                         </div>
 
-                        
+                            <div className="col">
+                        <div className="card">
+                                <img
+                                    src={Harness}
+                                    alt="Harness"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Dino Harness $129.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
                     </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={Blanket}
+                                    alt="Blanket"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Blanket $89.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={ChewToy}
+                                    alt="Chew Toy"
+                                    className="card-img-top"
+                                />
+                            
+                            <div className="card-body">
+                                <h3 className="dinoName">Chew Toy $49.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={BoyHat}
+                                    alt="Boy Hat"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Boy Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={GirlHat}
+                                    alt="Girl Hat"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Girl Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={Sword}
+                                    alt="Sword"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Dinosword $49.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={BoyHat}
+                                    alt="Boy Hat"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Boy Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={GirlHat}
+                                    alt="Girl Hat"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Girl Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card">
+                                <img
+                                    src={Sword}
+                                    alt="Sword"
+                                    className="card-img-top"
+                                />
+                    
+                            <div className="card-body">
+                                <h3 className="dinoName">Dinosword $49.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                </div>
 
         </main>
             )
