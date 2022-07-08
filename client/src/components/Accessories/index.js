@@ -4,6 +4,7 @@ import Harness from "../../assets/accessories/harness.jpg"
 import Blanket from "../../assets/accessories/Blanket.jpeg"
 import ChewToy from "../../assets/accessories/chewtoy.jpg"
 import BoyHat from "../../assets/accessories/boyhat.jpeg"
+import GirlHat from "../../assets/accessories/girlhat.jpg"
 import Sword from "../../assets/accessories/dinosword.jpg"
 import LeashCollar from "../../assets/accessories/leashcollar.jpg"
 import Muzzle from "../../assets/accessories/muzzle.jpg"
@@ -71,7 +72,7 @@ function AccessoriesPage() {
                             
                             <div className="card-body">
                                 <h3 className="dinoName">Chew Toy $49.99</h3>    
-                                <button className="adoptBtn">Adopt me, I dare you!</button>
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -79,14 +80,14 @@ function AccessoriesPage() {
                     <div className="col">
                         <div className="card">
                                 <img
-                                    src={AlloImage}
-                                    alt="Allosaurus"
+                                    src={BoyHat}
+                                    alt="Boy Hat"
                                     className="card-img-top"
                                 />
                     
-                        <div className="card-body">
-                            <h3 className="dinoName">Allosaurus</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Boy Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -94,14 +95,14 @@ function AccessoriesPage() {
                     <div className="col">
                         <div className="card">
                                 <img
-                                    src={DilophImage}
-                                    alt="Dilophosurus"
+                                    src={GirlHat}
+                                    alt="Girl Hat"
                                     className="card-img-top"
                                 />
                     
-                        <div className="card-body">
-                            <h3 className="dinoName">Dilophosaurus</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Infant Girl Hat $29.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
