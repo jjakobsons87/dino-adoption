@@ -110,14 +110,14 @@ function AccessoriesPage() {
                     <div className="col">
                         <div className="card">
                                 <img
-                                    src={PteroImage}
-                                    alt="Pteranodon"
+                                    src={Sword}
+                                    alt="Sword"
                                     className="card-img-top"
                                 />
                     
-                        <div className="card-body">
-                            <h3 className="dinoName">Pteranodon</h3>    
-                            <button className="adoptBtn">Adopt me, I dare you!</button>
+                            <div className="card-body">
+                                <h3 className="dinoName">Dinosword $49.99</h3>    
+                                <button className="adoptBtn">Add To Cart</button>
                             </div>
                         </div>
 
