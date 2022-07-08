@@ -17,72 +17,87 @@ import PachyImage from "../../assets/images/pachy.jpg";
 export default function DinoList({ name }) {
 
     const [currentDino, setCurrentDino] = useState();
-    const [isCardOpen, setIsCardOpen] = useState(false);
+    // const [isCardOpen, setIsCardOpen] = useState(false);
     
     const [dinos] = useState([
         {
             name: 'Tyrannasaurus Rex',
             diet: 'Carnivore',
+            source: TRexImage
 
         },
         {
             name: 'Spinosaurus',
-            diet: 'Carnivore'
+            diet: 'Carnivore',
+            source: SpinoImage
         },
         {
             name: 'Utahraptor',
-            diet: 'Carnivore'
+            diet: 'Carnivore',
+            source: RaptorImage
         },
         {
             name: 'Dilophosaurus',
-            diet: 'Carnivore'
+            diet: 'Carnivore',
+            source: DilophImage
         },
         {
             name: 'Allosaurus',
-            diet: 'Carnivore'
+            diet: 'Carnivore',
+            source: AlloImage
         },
         {
             name: 'Ankylosaurus',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: AnkylImage
         },
         {
             name: 'Brachiosaurus',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: BrontoImage
         },
         {
             name: 'Parasaurilophus',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: ParaImage
         },
         {
             name: 'Stegasaurus',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: StegaImage
         },
         {
             name: 'Triceratops',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: TriImage
         },
         {
             name: 'Pterandon',
-            diet: 'Carnivore'
+            diet: 'Carnivore',
+            source: PteroImage
         },
         {
             name: 'Pachycepalosaurus',
-            diet: 'Herbivore'
+            diet: 'Herbivore',
+            source: PachyImage
         }
     ]);
 
     const currentDinos = dinos.filter(dino => dino.name === name);
 
-    const toggleCard = (image, i) => {
-        setCurrentDino({...image, index:i})
-        setIsCardOpen(!isCardOpen);
-    }
+    // const toggleCard = (image, i) => {
+    //     setCurrentDino({...image, index:i})
+    //     setIsCardOpen(!isCardOpen);
+    // }
 
   return (
     <div>
         {isCardOpen && (
             <Card currentDino={currentDino} onClose={toggleCard} />
         )}
+        <div>
+            {currentDinos.map((dino, i) => ())}
+        </div>
 
     </div>
   )
