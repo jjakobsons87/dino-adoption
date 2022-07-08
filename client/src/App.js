@@ -1,5 +1,4 @@
-import AdoptionPage from "./components/Adoption/index.js";
-import Footer from "./components/Footer/index.js"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import {
   ApolloProvider,
@@ -9,6 +8,13 @@ import {
 } from "@apollo/client";
 import logo from "./logo.svg";
 import "./App.css";
+
+// route imports
+import Profile from './pages/Profile';
+import Home from './pages/Home';
+
+// component imports
+import Footer from "./components/Footer/index.js"
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -22,12 +28,25 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <div>
-      <main>
-        <AdoptionPage></AdoptionPage>
-      </main>
-      <Footer></Footer>
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <div className="container">
+            <Routes>
+              <Route 
+                path="/" 
+                element={<Home />} 
+              />
+              <Route 
+                path="/profile" 
+                element={<Profile />} 
+              />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
