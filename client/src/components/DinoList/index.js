@@ -21,40 +21,53 @@ export default function DinoList({ name }) {
     
     const [dinos] = useState([
         {
-            name: 'Tyrannasaurus Rex'
+            name: 'Tyrannasaurus Rex',
+            diet: 'Carnivore',
+
         },
         {
-            name: 'Spinosaurus'
+            name: 'Spinosaurus',
+            diet: 'Carnivore'
         },
         {
-            name: 'Utahraptor'
+            name: 'Utahraptor',
+            diet: 'Carnivore'
         },
         {
-            name: 'Dilophosaurus'
+            name: 'Dilophosaurus',
+            diet: 'Carnivore'
         },
         {
-            name: 'Allosaurus'
+            name: 'Allosaurus',
+            diet: 'Carnivore'
         },
         {
-            name: 'Ankylosaurus'
+            name: 'Ankylosaurus',
+            diet: 'Herbivore'
         },
         {
-            name: 'Brachiosaurus'
+            name: 'Brachiosaurus',
+            diet: 'Herbivore'
         },
         {
-            name: 'Parasaurilophus'
+            name: 'Parasaurilophus',
+            diet: 'Herbivore'
         },
         {
-            name: 'Stegasaurus'
+            name: 'Stegasaurus',
+            diet: 'Herbivore'
         },
         {
-            name: 'Triceratops'
+            name: 'Triceratops',
+            diet: 'Herbivore'
         },
         {
-            name: 'Pterandon'
+            name: 'Pterandon',
+            diet: 'Carnivore'
         },
         {
-            name: 'Pachycepalosaurus'
+            name: 'Pachycepalosaurus',
+            diet: 'Herbivore'
         }
     ]);
 
@@ -70,7 +83,7 @@ export default function DinoList({ name }) {
         {isCardOpen && (
             <Card currentDino={currentDino} onClose={toggleCard} />
         )}
-        
+
     </div>
   )
 }
