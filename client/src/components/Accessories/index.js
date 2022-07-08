@@ -1,5 +1,20 @@
 import React from 'react';
 
+import Harness from "../../assets/accessories/harness.jpg"
+import Blanket from "../../assets/accessories/Blanket.jpeg"
+import ChewToy from "../../assets/accessories/chewtoy.jpg"
+import BoyHat from "../../assets/accessories/boyhat.jpeg"
+import Sword from "../../assets/accessories/dinosword.jpg"
+import LeashCollar from "../../assets/accessories/leashcollar.jpg"
+import Muzzle from "../../assets/accessories/muzzle.jpg"
+import Pillow from "../../assets/accessories/pillow.jpg"
+import Treats from "../../assets/accessories/dinotreats.jpg"
+import FoodBowl from "../../assets/accessories/foodbowl.jpg"
+import Leaves from "../../assets/accessories/leaves.jpg"
+import Meat from "../../assets/accessories/meat.jpg"
+import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
+import WaterBowl from "../../assets/accessories/waterbowl.jpg"
+
 function AccessoriesPage() {
     return (
 
