@@ -1,19 +1,10 @@
 import React from 'react';
+import Card from '../Card/Card';
 
-import TRexImage from "../../assets/images/trex.jpg"
-import SpinoImage from "../../assets/images/spinosaurus.png"
-import RaptorImage from "../../assets/images/raptor.jpg"
-import DilophImage from "../../assets/images/dilophosaurus.png"
-import AlloImage from "../../assets/images/allosaurus.jpg"
-import AnkylImage from "../../assets/images/ankylosaurus.jpg"
-import BrontoImage from "../../assets/images/brontosaurus.jpg"
-import ParaImage from "../../assets/images/parasaurilophus.jpg"
-import StegaImage from "../../assets/images/stegasaurus.jpg"
-import TriImage from "../../assets/images/Triceratops.jpg"
-import PteroImage from "../../assets/images/pterandon.jpg"
-import PachyImage from "../../assets/images/pachy.jpg"
+
 
 function AdoptionPage() {
+
     return (
 
         <main id="dinoSale">
@@ -28,8 +19,9 @@ function AdoptionPage() {
                     </p>
                 </div>
             </div>
+            <Card />
 
-            <section id="carnivores">
+            {/* <section id="carnivores">
 
             <h2 className="sectTitle text-center">Carnivores</h2>
             <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect you if well maintained and well trained. Be warned! They can be unpredictable! Adopt at your own risk!</p>
@@ -229,7 +221,7 @@ function AdoptionPage() {
 
                 </div>
 
-            </section>
+            </section> */}
 
         </main>
     )
