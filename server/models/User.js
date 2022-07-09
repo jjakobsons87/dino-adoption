@@ -22,7 +22,7 @@ const userSchema = new Schema(
     },
     dinosOwned: {
         type: Number,
-        required: true
+        // required: true
     },
     comments: [
       {
