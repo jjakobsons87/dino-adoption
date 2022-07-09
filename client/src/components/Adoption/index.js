@@ -18,6 +18,7 @@ function AdoptionPage() {
 
         <main id="dinoSale">
              <h1 id="mainAdoptTitle" className="text-center font-weight-bold">The Dilusional Dinosaur Adoption Agency</h1>
+             <a href='#/cart'>Cart</a>
 
              <div id="siteDesc">
                 <div id="description">

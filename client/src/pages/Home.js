@@ -11,7 +11,11 @@ const Home = () => {
                     <AdoptionPage></AdoptionPage>
                 </div>
                 <div>
-                    <Basket />
+                    <Basket>
+                        <a href='#/'>
+                        <h1>Small Shopping Cart</h1>
+                        </a>
+                    </Basket>
                 </div>
             </main>
         </div>
