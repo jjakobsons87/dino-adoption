@@ -12,9 +12,7 @@ const Home = () => {
                 </div>
                 <div>
                     <Basket>
-                        <a href='#/'>
-                        <h1>Small Shopping Cart</h1>
-                        </a>
+                        <a href='#/'></a>
                     </Basket>
                 </div>
             </main>

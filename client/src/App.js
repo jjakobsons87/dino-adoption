@@ -1,12 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from "react";
-import {
-  ApolloProvider,
-  ApolloClient,
-  InMemoryCache,
-  createHttpLink,
-} from "@apollo/client";
-import logo from "./logo.svg";
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 import "./App.css";
 
 // route imports
