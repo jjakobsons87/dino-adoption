@@ -110,6 +110,11 @@ const resolvers = {
             throw new AuthenticationError('You need to be logged in!');
         },
 
+        addAccessory: async ( parent, args) => {
+            const accessory = await Accessory.create(args);
+            return accessory;
+        },
+        
         addDino: async (parent, args) => {
             const dino = await Dino.create(args);
             return dino;
