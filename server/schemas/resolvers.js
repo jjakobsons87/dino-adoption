@@ -66,11 +66,11 @@ const resolvers = {
         // get accessory by id 
         accessory: async (parent, { _id }) => {
             return Accessory.findOne({ _id })
-            .populate('name')
-            .populate('category')
-            .populate('price')
-            .populate('description')
-            .populate('inventory')
+            // .populate('name')
+            // .populate('category')
+            // .populate('price')
+            // .populate('description')
+            // .populate('inventory')
         }
     },
 

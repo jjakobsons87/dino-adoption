@@ -51,7 +51,7 @@ const typeDefs = gql`
         dinos: [Dino]
         dino(_id: ID!): Dino
         accessories: [Accessory]
-        accessory(_id: ID!): [Accessory]
+        accessory(_id: ID!): Accessory
         comments(username: String): [Comment]
         comment(_id: ID!): Comment
     }
