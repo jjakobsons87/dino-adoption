@@ -112,9 +112,19 @@ const resolvers = {
 
         addDino: async (parent, args) => {
             const dino = await Dino.create(args);
-
             return dino;
-        }
+        },
+
+        // updateDino: async (parent, { dinoId, args }, context) => {
+        //     if (context.user) {
+        //         const updatedDino = await Dino.findOneAndUpdate(
+        //             { _id: dinoId },
+        //             { $push: { }}
+        //         )
+        //     }
+        // }, 
+
+        // addToCart: async ( parent, { })
     }
 };
 
