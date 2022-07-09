@@ -109,6 +109,12 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
+
+        addDino: async (parent, args) => {
+            const dino = await Dino.create(args);
+
+            return dino;
+        }
     }
 };
 

@@ -60,8 +60,9 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         addComment(dinoId: ID!, commentBody: String!): Dino
-        addDino(bio: String!, species: String!, diet: String!, gender: String!, aggressiveness: String!, humanCasualties: Int!, fenceRequirement: Int!, name: String!, savedCount: Int!, age: Int!, inventory: Int!, )
+        addDino(bio: String!, species: String!, diet: String!, gender: String!, aggressiveness: Int!, humanCasualties: Int!, fenceRequirement: Int!, name: String!, savedCount: Int!, age: Int!, inventory: Int!): Dino
     }
+
     type Auth {
         token: ID!
         user: User
