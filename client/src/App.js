@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { useState } from "react";
 import {
   ApolloProvider,
   ApolloClient,
@@ -15,7 +15,7 @@ import Home from './pages/Home';
 
 // component imports
 import Footer from "./components/Footer/index.js"
-import { useState } from 'react';
+import Basket from './components/Basket';
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -30,7 +30,7 @@ const client = new ApolloClient({
 function App() {
 
   const [ cartItems, setCartItems ] = useState([]);
-  
+
   return (
     <ApolloProvider client={client}>
       <Router>
