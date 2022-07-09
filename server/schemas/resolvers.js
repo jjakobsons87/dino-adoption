@@ -40,17 +40,6 @@ const resolvers = {
         // get dino by id
         dino: async (parent, { _id }) => {
             return Dino.findOne({ _id })
-            .populate('bio')
-            .populate('species')
-            .populate('diet')
-            .populate('gender')
-            .populate('aggressiveness')
-            .populate('humanCasualties')
-            .populate('fenceRequirement')
-            .populate('name')
-            .populate('savedCount')
-            .populate('age')
-            .populate('inventory')
         },
 
         // get all accessories 
@@ -66,11 +55,6 @@ const resolvers = {
         // get accessory by id 
         accessory: async (parent, { _id }) => {
             return Accessory.findOne({ _id })
-            // .populate('name')
-            // .populate('category')
-            // .populate('price')
-            // .populate('description')
-            // .populate('inventory')
         }
     },
 
