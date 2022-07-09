@@ -1,44 +1,36 @@
-import React, { useState } from 'react';
-import '../../App.css';
-import About from '../About';
-import Contact from '../Contact';
-import Nav from '../Nav';
-import Projects from '../Projects';
-import Resume from '../Resume';
-import Footer from '../Footer';
+import React, { useState } from "react";
+import Nav from "../Nav/Nav";
+import Adoption from "../Adoption";
+import Profile from "./Profile";
+import Shop from "./Shop";
+import Login from "./Login";
 
-function App() {
-    const [currentPage, setCurrentPage] = useState('Home');
+export default function Header() {
+    const [currentPage, setCurrentPage] = useState("Adoption");
 
     const renderPage = () => {
-      if (currentPage === 'Home') {
-        return <Home />;
-      }
-      if (currentPage === 'Accessories') {
-        return <Accessories />;
-      }
-      if (currentPage === 'Profile') {
-        return <Profile />;
-      }
-      if (currentPage === 'Dinosaur') {
-        return <Dinosaur />;
-      }
-      //Will be for checkout page
-    //   return <Checkout />;
+        if (currentPage === "Adoption") {
+            return <Adoption />;
+        }
+        if (currentPage === "Profile") {
+            return <Profile />;
+        }
+        if (currentPage === "Shop") {
+            return <Shop />;
+        }
+        if (currentPage === "Login") {
+            return <Login />;
+        }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
-
-
     return (
-      <div>
-       <div>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
-      </div>
+        <div>
+            <Nav
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+            />
+            {renderPage()}
+        </div>
     );
-  }
-
-
-export default App;
+}
