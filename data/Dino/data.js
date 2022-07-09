@@ -13,6 +13,5 @@ module.exports [
         age: 12,
         inventory: 1,
         addedAt: Date.now
-
     }
 ]
