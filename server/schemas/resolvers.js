@@ -24,17 +24,6 @@ const resolvers = {
         // get all dinos 
         dinos: async () => {
             return Dino.find()
-            .populate('bio')
-            .populate('species')
-            .populate('diet')
-            .populate('gender')
-            .populate('aggressiveness')
-            .populate('humanCasualties')
-            .populate('fenceRequirement')
-            .populate('name')
-            .populate('savedCount')
-            .populate('age')
-            .populate('inventory')
         },
 
         // get dino by id
@@ -45,11 +34,6 @@ const resolvers = {
         // get all accessories 
         accessories: async () => {
             return Accessory.find()
-            .populate('name')
-            .populate('category')
-            .populate('price')
-            .populate('description')
-            .populate('inventory')
         },
 
         // get accessory by id 
