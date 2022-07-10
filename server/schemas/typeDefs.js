@@ -44,6 +44,12 @@ const typeDefs = gql`
         inventory: Int
     }
 
+    type Cart {
+        _id: ID
+        accessories: [Accessory]
+        dinos: [Dino]
+    }
+
     type Query { 
         me: User
         users: [User]
@@ -54,6 +60,7 @@ const typeDefs = gql`
         accessory(_id: ID!): Accessory
         comments(username: String): [Comment]
         comment(_id: ID!): Comment
+        cart(username: String!): [Cart]
     }
 
     type Mutation {
