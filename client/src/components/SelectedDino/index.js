@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuery } from "@apollo/client"
+import { useQuery, useLazyQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 
 const SelectedDino = () => {
@@ -10,14 +10,26 @@ const SelectedDino = () => {
         setIsCardOpen(!isCardOpen);
     }
 
-    const { loading, error, data } = useQuery(QUERY_DINOS);
+    const [getDino, { loading, error, data }] = useLazyQuery(QUERY_DINO);
 
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
     return (
 
-        <div onClick={toggleCard} id="singledino" ClassName = "selected-container">
+        <div onClick={() => {toggleCard; getDino({ variables: { _id: "id" }})}}
+            ClassName = "selected-container">
+            Species: {data.dinos.species}
+            Name: {data.dinos.name}
+            Bio: {data.dinos.bio}
+            Diet: {data.dinos.diet}
+            Gender: {data.dinos.gender}
+            Age: {data.dinos.age}
+            Aggressiveness: {data.dinos.aggressiveness}
+            Human Casualties: {data.dinos.humanCasualties}
+            Fence Requirement: {data.dinos.fenceRequirement}
+            Inventory: {data.dinos.inventory}
+            # of Times Saved: {data.dinos.savedCount}
 
         </div>
     )

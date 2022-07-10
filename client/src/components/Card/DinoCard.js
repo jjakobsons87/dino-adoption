@@ -34,8 +34,8 @@ export default function DinoCard() {
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={() => setCurrentDino(dino.name)}>View Dino</CButton>
-                    {currentDino === dino.name && 
+                    <CButton onClick={() => setCurrentDino(dino._id)}>View Dino</CButton>
+                    {currentDino === dino._id && 
                     <SelectedDino/>
                     }   
                 </CCardBody>
