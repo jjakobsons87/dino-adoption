@@ -7,7 +7,7 @@ const typeDefs = gql`
         email: String
         dinoCount: Int
         savedDinos: [Dino]
-        cart: [User]
+        cart: [Dino]
     }
 
     type Comment {
