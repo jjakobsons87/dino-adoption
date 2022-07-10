@@ -68,26 +68,6 @@ function Homepage() {
                         />
                     </div>
                     <p className="text-center text-white">Currently we hae 12 variety of dinosaurs that consist of 6 Carnivores and 6 Herbivores.
-                    <div id="dinoList">
-                        <ul>
-                            <li className="listTitle">Carnivores</li>
-                            <li>Tyrannasauus Rex</li>
-                            <li>Spinosaurus</li>
-                            <li>Utahraptor</li>
-                            <li>Allosaurus</li>
-                            <li>Dilophosaurus</li>
-                            <li>Pteranodon</li>
-                        </ul>
-                        <ul>
-                            <li className="listTitle">Herbivores</li>
-                            <li>Ankylosaurus</li>
-                            <li>Brachiosaurus</li>
-                            <li>Pachycephalosaurus</li>
-                            <li>Pachycephalosaurus</li>
-                            <li>Triceratops</li>
-                            <li>Stegasaurus</li>
-                        </ul>
-                    </div>
                     <br></br><br></br>
                     The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet.
                     </p>

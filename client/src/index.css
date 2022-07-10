@@ -22,17 +22,6 @@ ul {
   list-style: none;
 }
 
-.listTitle {
-  color: bisque;
-  padding: 10px;
-  text-decoration: underline;
-}
-
-#dinoList {
--webkit-column-count: 2;
-column-count: 2; 
-}
-
 footer {
   flex: 1;
   align-items: center;
