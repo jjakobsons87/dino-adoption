@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
-import Auth from "../utils/auth";
+import Auth from "../../utils/auth";
 
-export default function Nav({ currentPage, handlePageChange }) {
+export default function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav>
             { Auth.loggedIn() ? (

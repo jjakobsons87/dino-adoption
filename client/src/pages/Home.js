@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AdoptionPage from "../components/Adoption/index";
+import AdoptionPage from "../components/AdoptionPage/index";
 
 const Home = () => {
     return (

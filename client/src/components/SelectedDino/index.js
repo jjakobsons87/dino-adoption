@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SelectedDino = () => {
+
+
+    const [isCardOpen, setIsCardOpen] = useState(false);
+
+    const toggleCard = (image, i) => {
+        setIsCardOpen(!isCardOpen);
+    }
+
     return (
-        <div id="singledino" ClassName = "selected-container">
-            {/* large Dino Hero */}
+
+        <div onClick={toggleCard} id="singledino" ClassName = "selected-container">
+            Howdy, dino data here
         </div>
     )
 };
+                
 
 export default SelectedDino;

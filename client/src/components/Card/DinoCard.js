@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 // import DinoList from "../DinoList";
+import SelectedDino from "../SelectedDino";
 import TRexImage from "../../assets/images/trex.jpg";
 import SpinoImage from "../../assets/images/spinosaurus.png";
 import RaptorImage from "../../assets/images/raptor.jpg";
@@ -20,11 +21,13 @@ import {
     CCardBody,
     CCardTitle,
     CCardText,
-    CCardLink
+    CButton
 } from "@coreui/react";
 
 
 export default function DinoCard() {
+
+    const [currentDino, setCurrentDino] = useState();
 
     const [dinos] = useState([
         {
@@ -95,7 +98,10 @@ export default function DinoCard() {
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CCardLink href="#singledino">View Dino</CCardLink>
+                    <CButton onClick={() => setCurrentDino(dino.name)} href="#singledino">View Dino</CButton>
+                    {currentDino === dino.name && 
+                    <SelectedDino/>
+                    }   
                 </CCardBody>
             </CCard>
         ))}
