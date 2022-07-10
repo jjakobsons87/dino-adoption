@@ -14,7 +14,6 @@ import PteroImage from "../../assets/images/pterandon.jpg";
 import PachyImage from "../../assets/images/pachy.jpg";
 
 export default function DinoList({ dinos }) {
-    // const [currentDino, setCurrentDino] = useState();
     const [isCardOpen, setIsCardOpen] = useState(false);
 
     const [dinos] = useState([
