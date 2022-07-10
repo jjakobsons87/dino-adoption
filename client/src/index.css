@@ -34,6 +34,17 @@ footer {
   background-color: black;
 }
 
+#birthDiv {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeDinosPics {
+  width: 100%;
+}
+
 #carnivores {
   margin-top: 70px;
   position: relative;

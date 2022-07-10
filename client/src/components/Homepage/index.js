@@ -1,4 +1,5 @@
 import React from 'react';
+import RaptorBaby from '../../assets/homepage/raptorbaby.webp'
 
 function Homepage() {
     return (
@@ -18,6 +19,18 @@ function Homepage() {
             </div>
 
             <section>
+
+            <div id="birthDiv" className="description">
+                    <h2 className="text-center text-white">Dinosaurs from birth</h2>
+                    <div className="homeDinos">
+                        <img className="homeDinosPics"
+                            src={RaptorBaby}
+                            alt="Infant Raptor"
+                        />
+                    </div>
+                    <p className="text-center text-white">You have two adoptions in terms of the age that you will purchase: fully grown or the infant stage. Infant is recommended as it makes imprinting on the dinosaurs easier, thus they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but you will find it to be a much better route to go. 
+                    </p>
+                </div>
             </section>
         
         </main>
