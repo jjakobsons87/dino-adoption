@@ -14,6 +14,7 @@ export const QUERY_DINOS = gql`
             humanCasualties
             fenceRequirement
             inventory
+            imageURL
             comments {
                 _id
                 commentBody
@@ -37,6 +38,7 @@ export const QUERY_DINO = gql`
             humanCasualties
             fenceRequirement
             inventory
+            imageURL
             comments {
                 _id
                 commentBody
@@ -57,6 +59,7 @@ export const QUERY_ACCESSORIES = gql`
             price
             description
             inventory
+            imageURL
         }
     }
 `;
@@ -70,6 +73,7 @@ export const QUERY_ACCESSORY = gql`
             price
             description
             inventory
+            imageURL
         }
     }
 `;

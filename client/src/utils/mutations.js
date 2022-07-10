@@ -61,8 +61,8 @@ export const ADD_DINO = gql`
 `;
 
 export const ADD_ACCESSORY = gql`
-    mutation AddAccessory($name: String!, $category: String!, $price: Int!, $description: String!, $inventory: Int!) {
-        addAccessory(name: $name, category: $category, price: $price, description: $description, inventory: $inventory) {
+    mutation AddAccessory($name: String!, $category: String!, $price: Int!, $description: String!, $inventory: Int!, $imageURL: String!) {
+        addAccessory(name: $name, category: $category, price: $price, description: $description, inventory: $inventory, imageURL: $imageURL) {
             _id
             name
             category
