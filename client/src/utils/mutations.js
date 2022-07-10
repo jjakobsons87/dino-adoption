@@ -24,4 +24,18 @@ export const ADD_USER = gql`
     }
 `;
 
-
+export const ADD_COMMENT = gql`
+    mutation addComment ($dinoId: ID!, $commentBody: String!) {
+        addComment(dinoId: $dinoId, commentBody: $commentBody) {
+            _id
+            name
+            species
+            comments {
+                _id
+                commentBody
+                username
+                createdAt
+            }
+        }
+    }
+`;
