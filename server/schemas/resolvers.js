@@ -98,17 +98,29 @@ const resolvers = {
         // }, 
 
         // add dino to cart 
-        addToCart: async ( parent, { cartId }, context) => {
+        addToCart: async ( parent, { dinoId }, context) => {
             if (context.user) {
                 const updatedCart = await User.findOneAndUpdate(
                     { _id: context.user._id},
-                    { $addToSet: { cart: cartId } },
+                    { $addToSet: { cart: dinoId } },
                     { new: true }
                 ).populate('cart');
             
                 return updatedCart;
             }
             throw new AuthenticationError("You need to be logged in!");
+        },
+        // fav a dino 
+        addToFavorites: async (parent, { dinoId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id},
+                    { $addToSet: { savedDinos: dinoId } },
+                    { new: true }
+                ).populate('savedDinos');
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!');
         }
     }
 };

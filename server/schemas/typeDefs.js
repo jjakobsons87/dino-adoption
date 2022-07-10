@@ -6,9 +6,7 @@ const typeDefs = gql`
         username: String
         email: String
         dinoCount: Int
-        myDinos: [Dino]
-        favDino: [Dino]
-        comments: [Comment]
+        savedDinos: [Dino]
         cart: [User]
     }
 
@@ -70,7 +68,8 @@ const typeDefs = gql`
         addComment(dinoId: ID!, commentBody: String!): Dino
         addDino(bio: String!, species: String!, diet: String!, gender: String!, aggressiveness: Int!, humanCasualties: Int!, fenceRequirement: Int!, name: String!, savedCount: Int!, age: Int!, inventory: Int!): Dino
         addAccessory(name: String!, category: String!, price: Int!, description: String!, inventory: Int!): Accessory
-        addToCart(cartId: ID!): User
+        addToCart(dinoId: ID!): User
+        addToFavorites(dinoId: ID!): User
     }
 
     type Auth {
