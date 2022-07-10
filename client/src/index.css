@@ -16,7 +16,7 @@ footer {
   border: 5px solid azure;
 }
 
-#mainAdoptTitle {
+.mainPageTitle {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
 }
@@ -25,17 +25,17 @@ footer {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
   text-decoration: underline;
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 #description {
-  margin-top: 50px;
+  margin-top: 70px;
   border: 1px solid bisque;
   background-color: black;
 }
 
 #carnivores {
-  margin: 0;
+  margin-top: 70px;
   position: relative;
   bottom: 30px;
 }
@@ -84,8 +84,4 @@ footer {
 .adoptBtn[disabled] {
   cursor: default;
   opacity: .8;
-}
-
-.teamGits {
-  justify-content: space-around;
 }
