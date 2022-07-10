@@ -1,22 +1,29 @@
 body {
-  font-family: 'Bentham', serif;
   margin: 0;
   background-color: rgb(19, 19, 19);
 }
 
-p {
-  font-size: 17px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  background-color: black;
+  color: white;
 }
 
 footer {
-  flex: 1;
-  align-items: center;
-  margin-top: 50px;
+  width: auto;
+  margin-top: 100px;
   background-color: black;
-  border: 5px solid azure;
 }
 
-.mainPageTitle {
+#mainAdoptTitle {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
 }
@@ -25,17 +32,18 @@ footer {
   font-family: 'Fredericka the Great', cursive;
   color: bisque;
   text-decoration: underline;
-  margin-top: 25px;
+  margin-top: 70px;
 }
 
 #description {
-  margin-top: 70px;
-  border: 1px solid bisque;
-  background-color: black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 #carnivores {
-  margin-top: 70px;
+  margin-top: 125px;
   position: relative;
   bottom: 30px;
 }
@@ -58,14 +66,13 @@ footer {
 }
 
 .dinoName {
-  color: bisque;
+  color: azure;
   font-family: 'Fredericka the Great', cursive;
   font-size: 24px;
 }
 
 .adoptBtn {
   font-family: 'Fredericka the Great', cursive;
-  color: white;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -74,7 +81,7 @@ footer {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: rgb(33, 32, 32);
+  background-color: gray;
 }
 
 .adoptBtn:hover {
