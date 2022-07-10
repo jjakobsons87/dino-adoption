@@ -31,6 +31,7 @@ const resolvers = {
         // get all dinos 
         dinos: async () => {
             return Dino.find()
+            .populate('comments')
         },
 
         // get dino by id
