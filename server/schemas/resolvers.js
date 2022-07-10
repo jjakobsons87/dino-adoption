@@ -97,7 +97,7 @@ const resolvers = {
         //     }
         // }, 
 
-        addToCart: async ( parent, {  })
+        // addToCart: async ( parent, {  })
     }
 };
 
