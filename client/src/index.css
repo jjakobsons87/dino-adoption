@@ -46,14 +46,14 @@ footer {
 
 .imageDivs {
   display: flex;
-  flex: 1;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
 
-.homeDino {
-  height: 300px;
-  width: 350px;
+.homeDinos {  
+  width: 80%;
+  height: 60%;
 }
 
 .homeDinosPics {
