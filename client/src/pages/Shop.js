@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ShopPage from "../components/Accessories/index";
+import ShopPage from "../components/Shop/index";
 
 const Accessories = () => {
     return (

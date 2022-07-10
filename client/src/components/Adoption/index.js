@@ -28,7 +28,7 @@ function AdoptionPage() {
                 </div>
             </div>
 
-            <section id="carnivores">
+            <section id="dinosaursAdopt">
 
                 <h2 className="sectTitle text-center">Carnivores</h2>
                 <p className="text-white text-center">Expert mode for Dino-Ownership! Our carnivores, despite their terrifying appearances, will protect you if well maintained and well trained. Be warned! They can be unpredictable! Adopt at your own risk!</p>
@@ -124,17 +124,6 @@ function AdoptionPage() {
                             </div>
                         </div>
                     </div>
-
-                </div>
-                
-            </section>
-
-            <section id="herbivores">
-
-                <h2 className="sectTitle text-center">Herbivores</h2>
-                <p className="text-center text-white">Easy Mode for Dino-Ownership! Our Herbivores are, for the most part, well tempered and kind, but can become aggressve if they feel threatened. Keep a healthy relationship with them and you'll be fine!</p>
-
-                <div id= "dinosaurs" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
                     <div className="col">
                         <div className="card">
