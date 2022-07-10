@@ -2,7 +2,7 @@ import React from 'react';
 
 const SelectedDino = () => {
     return (
-        <div className = "selected-container">
+        <div id="singledino" ClassName = "selected-container">
             {/* large Dino Hero */}
         </div>
     )

@@ -30,7 +30,7 @@ export default function DinoCard({ dinos }) {
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CCardLink href="#card">View Dino</CCardLink>
+                    <CCardLink href="#singledino">View Dino</CCardLink>
                 </CCardBody>
             </CCard>
         ))}
