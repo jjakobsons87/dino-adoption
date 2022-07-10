@@ -40,7 +40,7 @@ function App() {
                 element={<Home />} 
               />
               <Route 
-                path="/Adoption" 
+                path="/adoption" 
                 element={<Adoption />} 
               />
                <Route 

@@ -28,7 +28,7 @@ footer {
   margin-top: 25px;
 }
 
-#description {
+.description {
   margin-top: 70px;
   border: 1px solid bisque;
   background-color: black;
