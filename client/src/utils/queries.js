@@ -46,3 +46,30 @@ export const QUERY_DINO = gql`
         }
     }
 `;
+
+
+export const QUERY_ACCESSORIES = gql`
+    query accessories {
+        accessories {
+            _id
+            name
+            category
+            price
+            description
+            inventory
+        }
+    }
+`;
+
+export const QUERY_ACCESSORY = gql`
+    query accessory($id: ID!) {
+        accessory(_id: $id) {
+            _id
+            name
+            category
+            price
+            description
+            inventory
+        }
+    }
+`;
