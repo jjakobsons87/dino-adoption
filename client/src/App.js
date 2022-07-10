@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 
 import {
@@ -12,6 +13,7 @@ import "./App.css";
 import Profile from './pages/Profile';
 import Home from './pages/Home';
 import Accessories from './pages/Accessories';
+import Login from '../src/components/Login';
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -28,6 +30,11 @@ const client = new ApolloClient({
 
 
 function App() {
+  const [token, setToken] = useState();
+
+  if (!token) {
+    return <Login setToken={setToken} />
+  }
   return (
     <ApolloProvider client={client}>
       <Router>
