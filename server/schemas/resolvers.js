@@ -8,7 +8,7 @@ const resolvers = {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                     .select('-__v -password')
-                    .populate('comments')
+                    .populate('cart')
                 return userData;
             }
             throw new AuthenticationError('Not logged in');
@@ -17,7 +17,7 @@ const resolvers = {
         users: async () => {
             return User.find()
             .select('-__v -password')
-            .populate('comments')
+            .populate('cart')
         },
 
         // get all dinos 

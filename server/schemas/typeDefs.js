@@ -9,6 +9,7 @@ const typeDefs = gql`
         myDinos: [Dino]
         favDino: [Dino]
         comments: [Comment]
+        cart: [User]
     }
 
     type Comment {
@@ -69,7 +70,7 @@ const typeDefs = gql`
         addComment(dinoId: ID!, commentBody: String!): Dino
         addDino(bio: String!, species: String!, diet: String!, gender: String!, aggressiveness: Int!, humanCasualties: Int!, fenceRequirement: Int!, name: String!, savedCount: Int!, age: Int!, inventory: Int!): Dino
         addAccessory(name: String!, category: String!, price: Int!, description: String!, inventory: Int!): Accessory
-        addToCart(dinoId: ID!): User
+        addToCart(cartId: ID!): User
     }
 
     type Auth {
