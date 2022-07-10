@@ -1,11 +1,20 @@
 body {
-  font-family: 'Bentham', serif;
+  font-family: 'PT Serif', serif;
   margin: 0;
   background-color: rgb(19, 19, 19);
 }
 
+h1 {
+  font-size: 6vh;
+}
+
+h2 {
+  font-size: 4vh;
+}
+
 p {
-  font-size: 2.8vh;
+  font-size: 2.6vh;
+  padding: 7px;
   margin-bottom: 25px;
 }
 
@@ -35,7 +44,7 @@ footer {
   background-color: black;
 }
 
-#birthDiv {
+.imageDivs {
   display: flex;
   flex: 1;
   flex-direction: column;

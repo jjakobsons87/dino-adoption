@@ -1,5 +1,6 @@
 import React from 'react';
 import RaptorBaby from '../../assets/homepage/raptorbaby.webp'
+import CaptiveDinos from "../../assets/homepage/captivedinos.jpg"
 
 function Homepage() {
     return (
@@ -17,20 +18,19 @@ function Homepage() {
                     <br></br><br></br>
                     We DO NOT condone these animals for military use.
                     </p>
+
+                    <h2 className="text-center sectTitle">The Challenges</h2>
+                    <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make the transition easier for both you and the dino. Give these animals as much attention as you can. It will make imprinting on them at a young age much quicker and avoid any unnecessary injuries and bodily harm
+                    <br></br><br></br>
+                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be loving and protective under the right circumstances, and believe us... no one will think twice of invading your home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus.
+                    </p>
+
                 </div>
             </div>
 
             <section>
 
-            <div className="description">
-                    <h2 className="text-center sectTitle">The Challenges</h2>
-                    <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make the transition easier for both you and the dino.
-                    <br></br><br></br>
-                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be loving and protective under the right circumstances, and believe us... no one will think twice of invading your home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus.
-                    </p>
-            </div>
-
-            <div id="birthDiv" className="description">
+            <div className="description imageDivs">
                     <h2 className="text-center sectTitle">Infant Stage Adoption</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
@@ -38,7 +38,23 @@ function Homepage() {
                             alt="Infant Raptor"
                         />
                     </div>
-                    <p className="text-center text-white">Your dinosaurs will be sent to you as infants to make both delivery and the transitions easier. Infant is highly recommended as it makes imprinting on the dinosaurs easier, thus they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but you will find it to be a much better route to go. It is a far greater risk to adopt a full grown, set in it's ways Raptor, as opposed to an infant that you can develop a stronger bond with. Of course, adults have the advantage of protection, savagery, and striking fear in the hearts of your enemies. 
+                    <p className="text-center text-white">Your dinosaurs will be sent to you as infants to make both delivery and the transitions safer. Infant is highly recommended as it makes imprinting on the dinosaurs easier, thus they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but you will find it to be a much better route to go. It is a far greater risk to adopt a full grown, set in it's ways Raptor, as opposed to an infant that you can develop a stronger bond with. Of course, adults have the advantage of protection, savagery, and striking fear in the hearts of your enemies. 
+                    <br></br><br></br>
+                    The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
+                    </p>
+                </div>
+
+                <div className="description imageDivs">
+                    <h2 className="text-center sectTitle">Dinosaurs in Captivity</h2>
+                    <div className="homeDinos">
+                        <img className="homeDinosPics"
+                            src={CaptiveDinos}
+                            alt="Captive Dinos"
+                        />
+                    </div>
+                    <p className="text-center text-white">The dinosaurs that we keep at our island facility are loved and cared for. We pride ourselves in the safety an understanding of these animals. We control any and all breeding, and each dinosaur sent out is genetically modified so that they CANNOT breed. What that means is if you want another dinosaur, you will have to adopt a new one. This is to avoid the dinosaurs proliferating outside of our control, and to also avoid any dino-related crises that could arise from unauthorized breeding. 
+                    <br></br><br></br>
+                    The above image shows 2 of our Brachiosauruses in captivity. The fences are secure and electrified, but they have plety of space to roam and eat, much like all of our other dinosaurs.
                     </p>
                 </div>
             </section>
