@@ -10,20 +10,34 @@ function Homepage() {
 
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
+            <nav>
+                <ul className="nav flex-row justify-content-center justify-content-around">
+                    <li className="nav-item"><a href="#siteDesc">The DDAA</a></li>
+                    <li className="nav-item"><a href="#infantAdopt">Infant Adoption</a></li>
+                    <li className="nav-item"><a href="#captDinos">Dinos in Captivity</a></li>
+                    <li className="nav-item"><a href="#dinoVar">Dino Variety</a></li>
+                </ul>
+            </nav>
+
             <div id="siteDesc">
                 <div className="description">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
                     <p className="text-center text-white">After many years of research, the Delusional Dinosaur Adoption Agency, or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! From the Tyrant King itself, the Tyrannasauus Rex, to the legendary long-neck, the Brachiosaurus, we have many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live alongside one another. It's a dream come true for many.
                     <br></br><br></br>
-                    Experience may vary, modifying DNA to control the size of your dinosaur at birth costs extra.
+                    Experience may vary, modifying DNA to control the size of your dinosaur when it's full-grown birth costs extra.
                     <br></br><br></br>
                     We DO NOT condone these animals for military use.
                     </p>
 
-                    <h2 className="text-center sectTitle">The Challenges</h2>
+                    <h2 className="text-center sectTitle">The Challenges and Risks</h2>
                     <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make the transition easier for both you and the dino. Give these animals as much attention as you can. It will make imprinting on them at a young age much quicker and avoid any unnecessary injuries and bodily harm
                     <br></br><br></br>
-                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be loving and protective under the right circumstances, and believe us... no one will think twice of invading your home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus.
+                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be loving and protective under the right circumstances, and believe us... no one will think twice of invading your home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus. But, take great care around these animals. They are unpredictable and can be exceedingly vicious. We are not responsible for anythng that occurs after the animal leaves our facility.
+                    </p>
+
+                    <h2 className="text-center sectTitle">Our Dinosaurs</h2>
+                    <p className="text-center text-white">The animals are given plenty of space to roam, plenty to eat and are treated with the utmost care and respect. They are seperated into different pens based upon their temperment and to avoid confrontations between the Dinosaurs. 
+                    <br></br><br></br>
                     </p>
 
                 </div>
@@ -31,7 +45,7 @@ function Homepage() {
 
             <section>
 
-            <div className="description imageDivs">
+            <div id="infantAdopt" className="description imageDivs">
                     <h2 className="text-center sectTitle">Infant Stage Adoption</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
@@ -45,7 +59,7 @@ function Homepage() {
                     </p>
                 </div>
 
-                <div className="description imageDivs">
+                <div id="captDinos" className="description imageDivs">
                     <h2 className="text-center sectTitle">Dinosaurs in Captivity</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
@@ -59,7 +73,7 @@ function Homepage() {
                     </p>
                 </div>
 
-                <div className="description imageDivs">
+                <div id="dinoVar" className="description imageDivs">
                     <h2 className="text-center sectTitle">Dinosaur Variety</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
@@ -69,7 +83,7 @@ function Homepage() {
                     </div>
                     <p className="text-center text-white">Currently we hae 12 variety of dinosaurs that consist of 6 Carnivores and 6 Herbivores.
                     <br></br><br></br>
-                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet. Also, just to note: some of these dinosaurs ARE NOT for sale on our website currently.
+                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet, both of which we accomodate in our shop Also, just to note: some of these dinosaurs ARE NOT for sale on our website currently.
                     </p>
                 </div>
 
