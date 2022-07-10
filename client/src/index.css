@@ -18,6 +18,21 @@ p {
   margin-bottom: 25px;
 }
 
+ul {
+  list-style: none;
+}
+
+.listTitle {
+  color: bisque;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+#dinoList {
+-webkit-column-count: 2;
+column-count: 2; 
+}
+
 footer {
   flex: 1;
   align-items: center;
@@ -52,8 +67,8 @@ footer {
 }
 
 .homeDinos {  
-  width: 80%;
-  height: 60%;
+  width: 70%;
+  height: 50%;
 }
 
 .homeDinosPics {
