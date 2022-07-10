@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Card from "../Card";
 import TRexImage from "../../assets/images/trex.jpg";
 import SpinoImage from "../../assets/images/spinosaurus.png";
 import RaptorImage from "../../assets/images/raptor.jpg";
@@ -13,8 +12,8 @@ import TriImage from "../../assets/images/Triceratops.jpg";
 import PteroImage from "../../assets/images/pterandon.jpg";
 import PachyImage from "../../assets/images/pachy.jpg";
 
-export default function DinoList({ dinos }) {
-    const [isCardOpen, setIsCardOpen] = useState(false);
+export default function DinoList() {
+    // const [isCardOpen, setIsCardOpen] = useState(false);
 
     const [dinos] = useState([
         {
@@ -76,9 +75,10 @@ export default function DinoList({ dinos }) {
 
     return (
         <div>
-            {isCardOpen && (
+            
+            {/* {isCardOpen && (
                 <Card currentDino={currentDino} onClose={toggleCard} />
-            )}
+            )} */}
         </div>
     );
 }

@@ -1,5 +1,18 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, {useState} from "react";
+// import DinoList from "../DinoList";
+import TRexImage from "../../assets/images/trex.jpg";
+import SpinoImage from "../../assets/images/spinosaurus.png";
+import RaptorImage from "../../assets/images/raptor.jpg";
+import DilophImage from "../../assets/images/dilophosaurus.png";
+import AlloImage from "../../assets/images/allosaurus.jpg";
+import AnkylImage from "../../assets/images/ankylosaurus.jpg";
+import BrontoImage from "../../assets/images/brontosaurus.jpg";
+import ParaImage from "../../assets/images/parasaurilophus.jpg";
+import StegaImage from "../../assets/images/stegasaurus.jpg";
+import TriImage from "../../assets/images/Triceratops.jpg";
+import PteroImage from "../../assets/images/pterandon.jpg";
+import PachyImage from "../../assets/images/pachy.jpg";
+// import { Link } from 'react-router-dom';
 
 import {
     CCard,
@@ -11,7 +24,59 @@ import {
 } from "@coreui/react";
 
 
-export default function DinoCard({ dinos }) {
+export default function DinoCard() {
+
+    const [dinos] = useState([
+        {
+            name: "Tyrannasaurus Rex",
+            source: TRexImage,
+        },
+        {
+            name: "Spinosaurus",
+            source: SpinoImage,
+        },
+        {
+            name: "Utahraptor",
+            source: RaptorImage,
+        },
+        {
+            name: "Dilophosaurus",
+            source: DilophImage,
+        },
+        {
+            name: "Allosaurus",
+            source: AlloImage,
+        },
+        {
+            name: "Ankylosaurus",
+            source: AnkylImage,
+        },
+        {
+            name: "Brachiosaurus",
+            source: BrontoImage,
+        },
+        {
+            name: "Parasaurilophus",
+            source: ParaImage,
+        },
+        {
+            name: "Stegasaurus",
+            source: StegaImage,
+        },
+        {
+            name: "Triceratops",
+            source: TriImage,
+        },
+        {
+            name: "Pterandon",
+            source: PteroImage,
+        },
+        {
+            name: "Pachycepalosaurus",
+            source: PachyImage,
+        },
+    ]);
+
     if(!dinos.length) {
         return <h3>No Dinos Available</h3>
     }
