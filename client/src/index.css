@@ -85,3 +85,12 @@ footer {
   cursor: default;
   opacity: .8;
 }
+
+.gradient-custom-2 {
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+
+
+.loginform {
+  background-color: white;
+}
