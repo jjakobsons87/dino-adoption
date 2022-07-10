@@ -69,7 +69,7 @@ function Homepage() {
                     </div>
                     <p className="text-center text-white">Currently we hae 12 variety of dinosaurs that consist of 6 Carnivores and 6 Herbivores.
                     <br></br><br></br>
-                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet.
+                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet. Also, just to note: some of these dinosaurs ARE NOT for sale on our website currently.
                     </p>
                 </div>
 

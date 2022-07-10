@@ -1,12 +1,12 @@
 import React from 'react';
 
-import AccessoriesPage from "../components/Accessories/index";
+import ShopPage from "../components/Accessories/index";
 
 const Accessories = () => {
     return (
         <div>
             <main>
-                <AccessoriesPage></AccessoriesPage>
+                <ShopPage></ShopPage>
             </main>
         </div>
     )

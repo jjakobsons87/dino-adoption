@@ -13,7 +13,7 @@ import "./App.css";
 import Home from './pages/Home'
 import Profile from './pages/Profile';
 import Adoption from './pages/Adoption';
-import Accessories from './pages/Accessories';
+import Shop from './pages/Shop';
 
 // component imports
 import Footer from "./components/Footer/index.js"
@@ -44,8 +44,8 @@ function App() {
                 element={<Adoption />} 
               />
                <Route 
-                path="/accessories" 
-                element={<Accessories />} 
+                path="/shop" 
+                element={<Shop />} 
               />
               <Route 
                 path="/profile" 
