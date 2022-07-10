@@ -14,76 +14,64 @@ import PteroImage from "../../assets/images/pterandon.jpg";
 import PachyImage from "../../assets/images/pachy.jpg";
 
 
-export default function DinoList({ name }) {
+export default function DinoList({ dinos }) {
 
-    const [currentDino, setCurrentDino] = useState();
-    // const [isCardOpen, setIsCardOpen] = useState(false);
+    // const [currentDino, setCurrentDino] = useState();
+    const [isCardOpen, setIsCardOpen] = useState(false);
     
     const [dinos] = useState([
         {
             name: 'Tyrannasaurus Rex',
-            diet: 'Carnivore',
             source: TRexImage
 
         },
         {
             name: 'Spinosaurus',
-            diet: 'Carnivore',
             source: SpinoImage
         },
         {
             name: 'Utahraptor',
-            diet: 'Carnivore',
             source: RaptorImage
         },
         {
             name: 'Dilophosaurus',
-            diet: 'Carnivore',
             source: DilophImage
         },
         {
             name: 'Allosaurus',
-            diet: 'Carnivore',
             source: AlloImage
         },
         {
             name: 'Ankylosaurus',
-            diet: 'Herbivore',
             source: AnkylImage
         },
         {
             name: 'Brachiosaurus',
-            diet: 'Herbivore',
             source: BrontoImage
         },
         {
             name: 'Parasaurilophus',
-            diet: 'Herbivore',
             source: ParaImage
         },
         {
             name: 'Stegasaurus',
-            diet: 'Herbivore',
             source: StegaImage
         },
         {
             name: 'Triceratops',
-            diet: 'Herbivore',
             source: TriImage
         },
         {
             name: 'Pterandon',
-            diet: 'Carnivore',
             source: PteroImage
         },
         {
             name: 'Pachycepalosaurus',
-            diet: 'Herbivore',
             source: PachyImage
         }
     ]);
 
-    const currentDinos = dinos.filter(dino => dino.name === name);
+    // const currentDinos = dinos.filter(dino => dino.name === name);
 
     // const toggleCard = (image, i) => {
     //     setCurrentDino({...image, index:i})
@@ -95,10 +83,6 @@ export default function DinoList({ name }) {
         {isCardOpen && (
             <Card currentDino={currentDino} onClose={toggleCard} />
         )}
-        <div>
-            {currentDinos.map((dino, i) => ())}
-        </div>
-
     </div>
   )
 }
