@@ -41,8 +41,14 @@ footer {
   align-items: center;
 }
 
+.homeDino {
+  height: 300px;
+  width: 350px;
+}
+
 .homeDinosPics {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 #carnivores {
