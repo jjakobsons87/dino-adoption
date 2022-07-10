@@ -1,4 +1,4 @@
-const { User, Comment, Accessory, Dino } = require('../models');
+const { User, Accessory, Dino: Dino } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
@@ -17,8 +17,7 @@ const resolvers = {
         users: async () => {
             return User.find()
             .select('-__v -password')
-            .populate('friends')
-            .populate('thoughts');
+            .populate('comments')
         },
 
         // get all dinos 
@@ -29,6 +28,7 @@ const resolvers = {
         // get dino by id
         dino: async (parent, { _id }) => {
             return Dino.findOne({ _id })
+            .populate('comments')
         },
 
         // get all accessories 
@@ -97,7 +97,19 @@ const resolvers = {
         //     }
         // }, 
 
-        // addToCart: async ( parent, {  })
+        // add dino to cart 
+        addToCart: async ( parent, { cartId }, context) => {
+            if (context.user) {
+                const updatedCart = await User.findOneAndUpdate(
+                    { _id: context.user._id},
+                    { $addToSet: { cart: cartId } },
+                    { new: true }
+                ).populate('cart');
+            
+                return updatedCart;
+            }
+            throw new AuthenticationError("You need to be logged in!");
+        }
     }
 };
 
