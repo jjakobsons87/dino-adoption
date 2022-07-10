@@ -1,12 +1,12 @@
 import React from 'react';
 
-import AdoptionPage from "../components/Adoption/index";
+import Homepage from "../components/Homepage/index";
 
-const Home = () => {
+const  Home = () => {
     return (
         <div>
             <main>
-                <AdoptionPage></AdoptionPage>
+                <Homepage></Homepage>
             </main>
         </div>
     )

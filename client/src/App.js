@@ -10,8 +10,9 @@ import logo from "./logo.svg";
 import "./App.css";
 
 // route imports
+import Home from './pages/Home'
 import Profile from './pages/Profile';
-import Home from './pages/Home';
+import Adoption from './pages/Adoption';
 import Accessories from './pages/Accessories';
 
 // component imports
@@ -37,6 +38,10 @@ function App() {
               <Route 
                 path="/" 
                 element={<Home />} 
+              />
+              <Route 
+                path="/Adoption" 
+                element={<Adoption />} 
               />
                <Route 
                 path="/accessories" 
