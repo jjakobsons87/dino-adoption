@@ -5,7 +5,8 @@ body {
 }
 
 p {
-  font-size: 17px;
+  font-size: 2.8vh;
+  margin-bottom: 25px;
 }
 
 footer {
