@@ -1,4 +1,4 @@
-const { User, Comment, Accessory, Dino } = require('../models');
+const { User, Accessory, Dino: Dino } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
@@ -8,7 +8,7 @@ const resolvers = {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                     .select('-__v -password')
-                    .populate('comments')
+                    .populate('cart')
                 return userData;
             }
             throw new AuthenticationError('Not logged in');
@@ -17,60 +17,37 @@ const resolvers = {
         users: async () => {
             return User.find()
             .select('-__v -password')
-            .populate('friends')
-            .populate('thoughts');
+            .populate('savedDinos')
+            .populate('cart')
+        },
+
+        user: async (parent, { username }) => {
+            return User.findOne({ username })
+            .select('-__v -password')
+            .populate('savedDinos')
+            .populate('cart')
         },
 
         // get all dinos 
         dinos: async () => {
             return Dino.find()
-            .populate('bio')
-            .populate('species')
-            .populate('diet')
-            .populate('gender')
-            .populate('aggressiveness')
-            .populate('humanCasualties')
-            .populate('fenceRequirement')
-            .populate('name')
-            .populate('savedCount')
-            .populate('age')
-            .populate('inventory')
+            .populate('comments')
         },
 
         // get dino by id
         dino: async (parent, { _id }) => {
             return Dino.findOne({ _id })
-            .populate('bio')
-            .populate('species')
-            .populate('diet')
-            .populate('gender')
-            .populate('aggressiveness')
-            .populate('humanCasualties')
-            .populate('fenceRequirement')
-            .populate('name')
-            .populate('savedCount')
-            .populate('age')
-            .populate('inventory')
+            .populate('comments')
         },
 
         // get all accessories 
         accessories: async () => {
             return Accessory.find()
-            .populate('name')
-            .populate('category')
-            .populate('price')
-            .populate('description')
-            .populate('inventory')
         },
 
         // get accessory by id 
         accessory: async (parent, { _id }) => {
             return Accessory.findOne({ _id })
-            .populate('name')
-            .populate('category')
-            .populate('price')
-            .populate('description')
-            .populate('inventory')
         }
     },
 
@@ -109,6 +86,51 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
+
+        addAccessory: async ( parent, args) => {
+            const accessory = await Accessory.create(args);
+            return accessory;
+        },
+        
+        addDino: async (parent, args) => {
+            const dino = await Dino.create(args);
+            return dino;
+        },
+
+        // updateDino: async (parent, { dinoId, args }, context) => {
+        //     if (context.user) {
+        //         const updatedDino = await Dino.findOneAndUpdate(
+        //             { _id: dinoId },
+        //             { $push: { }}
+        //         )
+        //     }
+        // }, 
+
+        // add dino to cart 
+        addToCart: async ( parent, { dinoId }, context) => {
+            if (context.user) {
+                const updatedCart = await User.findOneAndUpdate(
+                    { _id: context.user._id},
+                    { $addToSet: { cart: dinoId } },
+                    { new: true }
+                ).populate('cart');
+            
+                return updatedCart;
+            }
+            throw new AuthenticationError("You need to be logged in!");
+        },
+        // fav a dino 
+        addToFavorites: async (parent, { dinoId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id},
+                    { $addToSet: { savedDinos: dinoId } },
+                    { new: true }
+                ).populate('savedDinos');
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        }
     }
 };
 
