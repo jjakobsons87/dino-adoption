@@ -18,8 +18,8 @@ header {
 }
 
 footer {
-  height: 100px;
   width: auto;
+  margin-top: 100px;
   background-color: black;
 }
 
@@ -43,7 +43,7 @@ footer {
 }
 
 #carnivores {
-  margin: 0;
+  margin-top: 125px;
   position: relative;
   bottom: 30px;
 }
