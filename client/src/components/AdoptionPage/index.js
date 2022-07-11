@@ -6,11 +6,11 @@ function Adoption() {
         <main id="dinoSale">
             <div id="siteDesc">
                 <div id="description">
-                    <h2 className="text-center text-white">
+                    <h2 className="text-center">
                         The DDAA is here to fullfill all of your Dino-Related
                         needs!
                     </h2>
-                    <p className="text-center text-white">
+                    <p className="text-center">
                         The DDAA, after much work and toil, has finally acquired
                         the much sought after Dino-DNA, and, with the
                         aquisition, we have also gained the ability to
@@ -32,7 +32,7 @@ function Adoption() {
                 </div>
             </div>
             <div>
-            <DinoCard />
+         
             </div>
         </main>
     );
