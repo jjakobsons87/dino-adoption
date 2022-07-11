@@ -41,7 +41,7 @@ function Home() {
                     </p>
                     <br></br>
 
-                    <h2 className="text-center sectTitle">Our Mission</h2>
+                    <h2 className="text-center sectTitle">Our Mission: A New World</h2>
                     <p className="text-center">Humans and Dinosaurs are seperated by millions of years and now we are 
                     together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world 
                     filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
