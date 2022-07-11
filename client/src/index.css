@@ -84,3 +84,69 @@ footer {
   cursor: default;
   opacity: .8;
 }
+
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem 2rem;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  position: fixed;
+  background-color: rgb(205, 205, 205);
+}
+
+.navbar scrolled{
+  background-color: aqua;
+  transform: inherit;
+}
+
+.hero {
+  height: 35%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 95%);
+}
+
+.border {
+  background-color: rgb(49, 49, 49);
+  opacity: 0.75;
+  clip-path: polygon(0 98%, 100% 83%, 100% 0, 0 0);
+}
+
+.herotitle {
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.herotitle2 {
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  opacity: .4;
+}

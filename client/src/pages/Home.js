@@ -1,12 +1,14 @@
 import React from 'react';
 
-import AdoptionPage from "../components/AdoptionPage/index";
+import AdoptionPage from '../components/AdoptionPage';
+import Login from '../components/Login/index';
 
 const Home = () => {
     return (
         <div>
+            {/* <Login /> */}
             <main>
-                <AdoptionPage></AdoptionPage>
+                <AdoptionPage />
             </main>
         </div>
     )

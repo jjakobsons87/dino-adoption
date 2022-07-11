@@ -85,7 +85,7 @@ export default function DinoCard() {
     }
 
     return (
-        <div>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
         {dinos &&
             dinos.map(dino => (
             <CCard style={{ width: "18rem" }}>
