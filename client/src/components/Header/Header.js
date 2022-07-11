@@ -33,7 +33,10 @@ export default function Header() {
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
+            <div className="border">
              <img src={background} alt="background of a forest" className="hero"/>
+             <h1 className="herotitle">The Delusional Dinosaur Adoption Agency</h1>
+             </div>
             {renderPage()}
         </div>
     );
