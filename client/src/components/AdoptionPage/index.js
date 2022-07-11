@@ -31,7 +31,9 @@ function AdoptionPage() {
                     </p>
                 </div>
             </div>
-            <DinoCard/>
+            <div>
+            <DinoCard />
+            </div>
         </main>
     );
 }
