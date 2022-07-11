@@ -111,6 +111,7 @@ footer {
 
 .navbar scrolled{
   background-color: aqua;
+  transform: inherit;
 }
 
 .hero {
