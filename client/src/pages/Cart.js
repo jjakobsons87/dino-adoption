@@ -27,6 +27,7 @@ const Cart = (props) => {
                 <CartHero></CartHero>
             </div>
             <div className="basket">
+                {/* onAdd adds items to cart */}
                 <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
             </div>
         </div>
