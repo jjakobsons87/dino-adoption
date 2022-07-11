@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
 import background from "../../assets/images/hero-image.jpg";
+import logo2 from "../../assets/images/logocreamcropped2.png";
+import logo from "../../assets/images/logotransparent.png";
 // import Profile from "./Profile";
 // import Shop from "./Shop";
 // import Login from "./Login";
@@ -36,7 +38,10 @@ export default function Header() {
             />
             <div className="border">
              <img src={background} alt="background of a forest" className="hero"/>
-             <h1 className="herotitle">The Delusional Dinosaur Adoption Agency</h1>
+             <div className="logobox">
+             <img src= {logo2}className="herotitle2" alt="dinosaur logo"/>
+             <img src= {logo}className="herotitle" alt="dinosaur logo"/>
+             </div>
              </div>
             {renderPage()}
         </div>
