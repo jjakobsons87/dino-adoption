@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
+import Home from "../../pages/Home";
 import background from "../../assets/images/hero-image.jpg";
 import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
