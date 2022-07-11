@@ -49,8 +49,9 @@ export default function Navigation({ currentPage, handlePageChange }) {
             <div className="hamburger" onClick={toggleHamburger}>
                     <Hamburger isOpen={hamburgerOpen}/>
                 </div>
-
-                <style jsx>{`
+                
+                {/* add any additional nav styles here */}
+                {/* <style jsx>{`
                 @media screen and (max-width: 980px) {
                     .nav-row ul {
                         display: ${hamburgerOpen ? 'inline' : 'none'};
@@ -65,7 +66,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                     footer p {
                         display: ${hamburgerOpen ? 'inline' : 'none'};
                 }
-                `}</style>
+                `}</style> */}
         </nav>
 
     )

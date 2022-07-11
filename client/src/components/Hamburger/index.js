@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hamburger ({ isOpen}) {
+function Hamburger ({ isOpen }) {
     return (
         <>
             <div className="hamburger" >
@@ -21,7 +21,6 @@ function Hamburger ({ isOpen}) {
                 transform: ${ isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
                 margin-left: ${ isOpen ? '4px' : '0px'}
             }
-
             `}</style>
         </>
     )
