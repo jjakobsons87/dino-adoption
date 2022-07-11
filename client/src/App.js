@@ -41,7 +41,6 @@ function App() {
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         <Routes>
-                            <Route path="/" element={<Home />} />
                             <Route
                                 path="/shop"
                                 element={<Shop />}
