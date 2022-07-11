@@ -51,7 +51,11 @@ const dinoSchema = new Schema(
       default: Date.now,
       get: timestamp => dateFormat(timestamp)
     },
-    comment: [commentSchema]
+    imageURL: {
+      type: String,
+      required: true
+    },
+    comments: [commentSchema]
   },
   {
     toJSON: {

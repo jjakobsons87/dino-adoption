@@ -21,6 +21,10 @@ const accessorySchema = new Schema(
     inventory: {
         type: Number,
         required: true
+    },
+    imageURL: {
+      type: String,
+      required: true
     }
   },
   {

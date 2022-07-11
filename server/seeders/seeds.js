@@ -5,6 +5,7 @@ const { Accessory, Dino, User } = require('../models');
 
 
 // this will all need to change because of Faker
+
 db.once('open', async () => {
   await Thought.deleteMany({});
   await User.deleteMany({});
