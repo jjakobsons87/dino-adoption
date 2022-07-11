@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const SelectedDino = (props) => {
 
-    const { Dino, onAdd } = props;
+    const { dino, onAdd } = props;
 
     const [isCardOpen, setIsCardOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const SelectedDino = (props) => {
 
             {/* button to add the dino to the cart/basket */}
             <div>
-                <button onClick={()=> onAdd(Dino)} >Add to Cart</button>
+                <button onClick={()=> onAdd(dino)} >Add to Cart</button>
             </div>
         </div>
 

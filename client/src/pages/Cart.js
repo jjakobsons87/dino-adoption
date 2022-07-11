@@ -21,6 +21,21 @@ const Cart = (props) => {
         }
     };
 
+    const onRemove = ( dino ) => {
+        const exist = cartItems.find((x) => x.id === dino.id);
+        // if 1 remove it from the list
+        if(exist.qty === 1) {
+            setCartItems(cartItems.filter((x) => x.id !== dino.id))
+            // if greater than 1 decrease the quantity
+        } else {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === dino.id ? {...exist, qty: exist.qty - 1} : x
+                )
+            );
+        }
+    };
+
     return (
         <div className="cart-container">
             <div className="cart-hero">
@@ -28,7 +43,11 @@ const Cart = (props) => {
             </div>
             <div className="basket">
                 {/* onAdd adds items to cart */}
-                <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
+                <Basket 
+                    onAdd={onAdd}
+                    onRemove={onRemove}
+                    cartItems={cartItems}>
+                </Basket>
             </div>
         </div>
     )
