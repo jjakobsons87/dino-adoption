@@ -11,7 +11,7 @@ import SignUp from '../components/SignUp/signup'
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
         <Login />
         <SignUp />
         <main>
