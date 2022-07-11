@@ -4,10 +4,11 @@ import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
 
 export default function Navigation({ currentPage, handlePageChange }) {
+    
     return (
         <nav>
             { Auth.loggedIn() ? (
-                <Navbar className="navbar" expand="lg">
+                <Navbar className="navbar navbar-fixed-top container-fluid" expand="lg">
                     <Container className="navbar-internal">
                         <Navbar.Brand className="super-internal" href="#home">Home</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -39,4 +40,16 @@ export default function Navigation({ currentPage, handlePageChange }) {
         </nav>
 
     )
+}
+
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    
+    document.getElementById("navbar").style.background = "#501e27";
+  } else {
+   
+    document.getElementById("navbar").style.background = "none";
+  }
 }

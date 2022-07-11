@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import {
     ApolloProvider,
@@ -6,13 +7,13 @@ import {
     InMemoryCache,
     createHttpLink,
 } from "@apollo/client";
-import logo from "./logo.svg";
 import "./App.css";
 
 // route imports
-import Profile from "./pages/Profile";
-import Home from "./pages/Home";
-import Accessories from "./pages/Accessories";
+import Profile from './pages/Profile';
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import Login from '../src/components/Login';
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -28,6 +29,11 @@ const client = new ApolloClient({
 });
 
 function App() {
+//   const [token, setToken] = useState();
+
+//   if (!token) {
+//     return <Login setToken={setToken} />
+//   }
     return (
         <ApolloProvider client={client}>
             <Router>
@@ -37,10 +43,11 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route
-                                path="/accessories"
-                                element={<Accessories />}
+                                path="/shop"
+                                element={<Shop />}
                             />
                             <Route path="/profile" element={<Profile />} />
+                            <Route path="/login" element={<Login/>} />
                         </Routes>
                     </div>
                     <Footer />
