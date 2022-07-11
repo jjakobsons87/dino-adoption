@@ -4,8 +4,6 @@ import DinoCard from "../Card/DinoCard";
 function AdoptionPage() {
     return (
         <main id="dinoSale">
-            <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
-
             <div id="siteDesc">
                 <div id="description">
                     <h2 className="text-center text-white">
@@ -33,7 +31,9 @@ function AdoptionPage() {
                     </p>
                 </div>
             </div>
-            <DinoCard/>
+            <div>
+            <DinoCard />
+            </div>
         </main>
     );
 }

@@ -5,6 +5,7 @@ import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
 import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
+<<<<<<< HEAD
 function Home() {
     return (
 
@@ -215,6 +216,19 @@ function Home() {
             </section>
         
         </main>
+=======
+import AdoptionPage from '../components/AdoptionPage';
+import Login from '../components/Login/index';
+
+const Home = () => {
+    return (
+        <div>
+            {/* <Login /> */}
+            <main>
+                <AdoptionPage />
+            </main>
+        </div>
+>>>>>>> develop
     )
 }
 
