@@ -16,14 +16,12 @@ import Meat from "../../assets/accessories/meat.jpg"
 import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
 import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
-function AccessoriesPage() {
+function ShopPage() {
     return (
 
         <main id="dinoSale">
-             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
-
-             <div id="siteDesc">
-                <div id="description">
+             <div id="accessDesc">
+                <div className="description">
                     <h2 className="text-center text-white">Accessories for your dinosaur</h2>
                     <p className="text-center text-white">The DDAA also supplies many different "accessories" to help you both maintain and keep total control over your dinosaur. These are dangerous animals; afterall- it would be ashame if these got out and hurt somebody. These will help you avoid any unpleasant circumstances that could be brought on by these animals. 
                     <br></br><br></br>
@@ -176,7 +174,7 @@ function AccessoriesPage() {
                             <button className="adoptBtn">Add To Cart</button>
                         </div>
                     </div>
-                </div>
+                </div> ru
 
             </div>
 
@@ -284,4 +282,4 @@ function AccessoriesPage() {
             )
         }
 
-        export default AccessoriesPage;
+        export default ShopPage;
