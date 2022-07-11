@@ -30,6 +30,7 @@ export default function Header() {
     return (
         <div>
             <Navigation
+                sticky="top"
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />

@@ -94,7 +94,21 @@ footer {
 }
 
 .navbar {
-  background-color: white;
+  position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.7rem 2rem;
+      overflow: hidden;
+      z-index: 1;
+      width: 100%; 
+      margin: auto;
+      top: 0;
+      border-bottom: solid 1px var(--primary-color);
+      opacity: 0.9;
+
+      position: fixed;
+      top: 0;
 }
 
 .hero {
