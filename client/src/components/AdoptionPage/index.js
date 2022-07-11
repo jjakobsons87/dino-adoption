@@ -1,16 +1,16 @@
 import React from "react";
 import DinoCard from "../Card/DinoCard";
 
-function AdoptionPage() {
+function Adoption() {
     return (
         <main id="dinoSale">
             <div id="siteDesc">
                 <div id="description">
-                    <h2 className="text-center text-white">
+                    <h2 className="text-center">
                         The DDAA is here to fullfill all of your Dino-Related
                         needs!
                     </h2>
-                    <p className="text-center text-white">
+                    <p className="text-center">
                         The DDAA, after much work and toil, has finally acquired
                         the much sought after Dino-DNA, and, with the
                         aquisition, we have also gained the ability to
@@ -25,17 +25,17 @@ function AdoptionPage() {
                         <br></br>
                         <br></br>
                         There are two main categories of dinosaurs to choose
-                        from: Carnivores and Herbivores. Want to know more about
-                        a specific breed? Click on the images to visit their
-                        wikipedia page! Above all else, though... choose wisely!
+                        from: Carnivores and Herbivores. Each dinosaur has specific 
+                        traits that it is recommended you read. 
+                        Above all else, though... choose wisely!
                     </p>
                 </div>
             </div>
             <div>
-            <DinoCard />
+         
             </div>
         </main>
     );
 }
 
-export default AdoptionPage;
+export default Adoption;

@@ -13,7 +13,7 @@ import { setContext } from '@apollo/client/link/context';
 // route imports
 import Profile from './pages/Profile';
 import Home from './pages/Home';
-import Accessories from './pages/Accessories';
+import Shop from './pages/Shop';
 import Login from '../src/components/Login';
 
 // component imports
@@ -47,11 +47,10 @@ function App() {
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         <Routes>
-                            <Route path="/" element={<Home />} />
                             <Route path="/login" element={<Login/>} />
                             <Route
-                                path="/accessories"
-                                element={<Accessories />}
+                                path="/shop"
+                                element={<Shop />}
                             />
                             <Route path="/profile" element={<Profile />} />
                         </Routes>
