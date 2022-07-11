@@ -3,6 +3,7 @@ import RaptorBaby from '../../assets/homepage/raptorbaby.webp'
 import CaptiveDinos from "../../assets/homepage/captivedinos.jpg"
 import DinoVariety from "../../assets/homepage/dinovariety.jpg"
 import TRex from "../../assets/homepage/TRex.jpg"
+import DeadDino from "../../assets/homepage/deaddino.webp"
 
 function Homepage() {
     return (
@@ -17,6 +18,7 @@ function Homepage() {
                     <li className="nav-item"><a href="#infantAdopt">Infant Adoption</a></li>
                     <li className="nav-item"><a href="#captDinos">Captivity and Breeding</a></li>
                     <li className="nav-item"><a href="#dinoVar">Dino Variety</a></li>
+                    <li className="nav-item"><a href="#escape">Escape Protocol</a></li>
                     <li className="nav-item"><a href="#future">The Future</a></li>
                 </ul>
             </nav>
@@ -151,7 +153,37 @@ function Homepage() {
                     actual nature of these beasts.
                     </p>
 
-                </div><div id="future" className="description imageDivs">
+                </div>
+
+                <div id="escape" className="description imageDivs">
+                    <h2 className="text-center sectTitle">Escape Protocol</h2>
+                    <div className="homeDinos">
+                        <img className="homeDinosPics"
+                            src={DeadDino}
+                            alt="Captive Dinos"
+                        />
+                    </div>
+                    <p className="text-center text-white">Unfortunately, these things will happen. Whether it be from careless 
+                    ownership or the dinosaur has gone rogue. To that end, we have a contingency plan 
+                    to take care of the dinosaurs should they get free and begin harming other residents. Of course, we prefer 
+                    that the dinosaurs return safely, but should they escape, we will know and be forced to kill it. Each animal is 
+                    equipped with a sensor that we ourselves monitor. This isn't an attempt to spy on you, and we 
+                    were given the full rights to do this, given the circumstances.
+                    <br></br><br></br>
+                    We will supply invisible fences to each owner to be placed around the animals living area, with a radius large 
+                    enough for most ranches. Should the animal cross that fence, we will be alerted and will contact you immediately. 
+                    We ask that, if the situation is under control that you answer or contact us promptly. After 10 minutes of no 
+                    contact, we will send a powerful electric pulse into the heart of the dinosaur, stopping the heart beat and 
+                    killing it. This is to protect your friends and neighbors.
+                    <br></br><br></br>
+                    In the end it will be your responsiblity and, should anything terrible happen, you will be charged to the fullest 
+                    extent of the law. Our only rights is killing the dinosaur after 10 minutes of escape, but we waive all others to 
+                    it after it leaves our facility. Please be responsible and watch over your dino.
+                    </p>
+
+                </div>
+                
+                <div id="future" className="description imageDivs">
                     <h2 className="text-center sectTitle">The Future of the DDAA</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
@@ -162,14 +194,17 @@ function Homepage() {
                     <p className="text-center text-white">The DDAA will keep growing and expanding our influence throughout the world. 
                     Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better 
                     transition into today's world. We will continue to spearhead this movement as we introduce these animals into 2022, 
-                    millions of years after their original extinction, and in doing so will shape the entire world as we know it.
+                    millions of years after their original extinction, and in doing so will shape the entire world as we know it. The DDAA 
+                    will continue to work tirelessly to meet these goals, and with that and mind we call on the support of not only the 
+                    common folk, but the 1% as well! Help us to bring dinosaurs to you!
                     <br></br><br></br>
-                    But, this process will not be easy and will definitely not be cheap. We ask that you adopt one of our Jurassic 
-                    Creations, and not only that, visit our shop to by accessories, toys and food. By suporting us, you will support 
-                    the bright future we seek to create!
+                    This process will not be easy and will definitely not be cheap. We ask that you adopt one of our Jurassic 
+                    Creations and also visit our shop to by accessories, toys and food. By suporting us, you will support 
+                    the bright future we seek to create! The more funds we gather, the more our business will expand, and the more 
+                    dinosaurs you and your families will be able to enjoy.
                     <br></br><br></br>
                     As we've already stated, for more... involved... uses, we are easy to contact and you know who we are. We will 
-                    work with whatever your needs are! We have different plans to suit any and all needs!
+                    work with whatever your needs are! We have different plans to suit your budget!
                     <br></br><br></br>
                     And yes, we do have a T-Rex. 
                     </p>
