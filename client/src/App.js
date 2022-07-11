@@ -49,21 +49,12 @@ function App() {
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         <Routes>
-<<<<<<< HEAD
                             <Route path="/" element={<Home />} />
                             <Route path="/shop" element={<Shop />}/>
                             <Route path="/adoption" element={<Adoption />} />
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/login" element={<Login/>} />
                             <Route path="/cart" element={<Cart/>} />
-=======
-                            <Route path="/login" element={<Login/>} />
-                            <Route
-                                path="/shop"
-                                element={<Shop />}
-                            />
-                            <Route path="/profile" element={<Profile />} />
->>>>>>> develop
                         </Routes>
                     </div>
                     <Footer />
