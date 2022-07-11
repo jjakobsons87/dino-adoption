@@ -4,12 +4,13 @@ import User from '../../assets/images/rando.jpg'
 // import Username from ''
 // import numberOwned from ''
 
-const UserHero = () => {
+const UserHero = (username) => {
+
     return (
         <header className = "profile-header">
 
             <div className="profile-container">
-                {/* <div className="username">Hello {Username}</div> */}
+                <div className="username">Welcome {username}</div>
                 {/* Owned Dinos: # */}
                 <img className="profile-pic"
                     src={User}
