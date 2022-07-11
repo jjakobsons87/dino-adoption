@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../Nav/Nav";
-import Adoption from "../AdoptionPage";
+import AdoptionPage from "../AdoptionPage";
 // import Profile from "./Profile";
 // import Shop from "./Shop";
 // import Login from "./Login";

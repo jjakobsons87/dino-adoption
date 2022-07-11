@@ -12,7 +12,7 @@ import "./App.css";
 // route imports
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
-import Accessories from "./pages/Accessories";
+import Shop from "./pages/Shop";
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -37,8 +37,8 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route
-                                path="/accessories"
-                                element={<Accessories />}
+                                path="/shop"
+                                element={<Shop />}
                             />
                             <Route path="/profile" element={<Profile />} />
                         </Routes>

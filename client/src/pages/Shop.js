@@ -2,7 +2,7 @@ import React from 'react';
 
 import ShopPage from "../components/Shop/index";
 
-const Accessories = () => {
+const  Shop = () => {
     return (
         <div>
             <main>
@@ -12,4 +12,4 @@ const Accessories = () => {
     )
 };
 
-export default Accessories;
+export default Shop;

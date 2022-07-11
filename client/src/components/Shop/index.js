@@ -16,7 +16,7 @@ import Meat from "../../assets/accessories/meat.jpg"
 import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
 import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
-function AccessoriesPage() {
+function ShopPage() {
     return (
 
         <main id="dinoSale">
@@ -282,4 +282,4 @@ function AccessoriesPage() {
             )
         }
 
-        export default AccessoriesPage;
+        export default ShopPage;

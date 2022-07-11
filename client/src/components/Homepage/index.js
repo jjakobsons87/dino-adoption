@@ -24,7 +24,13 @@ function Homepage() {
             <div id="siteDesc">
                 <div className="description">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
-                    <p className="text-center text-white">After many years of research, the Delusional Dinosaur Adoption Agency, or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! From the Tyrant King itself, the Tyrannasauus Rex, to the legendary long-neck, the Brachiosaurus, we have many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live alongside one another. It's a dream come true for many.
+                    <p className="text-center text-white">After many years of research, the Delusional Dinosaur Adoption Agency, 
+                    or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
+                    the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
+                    From the Tyrant King itself, the Tyrannasauus Rex, to the legendary long-neck, the Brachiosaurus, we have 
+                    many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over 
+                    the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live 
+                    alongside one another. It's a dream come true for many.
                     <br></br><br></br>
                     Experience may vary, modifying DNA to control the size of your dinosaur when it's full-grown birth costs extra.
                     <br></br><br></br>
@@ -32,14 +38,27 @@ function Homepage() {
                     </p>
 
                     <h2 className="text-center sectTitle">Our Mission</h2>
-                    <p className="text-center text-white">Humans and Dinosaurs are seperated by millions of years and now we are together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world filled with dinosaurs is something you've only ever read about in stories but now we have a world where dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than man and dog.
+                    <p className="text-center text-white">Humans and Dinosaurs are seperated by millions of years and now we are 
+                    together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world 
+                    filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
+                    dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
+                    man and dog.
                     <br></br><br></br>
                     </p>
 
                     <h2 className="text-center sectTitle">The Challenges and Risks</h2>
-                    <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make the transition easier for both you and the dino. Give these animals as much attention as you can. It will make imprinting on them at a young age much quicker and avoid any unnecessary injuries and bodily harm
+                    <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require 
+                    A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become 
+                    aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make 
+                    the transition easier for both you and the dino. Give these animals as much attention as you can. It will make 
+                    imprinting on them at a young age much quicker and avoid any unnecessary injuries and bodily harm
                     <br></br><br></br>
-                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be loving and protective under the right circumstances, and believe us... no one will think twice of invading your home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus. But, take great care around these animals. They are unpredictable and can be exceedingly vicious. We are not responsible for anythng that occurs after the animal leaves our facility.
+                    This will not be like owning a dog, cat or even more exotic animals from our time. Our current lineup is much 
+                    bigger, meaner and far more dangerous than anything you can imagine; but don't let that deter you! They can be 
+                    loving and protective under the right circumstances, and believe us... no one will think twice of invading your 
+                    home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus. But, take 
+                    great care around these animals. They are unpredictable and can be exceedingly vicious. We are not responsible 
+                    for anythng that occurs after the animal leaves our facility.
                     </p>
 
                 </div>
@@ -55,9 +74,16 @@ function Homepage() {
                             alt="Infant Raptor"
                         />
                     </div>
-                    <p className="text-center text-white">Your dinosaurs will be sent to you as infants to make both delivery and the transitions safer. Infant is highly recommended as it makes imprinting on the dinosaurs easier, thus they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but you will find it to be a much better route to go. It is a far greater risk to adopt a full grown, set in it's ways Raptor, as opposed to an infant that you can develop a stronger bond with. Of course, adults have the advantage of protection, savagery, and striking fear in the hearts of your enemies. 
+                    <p className="text-center text-white">Your dinosaurs will be sent to you as infants to make both delivery 
+                    and the transitions safer. Infant is highly recommended as it makes imprinting on the dinosaurs easier, thus 
+                    they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but 
+                    you will find it to be a much better route to go. It is a far greater risk to adopt a full grown, set in it's 
+                    ways Raptor, as opposed to an infant that you can develop a stronger bond with. Of course, adults have the 
+                    advantage of protection, savagery, and striking fear in the hearts of your enemies. 
                     <br></br><br></br>
-                    The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
+                    The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is 
+                    considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop 
+                    a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
                     </p>
                 </div>
 
@@ -69,9 +95,15 @@ function Homepage() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center text-white">The dinosaurs that we keep at our island facility are loved and cared for. We pride ourselves in the safety an understanding of these animals. We control any and all breeding, and each dinosaur sent out is genetically modified so that they CANNOT breed. What that means is if you want another dinosaur, you will have to adopt a new one. This is to avoid the dinosaurs proliferating outside of our control, and to also avoid any dino-related crises that could arise from unauthorized breeding. 
+                    <p className="text-center text-white">The dinosaurs that we keep at our island facility are loved and 
+                    cared for. We pride ourselves in the safety an understanding of these animals. We control any and all 
+                    breeding, and each dinosaur sent out is genetically modified so that they CANNOT breed. What that means
+                    is if you want another dinosaur, you will have to adopt a new one. This is to avoid the dinosaurs 
+                    proliferating outside of our control, and to also avoid any dino-related crises that could arise from 
+                    unauthorized breeding. 
                     <br></br><br></br>
-                    The above image shows 2 of our Brachiosauruses in captivity. The fences are secure and electrified, but they have plety of space to roam and eat, much like all of our other dinosaurs.
+                    The above image shows 2 of our Brachiosauruses in captivity. The fences are secure and electrified, but 
+                    they have plety of space to roam and eat, much like all of our other dinosaurs.
                     </p>
                 </div>
 
@@ -83,9 +115,16 @@ function Homepage() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center text-white">Currently we have 12 variety of dinosaurs that consist of 6 Carnivores and 6 Herbivores.
+                    <p className="text-center text-white">Currently we have 12 variety of dinosaurs that consist of 6 Carnivores 
+                    and 6 Herbivores. Herbivores are more docile, and will only attack when threatened... normally. Carnivores 
+                    are much more malicious, and will you see as their next meal if not given the proper care. Ranging from the 
+                    Spinosaurus to the Stegasaurus, we will have many options to suit your needs, as well as several that we 
+                    haven't yet showcased yet.
                     <br></br><br></br>
-                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet, both of which we accomodate in our shop Also, just to note: some of these dinosaurs ARE NOT for sale on our website currently.
+                    The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in 
+                    their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. 
+                    For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet, 
+                    both of which we accomodate in our shop.
                     </p>
 
                 </div><div id="future" className="description imageDivs">
@@ -96,7 +135,14 @@ function Homepage() {
                             alt="TRex"
                         />
                     </div>
-                    <p className="text-center text-white">The DDAA will keep growing and expanding our influence throughout the world. Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better transition into today's world. We will continue to spear awareness as we introduce these animals into 2022, millions of years after their original extinction, and in doing so will shape the entire world as we know it.
+                    <p className="text-center text-white">The DDAA will keep growing and expanding our influence throughout the world. 
+                    Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better 
+                    transition into today's world. We will continue to spearhead this movement as we introduce these animals into 2022, 
+                    millions of years after their original extinction, and in doing so will shape the entire world as we know it.
+                    <br></br><br></br>
+                    But, this process will not be easy and will definitely not be cheap. We ask that you adopt one of our Jurassic 
+                    Creations, and not only that, visit our shop to by accessories, toys and food. By suporting us, you will support 
+                    the bright future we seek to create!
                     <br></br><br></br>
                     And yes, we do have a T-Rex.
                     </p>
