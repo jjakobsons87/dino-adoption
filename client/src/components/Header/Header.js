@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import Navigation from "../Nav/Nav";
-<<<<<<< HEAD
-import AdoptionPage from "../AdoptionPage";
-=======
 import Adoption from "../AdoptionPage";
 import background from "../../assets/images/hero-image.jpg";
 import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
->>>>>>> develop
 // import Profile from "./Profile";
 // import Shop from "./Shop";
 // import Login from "./Login";

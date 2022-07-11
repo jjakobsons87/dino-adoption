@@ -1,7 +1,7 @@
 import React from "react";
 import DinoCard from "../Card/DinoCard";
 
-function AdoptionPage() {
+function Adoption() {
     return (
         <main id="dinoSale">
             <div id="siteDesc">
@@ -38,4 +38,4 @@ function AdoptionPage() {
     );
 }
 
-export default AdoptionPage;
+export default Adoption;
