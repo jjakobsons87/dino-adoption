@@ -6,7 +6,7 @@ import Login from '../components/Login/index';
 const Home = () => {
     return (
         <div>
-            <Login />
+            {/* <Login /> */}
             <main>
                 <AdoptionPage />
             </main>

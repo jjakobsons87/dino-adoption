@@ -29,11 +29,11 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [token, setToken] = useState();
+//   const [token, setToken] = useState();
 
-  if (!token) {
-    return <Login setToken={setToken} />
-  }
+//   if (!token) {
+//     return <Login setToken={setToken} />
+//   }
     return (
         <ApolloProvider client={client}>
             <Router>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
+import background from "../../assets/images/hero-image.jpg";
 // import Profile from "./Profile";
 // import Shop from "./Shop";
 // import Login from "./Login";
@@ -32,6 +33,7 @@ export default function Header() {
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
+             <img src={background} alt="background of a forest" className="hero"/>
             {renderPage()}
         </div>
     );
