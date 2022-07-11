@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 
 //components
-import CartItems from '../components/cartItems';
+import Basket from '../components/Basket';
+import CartHero from '../components/CartHero';
 
 const Cart = (props) => {
+
+    const [cartItems, setCartItems] = useState([]);
+
     return (
         <div className="cart-container">
-            <CartItems/>
+            <div className="cart-hero">
+                <CartHero></CartHero>
+            </div>
+            <div className="basket">
+                <Basket cartItems={cartItems}></Basket>
+            </div>
         </div>
     )
 };
