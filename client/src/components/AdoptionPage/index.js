@@ -1,7 +1,7 @@
 import React from "react";
 import DinoCard from "../Card/DinoCard";
 
-function AdoptionPage() {
+function Adoption() {
     return (
         <main id="dinoSale">
             <div id="siteDesc">
@@ -25,9 +25,9 @@ function AdoptionPage() {
                         <br></br>
                         <br></br>
                         There are two main categories of dinosaurs to choose
-                        from: Carnivores and Herbivores. Want to know more about
-                        a specific breed? Click on the images to visit their
-                        wikipedia page! Above all else, though... choose wisely!
+                        from: Carnivores and Herbivores. Each dinosaur has specific 
+                        traits that it is recommended you read. 
+                        Above all else, though... choose wisely!
                     </p>
                 </div>
             </div>
@@ -38,4 +38,4 @@ function AdoptionPage() {
     );
 }
 
-export default AdoptionPage;
+export default Adoption;
