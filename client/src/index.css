@@ -32,14 +32,15 @@ footer {
 }
 
 .mainPageTitle {
-  font-family: 'Fredericka the Great', cursive;
-  color: whitesmoke;
+  font-family: 'Graduate', cursive;
+  color: lightgrey;
 }
 
 .sectTitle {
-  font-family: 'Fredericka the Great', cursive;
-  color: whitesmoke;
-  text-decoration: underline;
+  font-family: 'Graduate', cursive;
+  border: 3px solid white;
+  background-color:  rgb(205, 205, 205);
+  color: black;
   margin-top: 25px;
 }
 

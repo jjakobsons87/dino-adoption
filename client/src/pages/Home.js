@@ -24,7 +24,7 @@ function Home() {
             </nav>
 
             <div id="siteDesc">
-                <div className="description">
+                <div className="description imageDivs">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
                     <p className="text-center">After many years of research, the Delusional Dinosaur Adoption Agency, 
                     or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
@@ -39,6 +39,7 @@ function Home() {
                     Want these animals for more... physical... jobs? Go through the proper channels to contact us directly and we 
                     will be happy to accomodate you!
                     </p>
+                    <br></br>
 
                     <h2 className="text-center sectTitle">Our Mission</h2>
                     <p className="text-center">Humans and Dinosaurs are seperated by millions of years and now we are 
@@ -46,8 +47,8 @@ function Home() {
                     filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
                     dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
                     man and dog.
-                    <br></br><br></br>
                     </p>
+                    <br></br>
 
                     <h2 className="text-center sectTitle">The Challenges and Risks</h2>
                     <p className="text-center">We never said that owning a dinosaur would be easy. These animals require 
