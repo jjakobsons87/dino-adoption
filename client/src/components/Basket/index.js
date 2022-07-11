@@ -36,9 +36,21 @@ const totalPrice = itemsPrice + taxPrice + shippingPrice;
             {cartItems.length !== 0 && (
                 <>
                 <hr></hr>
-                <div className="price">
+                <div className="subtotal">
                     <div>Items Price</div>
                     <div> ${itemsPrice.toFixed(2)}</div>
+                </div>
+                <div className="subtotal">
+                    <div>Tax Price</div>
+                    <div> ${taxPrice.toFixed(2)}</div>
+                </div>
+                <div className="subtotal">
+                    <div>Shipping Price</div>
+                    <div> ${shippingPrice.toFixed(2)}</div>
+                </div>
+                <div className="total-price">
+                    <div><strong>Total Price</strong></div>
+                    <div><strong> ${totalPrice.toFixed(2)} </strong></div>
                 </div>
                 </>
             )}
