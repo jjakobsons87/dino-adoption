@@ -16,6 +16,7 @@ p {
   font-size: 2.6vh;
   padding: 7px;
   margin-bottom: 25px;
+  color: silver;
 }
 
 ul {
@@ -37,7 +38,7 @@ footer {
 
 .sectTitle {
   font-family: 'Fredericka the Great', cursive;
-  color: floralwhite;
+  color: whitesmoke;
   text-decoration: underline;
   margin-top: 25px;
 }

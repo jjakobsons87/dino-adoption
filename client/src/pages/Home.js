@@ -26,7 +26,7 @@ function Home() {
             <div id="siteDesc">
                 <div className="description">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
-                    <p className="text-center text-white">After many years of research, the Delusional Dinosaur Adoption Agency, 
+                    <p className="text-center">After many years of research, the Delusional Dinosaur Adoption Agency, 
                     or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
                     the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
                     From the Crocidile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
@@ -41,7 +41,7 @@ function Home() {
                     </p>
 
                     <h2 className="text-center sectTitle">Our Mission</h2>
-                    <p className="text-center text-white">Humans and Dinosaurs are seperated by millions of years and now we are 
+                    <p className="text-center">Humans and Dinosaurs are seperated by millions of years and now we are 
                     together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world 
                     filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
                     dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
@@ -50,7 +50,7 @@ function Home() {
                     </p>
 
                     <h2 className="text-center sectTitle">The Challenges and Risks</h2>
-                    <p className="text-center text-white">We never said that owning a dinosaur would be easy. These animals require 
+                    <p className="text-center">We never said that owning a dinosaur would be easy. These animals require 
                     A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become 
                     aggressive. Plenty of stimulation will be required! Fortunately, we do offer accessories, food and toys to make 
                     the transition easier for both you and the dino. Give these animals as much attention as you can. It will make 
@@ -80,7 +80,7 @@ function Home() {
                             alt="Infant Raptor"
                         />
                     </div>
-                    <p className="text-center text-white">Your dinosaurs will be sent to you as infants to make both delivery 
+                    <p className="text-center">Your dinosaurs will be sent to you as infants to make both delivery 
                     and the transitions safer. Infant is highly recommended as it makes imprinting on the dinosaurs easier, thus 
                     they wil be more loyal to you. This has additional costs due to the care that comes with the adoption, but 
                     you will find it to be a much better route to go. It is a far greater risk to adopt a full grown, set in it's 
@@ -107,7 +107,7 @@ function Home() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center text-white">The dinosaurs that we keep at our island facility are loved and 
+                    <p className="text-center">The dinosaurs that we keep at our island facility are loved and 
                     cared for. We pride ourselves in the safety an understanding of these animals. We control any and all 
                     breeding, once the dinosaur is mature, and each dinosaur sent out is genetically modified so that they 
                     CANNOT breed. What that mean is if you want another dinosaur, you will have to adopt a new one. This 
@@ -134,7 +134,7 @@ function Home() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center text-white">Currently we have 12 variety of dinosaurs that consist of 6 Carnivores 
+                    <p className="text-center">Currently we have 12 variety of dinosaurs that consist of 6 Carnivores 
                     and 6 Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly 
                     plant-based diet, both of which we accomodate in our shop. Herbivores are far more self-sufficient since they 
                     eat plants, and only attack when threatened... normally. We consider these to be the "Easy Mode" of dinosaurs. 
@@ -163,7 +163,7 @@ function Home() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center text-white">Unfortunately, these things will happen. Whether it be from careless 
+                    <p className="text-center">Unfortunately, these things will happen. Whether it be from careless 
                     ownership or the dinosaur has gone rogue. To that end, we have a contingency plan 
                     to take care of the dinosaurs should they get free and begin harming other residents. Of course, we prefer 
                     that the dinosaurs return safely, but should they escape, we will know and be forced to kill it. Each animal is 
@@ -191,7 +191,7 @@ function Home() {
                             alt="TRex"
                         />
                     </div>
-                    <p className="text-center text-white">The DDAA will keep growing and expanding our influence throughout the world. 
+                    <p className="text-center">The DDAA will keep growing and expanding our influence throughout the world. 
                     Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better 
                     transition into today's world. We will continue to spearhead this movement as we introduce these animals into 2022, 
                     millions of years after their original extinction, and in doing so will shape the entire world as we know it. The DDAA 
