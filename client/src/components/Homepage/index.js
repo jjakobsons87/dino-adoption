@@ -15,7 +15,7 @@ function Homepage() {
                 <ul className="nav flex-row justify-content-center justify-content-around">
                     <li className="nav-item"><a href="#siteDesc">The DDAA</a></li>
                     <li className="nav-item"><a href="#infantAdopt">Infant Adoption</a></li>
-                    <li className="nav-item"><a href="#captDinos">Dinos in Captivity</a></li>
+                    <li className="nav-item"><a href="#captDinos">Captivity and Breeding</a></li>
                     <li className="nav-item"><a href="#dinoVar">Dino Variety</a></li>
                     <li className="nav-item"><a href="#future">The Future</a></li>
                 </ul>
@@ -27,14 +27,15 @@ function Homepage() {
                     <p className="text-center text-white">After many years of research, the Delusional Dinosaur Adoption Agency, 
                     or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
                     the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
-                    From the Tyrant King itself, the Tyrannasauus Rex, to the legendary long-neck, the Brachiosaurus, we have 
+                    From the Crocidile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
                     many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over 
                     the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live 
                     alongside one another. It's a dream come true for many.
                     <br></br><br></br>
                     Experience may vary, modifying DNA to control the size of your dinosaur when it's full-grown birth costs extra.
                     <br></br><br></br>
-                    We DO NOT condone these animals for military use.
+                    Want these animals for more... physical... jobs? Go through the proper channels to contact us directly and we 
+                    will be happy to accomodate you!
                     </p>
 
                     <h2 className="text-center sectTitle">Our Mission</h2>
@@ -59,6 +60,9 @@ function Homepage() {
                     home or doing you and your family harm, lest they get blinded and mauled by your pet Dilophosaurus. But, take 
                     great care around these animals. They are unpredictable and can be exceedingly vicious. We are not responsible 
                     for anythng that occurs after the animal leaves our facility.
+                    <br></br><br></br>
+                    We have dinosaurs that are proven tanks, have built in weapons, are faster than Cheetahs, stealthy in water, 
+                    and feared by all. Take caution with these animals.
                     </p>
 
                 </div>
@@ -81,6 +85,12 @@ function Homepage() {
                     ways Raptor, as opposed to an infant that you can develop a stronger bond with. Of course, adults have the 
                     advantage of protection, savagery, and striking fear in the hearts of your enemies. 
                     <br></br><br></br>
+                    These animals are not like yor typical ones, as we've already said. A lot more works needs to go into their 
+                    training since these are more than just wild and exotic. With an infant, it wil be easier to accomplish this, 
+                    but we make no promises if you choose to neglect your responsiblity to the dinosaur. It could easily rip you 
+                    to sheds or crush your skull when it gets old enough, and you would do well to keep that in mind as you 
+                    adopt and raise.
+                    <br></br><br></br>
                     The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is 
                     considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop 
                     a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
@@ -88,7 +98,7 @@ function Homepage() {
                 </div>
 
                 <div id="captDinos" className="description imageDivs">
-                    <h2 className="text-center sectTitle">Dinosaurs in Captivity</h2>
+                    <h2 className="text-center sectTitle">Captivity and Breeding</h2>
                     <div className="homeDinos">
                         <img className="homeDinosPics"
                             src={CaptiveDinos}
@@ -97,13 +107,20 @@ function Homepage() {
                     </div>
                     <p className="text-center text-white">The dinosaurs that we keep at our island facility are loved and 
                     cared for. We pride ourselves in the safety an understanding of these animals. We control any and all 
-                    breeding, and each dinosaur sent out is genetically modified so that they CANNOT breed. What that means
-                    is if you want another dinosaur, you will have to adopt a new one. This is to avoid the dinosaurs 
-                    proliferating outside of our control, and to also avoid any dino-related crises that could arise from 
-                    unauthorized breeding. 
+                    breeding, once the dinosaur is mature, and each dinosaur sent out is genetically modified so that they 
+                    CANNOT breed. What that mean is if you want another dinosaur, you will have to adopt a new one. This 
+                    is to avoid the dinosaurs proliferating outside of our control, and to also avoid any dino-related crises 
+                    that could arise from unauthorized breeding. 
                     <br></br><br></br>
-                    The above image shows 2 of our Brachiosauruses in captivity. The fences are secure and electrified, but 
-                    they have plety of space to roam and eat, much like all of our other dinosaurs.
+                    We normally breed for two sole reasons: demand and our personal supply. This is avoid ourselves being
+                    overwhelmed. It may take up to 6 months to receive your adopted dino because they are bred when we receieve 
+                    payment. It takes time for the eggs to be laid and for the infant to get used to the outside world so that it 
+                    can properly eat, walk and function. Like a puppy that needs to be able to eat it's own food before you can 
+                    take it home.
+                    <br></br><br></br>
+                    Safety is our top priority. We have tall, stone, electrificed fences that act as the pens to protect our staff, 
+                    but we give the dinosaurs more than enough room to grow, roam and eat. In the above image, you can see two 
+                    Brachiosauruses roaming in one of these pens. There is no fence in site because the pen is just that big. 
                     </p>
                 </div>
 
@@ -116,15 +133,22 @@ function Homepage() {
                         />
                     </div>
                     <p className="text-center text-white">Currently we have 12 variety of dinosaurs that consist of 6 Carnivores 
-                    and 6 Herbivores. Herbivores are more docile, and will only attack when threatened... normally. Carnivores 
-                    are much more malicious, and will you see as their next meal if not given the proper care. Ranging from the 
-                    Spinosaurus to the Stegasaurus, we will have many options to suit your needs, as well as several that we 
-                    haven't yet showcased yet.
+                    and 6 Herbivores. For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly 
+                    plant-based diet, both of which we accomodate in our shop. Herbivores are far more self-sufficient since they 
+                    eat plants, and only attack when threatened... normally. We consider these to be the "Easy Mode" of dinosaurs. 
+                    Carnivores are much more malicious and are more like the "Expert Mode", and will you see as their next meal if 
+                    not given the proper care. We have many options to suit your needs, as well as several that we haven't yet showcased yet.
+                    <br></br><br></br>
+                    They will cost money and time to raise, especially the Carnivores considering the threat they pose to you. 
+                    Do not take any lightly, but if you choose to adopt a Carnivore take even more precautions. We have harnesses 
+                    and muzzles available in our shop. We also recommend doing your own research before adopting to better understand 
+                    the nature of these animals.
                     <br></br><br></br>
                     The above image shows several of our dinosaurs together in a pen. Of course, we typcially keep Carnivores in 
-                    their own pens due to their more malicious nature. Herbivores, however, are more tolerant of other Herbivores. 
-                    For those who don't know, Carnivores have a meat based diet while Herbivores have a strictly plant-based diet, 
-                    both of which we accomodate in our shop.
+                    their own pens due to their more vicious nature. Herbivores, however, are more tolerant of other Herbivores, and 
+                    typcially have no issues living within the same enclosure. Think "The Land Before Time" and all those dinosaurs 
+                    living together in harmony, terrified of the dreaed "Sharp Teeth". Suprisingly, it's relatively accurate to the 
+                    actual nature of these beasts.
                     </p>
 
                 </div><div id="future" className="description imageDivs">
@@ -144,7 +168,10 @@ function Homepage() {
                     Creations, and not only that, visit our shop to by accessories, toys and food. By suporting us, you will support 
                     the bright future we seek to create!
                     <br></br><br></br>
-                    And yes, we do have a T-Rex.
+                    As we've already stated, for more... involved... uses, we are easy to contact and you know who we are. We will 
+                    work with whatever your needs are! We have different plans to suit any and all needs!
+                    <br></br><br></br>
+                    And yes, we do have a T-Rex. 
                     </p>
                 </div>
 
