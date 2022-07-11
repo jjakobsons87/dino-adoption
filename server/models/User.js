@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+// const Cart = require('./Cart')
 
 const userSchema = new Schema(
   {
@@ -20,14 +21,22 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
-    dinosOwned: {
-        type: Number,
-        required: true
-    },
-    comments: [
+    savedDinos: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Comment'
+        ref: 'Dino'
+      }
+    ],
+    // comments: [
+    //   {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Comment'
+    //   }
+    // ],
+    cart: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Dino'
       }
     ]
   },
