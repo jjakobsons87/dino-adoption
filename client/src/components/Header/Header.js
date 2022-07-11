@@ -8,7 +8,6 @@ import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
 import Shop from "../Shop/index";
 import Login from "../Login/index";
-import Home from "../../pages/Home";
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState("Home");
