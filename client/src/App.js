@@ -52,6 +52,7 @@ function App() {
                                 path="/shop"
                                 element={<Shop />}
                             />
+                            <Route path="/home" element={<Home/>} />
                             <Route path="/profile" element={<Profile />} />
                         </Routes>
                     </div>
