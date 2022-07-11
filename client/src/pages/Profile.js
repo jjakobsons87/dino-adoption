@@ -6,7 +6,6 @@ import Auth from '../utils/auth';
 
 //components
 import LikedDinos from '../components/LikedDinos';
-import SelectedDino from '../components/SelectedDino';
 import UserHero from '../components/UserHero';
 
 const Profile = (props) => {
@@ -42,7 +41,6 @@ const Profile = (props) => {
                 username={user.username}
             />
             <LikedDinos></LikedDinos>
-            <SelectedDino></SelectedDino>
         </div>
     )
 };
