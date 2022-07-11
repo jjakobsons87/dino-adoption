@@ -14,6 +14,7 @@ import Profile from './pages/Profile';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Login from '../src/components/Login';
+import Adoption from './pages/Adoption';
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -44,6 +45,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/shop" element={<Shop />}/>
+                            <Route path="/adoption" element={<Adoption />} />
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/login" element={<Login/>} />
                             <Route path="/cart" element={<Cart/>} />

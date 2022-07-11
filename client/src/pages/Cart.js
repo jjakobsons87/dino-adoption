@@ -27,7 +27,7 @@ const Cart = (props) => {
                 <CartHero></CartHero>
             </div>
             <div className="basket">
-                <Basket cartItems={cartItems}></Basket>
+                <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
             </div>
         </div>
     )
