@@ -251,3 +251,24 @@ footer {
   background-color: silver;
   transition-duration: .5s;
 }
+
+@media screen and (max-width: 630px) and (min-width: 330px) {
+  .description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutSect {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
