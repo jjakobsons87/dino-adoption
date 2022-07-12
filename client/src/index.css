@@ -184,3 +184,54 @@ footer {
   width: 50%;
   opacity: .4;
 }
+
+/* avatar styles */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: rgb(191, 191, 191);
+  border-style: outset;
+  background-color: white;
+}
+
+/* user welcome styles */
+.user-hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.user-welcome {
+  margin-left: 2.5%;
+  padding-top: 4%;
+  padding-right: 25%;
+  color: white;
+}
+
+.user-photo {
+
+}
+
+.avatar {
+  position: relative;
+}
+
+.upload-photo {
+  position: relative;
+  display: block;
+  margin-left: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.upload-photo:hover {
+  background-color: silver;
+  transition-duration: .5s;
+}

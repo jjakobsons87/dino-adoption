@@ -5,9 +5,15 @@ import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
 import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
-function Home() {
-    return (
+import AdoptionPage from '../components/AdoptionPage';
+import Login from '../components/Login/index';
+import SignUp from '../components/SignUp/signup';
 
+const Home = () => {
+    return (
+        <div>
+        <Login />
+        <SignUp />
         <main>
 
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
@@ -216,6 +222,7 @@ function Home() {
             </section>
         
         </main>
+        </div>
     )
 }
 
