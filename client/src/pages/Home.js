@@ -35,7 +35,7 @@ const Home = () => {
                     <p className="text-center">After many years of research, the Delusional Dinosaur Adoption Agency, 
                     or DDAA, has "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
                     the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
-                    From the Crocidile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
+                    From the Crocodile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
                     many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over 
                     the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live 
                     alongside one another. It's a dream come true for many.
