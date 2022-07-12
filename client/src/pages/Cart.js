@@ -4,11 +4,9 @@ import { Navigate, useParams } from 'react-router-dom';
 //components
 import Basket from '../components/Basket';
 import CartHero from '../components/CartHero';
-import { QUERY_DINO } from '../utils/queries';
 
 const Cart = () => {
 
-    const { dino } = QUERY_DINO;
     const [cartItems, setCartItems] = useState([]);
     const onAdd = (dino) => {
         const exist = cartItems.find(x=> x.id === dino.id);

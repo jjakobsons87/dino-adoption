@@ -2,18 +2,13 @@ import React, { useContext, useState, useMutation } from 'react';
 import Auth from '../../utils/auth';
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
-import { ADD_FAVORITE } from "../../utils/mutations";
 
 //import components
 import LikeButton from '../LikeButton';
 
-const SelectedDino = (props) => {
+const SelectedDino = () => {
 
-    // needed for likes
-    // const { user } = useContext(Auth.loggedIn());
-    // const { addFavorite } = useMutation(ADD_FAVORITE);
-    // needed for cart
-    const { dino, onAdd } = props;
+
     
 // const SelectedDino = () => {
 
@@ -30,10 +25,6 @@ const SelectedDino = (props) => {
 
     return (
         <div>
-            {/* button to add the dino to the cart/basket */}
-            <div>
-                <button onClick={()=> onAdd(dino)} >Add to Cart</button>
-            </div>
             <div>
                 <LikeButton />
             </div>

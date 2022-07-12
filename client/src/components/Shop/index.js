@@ -16,7 +16,10 @@ import Meat from "../../assets/accessories/meat.jpg"
 import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
 import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
-function ShopPage() {
+function ShopPage(props) {
+
+    const { accessory, onAdd } = props;
+
     return (
 
         <main id="dinoSale">
@@ -45,8 +48,9 @@ function ShopPage() {
                             />
                 
                         <div className="card-body">
-                            <h3 className="dinoName">Dino Harness $129.99</h3>    
-                            <button className="adoptBtn">Add To Cart</button>
+                            <h3 className="dinoName">Dino Harness $129.99</h3>  
+                            {/* button to add the dino to the cart/basket */}
+                            <button className="adoptBtn" onClick={()=> onAdd(accessory)} >Add to Cart</button>
                         </div>
                     </div>
                 </div>
