@@ -10,7 +10,7 @@ const UserHero = (username) => {
         <header className = "profile-header">
 
             <div className="profile-container">
-                <div className="username">Welcome {username}</div>
+                {/* <div className="username">Welcome {username}</div> */}
                 {/* Owned Dinos: # */}
                 <img className="profile-pic"
                     src={User}

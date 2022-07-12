@@ -37,9 +37,7 @@ const Profile = (props) => {
 
     return (
         <div className="profile-container">
-            <h1>"hello"</h1>
             <UserHero
-            
                 username={user.username}
             />
             <LikedDinos></LikedDinos>
