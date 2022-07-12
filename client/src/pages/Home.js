@@ -30,10 +30,10 @@ const Home = () => {
             </nav>
 
             <div id="siteDesc">
-                <div className="description imageDivs">
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
                     <p className="text-center">After many years of research, the Delusional Dinosaur Adoption Agency, 
-                    or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
+                    or DDAA, has "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
                     the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
                     From the Crocidile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
                     many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over 
@@ -46,16 +46,21 @@ const Home = () => {
                     will be happy to accomodate you!
                     </p>
                     <br></br>
-
+                </div>
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">Our Mission: A New World</h2>
                     <p className="text-center">Humans and Dinosaurs are seperated by millions of years and now we are 
-                    together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world 
+                    together at last. Our goal is to build a relationship with these almost mythical beasts of nature. A world 
                     filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
                     dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
                     man and dog.
+                    <br></br>
+                    We also want to better understand the animals that once ruled the Earth, millons of years before humans walked 
+                    its plains and constructed its towers. We seek to not only improve upon humanity but to humble it.
                     </p>
                     <br></br>
-
+                </div>
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">The Challenges and Risks</h2>
                     <p className="text-center">We never said that owning a dinosaur would be easy. These animals require 
                     A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become 

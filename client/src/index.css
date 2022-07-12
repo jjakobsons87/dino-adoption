@@ -13,7 +13,7 @@ h2 {
 }
 
 p {
-  font-size: 2.6vh;
+  font-size: 2.5vh;
   padding: 7px;
   margin-bottom: 25px;
   color: silver;
@@ -42,6 +42,20 @@ footer {
   background-color:  rgb(205, 205, 205);
   color: black;
   margin-top: 25px;
+}
+
+#siteDesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutSect {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  background-color: black;
+  border: 1px solid snow;
 }
 
 .description {
