@@ -109,7 +109,7 @@ function Home() {
                         />
                     </div>
                     <p className="text-center">The dinosaurs that we keep at our island facility are loved and 
-                    cared for. We pride ourselves in the safety an understanding of these animals. We control any and all 
+                    cared for. We pride ourselves in the safety and understanding of these animals. We control any and all 
                     breeding, once the dinosaur is mature, and each dinosaur sent out is genetically modified so that they 
                     CANNOT breed. What that mean is if you want another dinosaur, you will have to adopt a new one. This 
                     is to avoid the dinosaurs proliferating outside of our control, and to also avoid any dino-related crises 
@@ -164,22 +164,22 @@ function Home() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center">Unfortunately, these things will happen. Whether it be from careless 
+                    <p className="text-center">Unfortunately, escapes are bound to happen; whether it be from careless 
                     ownership or the dinosaur has gone rogue. To that end, we have a contingency plan 
                     to take care of the dinosaurs should they get free and begin harming other residents. Of course, we prefer 
                     that the dinosaurs return safely, but should they escape, we will know and be forced to kill it. Each animal is 
-                    equipped with a sensor that we ourselves monitor. This isn't an attempt to spy on you, and we 
+                    equipped with a sensor in their chests that we ourselves monitor. This isn't an attempt to spy on you, and we 
                     were given the full rights to do this, given the circumstances.
                     <br></br><br></br>
                     We will supply invisible fences to each owner to be placed around the animals living area, with a radius large 
                     enough for most ranches. Should the animal cross that fence, we will be alerted and will contact you immediately. 
                     We ask that, if the situation is under control that you answer or contact us promptly. After 10 minutes of no 
-                    contact, we will send a powerful electric pulse into the heart of the dinosaur, stopping the heart beat and 
+                    contact, we will send a powerful electric pulse into the heart of the dinosaur, stopping the heart and 
                     killing it. This is to protect your friends and neighbors.
                     <br></br><br></br>
                     In the end it will be your responsiblity and, should anything terrible happen, you will be charged to the fullest 
                     extent of the law. Our only rights is killing the dinosaur after 10 minutes of escape, but we waive all others to 
-                    it after it leaves our facility. Please be responsible and watch over your dino.
+                    it after it leaves our facility. Please review your states dinosaur laws for more details.
                     </p>
 
                 </div>
