@@ -4,7 +4,10 @@ function Footer() {
 	return (
 		<footer className="footer flex-row">
 			<div className="text-center font-italic text-white">
-                Disclaimer: "The DDAA is not responsible for any injury, maiming or death caused by the purchase of our dinosaurs. We are also not responsible for the events that could possibly lead to the dinosaurs escaping, breeding and threatening human civilization as we know it.""
+                Disclaimer: "The DDAA is not responsible for any injury, maiming or death caused by the purchase of our dinosaurs. 
+				We are also not responsible for the events that could possibly lead to the dinosaurs somehow breeding and 
+				threatening human civilization as we know it. Finally, we are not responsible for humanity's placement as the 
+				Dominant Species on Earth."
             </div>
 
 			<div className="teamGits">

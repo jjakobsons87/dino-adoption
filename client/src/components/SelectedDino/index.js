@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import DinoModel from "../Card/DinoModel";
-
 import {
     CCard,
     CCardImage,
@@ -10,20 +9,15 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-
 const SelectedDino = ({dino}) => {
-
     const handleClose = () => setShow(false);
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
     const [isCardOpen, setIsCardOpen] = useState(false);
-
     const toggleCard = (image, i) => {
         setIsCardOpen(!isCardOpen);
     }
-
     return (
-
         <CCard style={{ width: "18rem" }}>
         <CCardImage orientation="top" src={dino.source} />
         <CCardBody>
@@ -35,7 +29,7 @@ const SelectedDino = ({dino}) => {
         </CCardBody>
         <CCardBody>
             <CButton  onClick={handleShow}>View Dino</CButton>
-            {/* {currentDino === dino.name && 
+            {/* {currentDino === dino.name &&
             <SelectedDino/>
             }    */}
              <Modal show={show} onHide={handleClose}>
@@ -49,6 +43,13 @@ const SelectedDino = ({dino}) => {
     </CCard>
     )
 };
-                
-
 export default SelectedDino;
+
+
+
+
+
+
+
+
+
