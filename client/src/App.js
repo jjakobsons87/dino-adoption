@@ -53,6 +53,7 @@ function App() {
                             <Route path="/shop" element={<Shop />} />
                             <Route path="/home" element={<Home/>} />
                             <Route path="/profile" element={<Profile />} />
+                            <Route path="/cart" element={<Cart />} />
                         </Routes>
                     </div>
                     <Footer />
