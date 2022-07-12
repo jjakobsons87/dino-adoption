@@ -5,8 +5,6 @@ const UserPhoto = () => {
     const currentUser = Auth.loggedIn();
     const [photoURL, setPhotoURL] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&usqp=CAU")
 
-    function handleChange() {
-    }
     function handleClick() {
     }
 
@@ -17,10 +15,9 @@ const UserPhoto = () => {
     }, [currentUser])
 
     return (
-        <div className="profilePhoto">
-            <input type="file" onChange={handleChange} />
-            <button onClick={handleClick}>Upload</button>
+        <div className="profile-photo">
             <img src={photoURL} alt="Avatar" className="avatar"/>
+            <button onClick={handleClick} className="upload-photo">UPLOAD</button>
         </div>
     )
 };

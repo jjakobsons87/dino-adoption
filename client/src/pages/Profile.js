@@ -38,10 +38,12 @@ const Profile = (props) => {
     return (
         <div className="profile-container">
             <div className="user-hero">
-                <h2 className="user-welcome text-secondary p-3">
+                <h2 className="user-welcome">
                     Welcome {`${user.username}`}!
                 </h2>
-                <UserPhoto/>
+                <div className="user-photo">
+                    <UserPhoto/>
+                </div>
             </div>
             <LikedDinos></LikedDinos>
         </div>
