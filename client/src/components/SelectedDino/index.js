@@ -1,10 +1,16 @@
-// import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import Auth from '../utils/auth';
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 
-const SelectedDino = (props) => {
+import LikeButton from '../LikeButton';
+
+const SelectedDino = ({ props, dino: {id, likeCount, likes }}) => {
+
+    const { user } = useContext(Auth)
 
     const { dino, onAdd } = props;
+    
 // const SelectedDino = () => {
 
 //     const [isCardOpen, setIsCardOpen] = useState(false);
@@ -23,6 +29,9 @@ const SelectedDino = (props) => {
             {/* button to add the dino to the cart/basket */}
             <div>
                 <button onClick={()=> onAdd(dino)} >Add to Cart</button>
+            </div>
+            <div>
+                <LikeButton user={user} dino={{ id, likes, likeCount }} />
             </div>
         </div>
     )

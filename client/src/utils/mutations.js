@@ -72,3 +72,16 @@ export const ADD_ACCESSORY = gql`
         }
     }
 `;
+
+const LIKE_DINO_MUTATION = gql`
+    mutation likedPost($postId: ID!) {
+        likedDino(dinoId: $dinoId) {
+            id
+            likes {
+                id
+                username
+            }
+            likeCount
+        }
+    }
+`;
