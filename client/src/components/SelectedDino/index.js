@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import Auth from '../utils/auth';
+import Auth from '../../utils/auth';
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 

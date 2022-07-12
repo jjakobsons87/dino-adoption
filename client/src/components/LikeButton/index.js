@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import { LIKE_DINO_MUTATION } from '../utils/mutations';
+import { LIKE_DINO_MUTATION } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 import { Button, Label, Icon } from 'semantic-ui-react'
 
