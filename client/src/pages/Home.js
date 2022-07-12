@@ -5,9 +5,15 @@ import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
 import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
-function Home() {
-    return (
+import AdoptionPage from '../components/AdoptionPage';
+import Login from '../components/Login/index';
+import SignUp from '../components/SignUp/signup';
 
+const Home = () => {
+    return (
+        <div>
+        <Login />
+        <SignUp />
         <main>
 
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
@@ -24,12 +30,12 @@ function Home() {
             </nav>
 
             <div id="siteDesc">
-                <div className="description imageDivs">
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">The DDAA: Dino Engineering</h2>
                     <p className="text-center">After many years of research, the Delusional Dinosaur Adoption Agency, 
-                    or DDAA, have "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
+                    or DDAA, has "acquired" genuine Dino DNA through very specific, non Government related channels. Thanks to 
                     the hard work of us and others, you too now have the distinct opportunity of owning your very own dinosaur! 
-                    From the Crocidile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
+                    From the Crocodile-esqu Spinosaurus to the legendary long-necked Brachiosaurus, we have 
                     many options to choose from! Our organization is funded publicly by contributors and dinosaur lovers all over 
                     the world. This is a chance for, after millions of years of seperation, dinosaurs and humans to live 
                     alongside one another. It's a dream come true for many.
@@ -40,16 +46,22 @@ function Home() {
                     will be happy to accomodate you!
                     </p>
                     <br></br>
-
+                </div>
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">Our Mission: A New World</h2>
                     <p className="text-center">Humans and Dinosaurs are seperated by millions of years and now we are 
-                    together at last. Our goal is to build a relationship with these, almost mythical beats of nature. A world 
+                    together at last. Our goal is to build a relationship with these almost mythical beasts of nature. A world 
                     filled with dinosaurs is something you've only ever read about in stories but now we have a world where 
                     dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
                     man and dog.
+                    <br></br>
+                    <br></br>
+                    We also want to better understand the animals that once ruled the Earth, millons of years before humans walked 
+                    its plains and constructed its towers. We seek to not only improve upon humanity but to humble it.
                     </p>
                     <br></br>
-
+                </div>
+                <div className="aboutSect imageDivs">
                     <h2 className="text-center sectTitle">The Challenges and Risks</h2>
                     <p className="text-center">We never said that owning a dinosaur would be easy. These animals require 
                     A LOT of space to roam around, they need to remain active or these is a "small" chance that they will become 
@@ -94,7 +106,7 @@ function Home() {
                     to sheds or crush your skull when it gets old enough, and you would do well to keep that in mind as you 
                     adopt and raise.
                     <br></br><br></br>
-                    The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is 
+                    The above image shows a full-grown Raptor alongside an infant Raptor. As you can see, the size difference is 
                     considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop 
                     a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
                     </p>
@@ -109,7 +121,7 @@ function Home() {
                         />
                     </div>
                     <p className="text-center">The dinosaurs that we keep at our island facility are loved and 
-                    cared for. We pride ourselves in the safety an understanding of these animals. We control any and all 
+                    cared for. We pride ourselves in the safety and understanding of these animals. We control any and all 
                     breeding, once the dinosaur is mature, and each dinosaur sent out is genetically modified so that they 
                     CANNOT breed. What that mean is if you want another dinosaur, you will have to adopt a new one. This 
                     is to avoid the dinosaurs proliferating outside of our control, and to also avoid any dino-related crises 
@@ -140,7 +152,7 @@ function Home() {
                     plant-based diet, both of which we accomodate in our shop. Herbivores are far more self-sufficient since they 
                     eat plants, and only attack when threatened... normally. We consider these to be the "Easy Mode" of dinosaurs. 
                     Carnivores are much more malicious and are more like the "Expert Mode", and will you see as their next meal if 
-                    not given the proper care. We have many options to suit your needs, as well as several that we haven't yet showcased yet.
+                    not given the proper care. We have many options to suit your needs, as well as several that we haven't showcased yet.
                     <br></br><br></br>
                     They will cost money and time to raise, especially the Carnivores considering the threat they pose to you. 
                     Do not take any lightly, but if you choose to adopt a Carnivore take even more precautions. We have harnesses 
@@ -164,22 +176,22 @@ function Home() {
                             alt="Captive Dinos"
                         />
                     </div>
-                    <p className="text-center">Unfortunately, these things will happen. Whether it be from careless 
+                    <p className="text-center">Unfortunately, escapes are bound to happen; whether it be from careless 
                     ownership or the dinosaur has gone rogue. To that end, we have a contingency plan 
                     to take care of the dinosaurs should they get free and begin harming other residents. Of course, we prefer 
                     that the dinosaurs return safely, but should they escape, we will know and be forced to kill it. Each animal is 
-                    equipped with a sensor that we ourselves monitor. This isn't an attempt to spy on you, and we 
+                    equipped with a sensor in their chests that we ourselves monitor. This isn't an attempt to spy on you, and we 
                     were given the full rights to do this, given the circumstances.
                     <br></br><br></br>
                     We will supply invisible fences to each owner to be placed around the animals living area, with a radius large 
                     enough for most ranches. Should the animal cross that fence, we will be alerted and will contact you immediately. 
                     We ask that, if the situation is under control that you answer or contact us promptly. After 10 minutes of no 
-                    contact, we will send a powerful electric pulse into the heart of the dinosaur, stopping the heart beat and 
+                    contact, we will send a powerful electric pulse into the heart of the dinosaur, stopping the heart and 
                     killing it. This is to protect your friends and neighbors.
                     <br></br><br></br>
                     In the end it will be your responsiblity and, should anything terrible happen, you will be charged to the fullest 
                     extent of the law. Our only rights is killing the dinosaur after 10 minutes of escape, but we waive all others to 
-                    it after it leaves our facility. Please be responsible and watch over your dino.
+                    it after it leaves our facility. Please review your states dinosaur laws for more details.
                     </p>
 
                 </div>
@@ -196,7 +208,7 @@ function Home() {
                     Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better 
                     transition into today's world. We will continue to spearhead this movement as we introduce these animals into 2022, 
                     millions of years after their original extinction, and in doing so will shape the entire world as we know it. The DDAA 
-                    will continue to work tirelessly to meet these goals, and with that and mind we call on the support of not only the 
+                    will work tirelessly to meet these goals, and with that and mind we call on the support of not only the 
                     common folk, but the 1% as well! Help us to bring dinosaurs to you!
                     <br></br><br></br>
                     This process will not be easy and will definitely not be cheap. We ask that you adopt one of our Jurassic 
@@ -216,6 +228,7 @@ function Home() {
             </section>
         
         </main>
+        </div>
     )
 }
 

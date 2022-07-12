@@ -8,6 +8,15 @@ code {
     monospace;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
 footer {
   width: auto;
   margin-top: 100px;
@@ -15,12 +24,12 @@ footer {
 }
 
 #mainAdoptTitle {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   color: bisque;
 }
 
 .sectTitle {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   color: bisque;
   text-decoration: underline;
   margin-top: 70px;
@@ -46,6 +55,7 @@ footer {
   display: block;
   background-color: black;
   width: 300px;
+  height: 350px;
   text-align: center;
   border: 1px solid bisque;
 }
@@ -57,12 +67,12 @@ footer {
 
 .dinoName {
   color: azure;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   font-size: 24px;
 }
 
 .adoptBtn {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
