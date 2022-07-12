@@ -184,3 +184,17 @@ footer {
   width: 50%;
   opacity: .4;
 }
+
+/* avatar styles */
+.avatar {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: rgb(191, 191, 191);
+  border-style: outset;
+  background-color: white;
+}
+
+/* user welcome styles */

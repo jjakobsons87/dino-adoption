@@ -6,7 +6,7 @@ import Auth from '../utils/auth';
 
 //components
 import LikedDinos from '../components/LikedDinos';
-import UserHero from '../components/UserHero';
+import UserPhoto from '../components/UserPhoto';
 
 const Profile = (props) => {
     const { username: userParam } = useParams();
@@ -37,10 +37,12 @@ const Profile = (props) => {
 
     return (
         <div className="profile-container">
-            <h2 className="bg-dark text-secondary p-3 display-inline-block">
-                Welcome {`${user.username}`}!
-            </h2>
-            <UserHero/>
+            <div className="user-hero">
+                <h2 className="user-welcome text-secondary p-3">
+                    Welcome {`${user.username}`}!
+                </h2>
+                <UserPhoto/>
+            </div>
             <LikedDinos></LikedDinos>
         </div>
     )
