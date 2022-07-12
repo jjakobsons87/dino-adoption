@@ -12,7 +12,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav>
             {Auth.loggedIn() ? (
-                <Navbar className="navbar navbar-fixed-top container-fluid" expand="lg">
+                <Navbar className="navbar container-fluid" expand="lg">
                     <Container className="navbar-internal">
                         <Navbar.Brand className="super-internal" href="#home">Home</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />

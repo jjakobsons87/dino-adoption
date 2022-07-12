@@ -94,7 +94,7 @@ export default function Login (props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button className="btn d-block w-100" type="submit">
+          <Button className="btn d-block w-100" type="submit" onClick={handleFormSubmit}>
                 Submit</Button>
                 </Form>
                 {error && <div>Login failed</div>}
