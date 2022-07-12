@@ -6,6 +6,8 @@ const typeDefs = gql`
         username: String
         email: String
         dinoCount: Int
+        dinoQuiz: String
+        imageURL: String
         savedDinos: [Dino]
         cart: [Accessory] 
     }

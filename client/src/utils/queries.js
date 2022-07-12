@@ -88,6 +88,7 @@ export const QUERY_USER = gql`
             email
             dinoQuiz
             imageURL
+            dinoCount
             savedDinos {
                 _id
                 name
@@ -110,20 +111,6 @@ export const QUERY_ME = gql`
             _id
             username
             email
-            dinoQuiz
-            imageURL
-            savedDinos {
-                _id
-                name
-                species
-                bio
-            }
-            cart {
-                _id
-                name
-                price
-                imageURL
-            }
         }
     }
 `;
