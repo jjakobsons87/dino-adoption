@@ -6,7 +6,7 @@ function Adoption() {
         <main id="dinoSale">
             <div id="siteDesc">
                 <div id="description">
-                    <h2 className="text-center">
+                    <h2 className="text-center sectTitle">
                         The DDAA is here to fullfill all of your Dino-Related
                         needs!
                     </h2>
