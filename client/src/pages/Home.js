@@ -55,6 +55,7 @@ const Home = () => {
                     dinosaurs exist. All we want is humans and dinosaurs to live side-by-side, to create a bond even greater than 
                     man and dog.
                     <br></br>
+                    <br></br>
                     We also want to better understand the animals that once ruled the Earth, millons of years before humans walked 
                     its plains and constructed its towers. We seek to not only improve upon humanity but to humble it.
                     </p>
