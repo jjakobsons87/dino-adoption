@@ -3,12 +3,13 @@ import Auth from '../../utils/auth';
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 
+//import components
 import LikeButton from '../LikeButton';
 
-const SelectedDino = ({ props, dino: {id, likeCount, likes }}) => {
+const SelectedDino = (props) => {
 
-    const { user } = useContext(Auth)
-
+    // needed for likes
+    // needed for cart
     const { dino, onAdd } = props;
     
 // const SelectedDino = () => {
@@ -31,7 +32,7 @@ const SelectedDino = ({ props, dino: {id, likeCount, likes }}) => {
                 <button onClick={()=> onAdd(dino)} >Add to Cart</button>
             </div>
             <div>
-                <LikeButton user={user} dino={{ id, likes, likeCount }} />
+                {/* <LikeButton user={user} dino={{ id, likes, likeCount }} /> */}
             </div>
         </div>
     )

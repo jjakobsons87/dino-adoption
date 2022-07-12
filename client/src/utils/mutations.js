@@ -74,7 +74,7 @@ export const ADD_ACCESSORY = gql`
 `;
 
 export const LIKE_DINO_MUTATION = gql`
-    mutation likedPost($postId: ID!) {
+    mutation likedDino($dinoId: ID!) {
         likedDino(dinoId: $dinoId) {
             id
             likes {
