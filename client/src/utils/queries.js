@@ -15,6 +15,7 @@ export const QUERY_DINOS = gql`
             fenceRequirement
             inventory
             imageURL
+            savedCount
             comments {
                 _id
                 commentBody
@@ -39,6 +40,7 @@ export const QUERY_DINO = gql`
             fenceRequirement
             inventory
             imageURL
+            savedCount
             comments {
                 _id
                 commentBody

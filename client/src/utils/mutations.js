@@ -14,7 +14,7 @@ export const LOGIN_USER = gql`
 
 export const ADD_USER = gql`
     mutation addUser($username: String!, $email: String!, $password: String!, $dinoQuiz: String, $imageURL: String) {
-        addUser(username: $username, email: $email, password: $password, dinoQuiz: $) {
+        addUser(username: $username, email: $email, password: $password, dinoQuiz: $dinoQuiz) {
             token
             user {
                 _id
@@ -43,8 +43,8 @@ export const ADD_COMMENT = gql`
 `;
 
 export const ADD_DINO = gql`
-    mutation AddDino($bio: String!, $species: String!, $diet: String!, $gender: String!, $aggressiveness: Int!, $humanCasualties: Int!, $fenceRequirement: Int!, $name: String!, $savedCount: Int!, $age: Int!, $inventory: Int!, $price: Int!, $imageURL: String!) {
-        addDino(bio: $bio, species: $species, diet: $diet, gender: $gender, aggressiveness: $aggressiveness, humanCasualties: $humanCasualties, fenceRequirement: $fenceRequirement, name: $name, savedCount: $savedCount, age: $age, inventory: $inventory, price: $price, imageURL: $imageURL) {
+    mutation AddDino($bio: String!, $species: String!, $diet: String!, $gender: String!, $aggressiveness: Int!, $humanCasualties: Int!, $fenceRequirement: Int!, $name: String!,  $age: Int!, $inventory: Int!, $price: Int!, $imageURL: String!) {
+        addDino(bio: $bio, species: $species, diet: $diet, gender: $gender, aggressiveness: $aggressiveness, humanCasualties: $humanCasualties, fenceRequirement: $fenceRequirement, name: $name, age: $age, inventory: $inventory, price: $price, imageURL: $imageURL) {
             _id
             bio
             species
