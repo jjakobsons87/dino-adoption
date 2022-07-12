@@ -106,7 +106,7 @@ const Home = () => {
                     to sheds or crush your skull when it gets old enough, and you would do well to keep that in mind as you 
                     adopt and raise.
                     <br></br><br></br>
-                    The above image shows a full-grown Raptor alongside an infant Raptor. AS you can see, the size difference is 
+                    The above image shows a full-grown Raptor alongside an infant Raptor. As you can see, the size difference is 
                     considerable and it doesn't take long for these Dinosaurs to grow to full size. The time you have to develop 
                     a bond will be limited, do not take your time in doing so! Spend time with your dinosaurs as much as possible!
                     </p>
@@ -152,7 +152,7 @@ const Home = () => {
                     plant-based diet, both of which we accomodate in our shop. Herbivores are far more self-sufficient since they 
                     eat plants, and only attack when threatened... normally. We consider these to be the "Easy Mode" of dinosaurs. 
                     Carnivores are much more malicious and are more like the "Expert Mode", and will you see as their next meal if 
-                    not given the proper care. We have many options to suit your needs, as well as several that we haven't yet showcased yet.
+                    not given the proper care. We have many options to suit your needs, as well as several that we haven't showcased yet.
                     <br></br><br></br>
                     They will cost money and time to raise, especially the Carnivores considering the threat they pose to you. 
                     Do not take any lightly, but if you choose to adopt a Carnivore take even more precautions. We have harnesses 
@@ -208,7 +208,7 @@ const Home = () => {
                     Eventually, we will be able to clone new species of dinosaur, and engineer them however we see fit to better 
                     transition into today's world. We will continue to spearhead this movement as we introduce these animals into 2022, 
                     millions of years after their original extinction, and in doing so will shape the entire world as we know it. The DDAA 
-                    will continue to work tirelessly to meet these goals, and with that and mind we call on the support of not only the 
+                    will work tirelessly to meet these goals, and with that and mind we call on the support of not only the 
                     common folk, but the 1% as well! Help us to bring dinosaurs to you!
                     <br></br><br></br>
                     This process will not be easy and will definitely not be cheap. We ask that you adopt one of our Jurassic 
