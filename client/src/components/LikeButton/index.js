@@ -10,35 +10,45 @@ const LikeButton = ({ dinoId, user }) => {
 
     const handleChange = (event) => {
         if (event) {
-            // if liked, fill
             setLiked();
-            addLike({
-                variables: { dinoId }
-            });
-            <Button color ="teal">
+            // if liked, fill
+            <button>
                 <Icon name="heart" />
-            </Button>
+            </button>
         } else {
             // if not liked, empty
-            <Button color = "teal" basic>
+            <button>
                 <Icon name="heart" />
-            </Button>
+            </button>
         }
 
-        // if (!user?.username) {
-        //     return (
-        //     // if no user show unfilled & back to route back to login
-        //     <Button as={Link} to="/login" color="teal" basic>
-        //         <Icon name="heart" />
-        //     </Button>
-        //     );
-        //   }
+        if (!user?.username) {
+            return (
+            // if no user show unfilled & back to route back to login
+            <Button as={Link} to="/login" color="teal" basic>
+                <Icon name="heart" />
+            </Button>
+            );
+          }
     };
+
+    const handleButtonSubmit = async (event) => {
+        event.preventDefault();
+        
+        try {
+            await addLike({
+                variables: { dinoId }
+            });
+        } catch (e) {
+            console.error(e);
+        }
+    }
 
     return(
         <div>
-            <Button onClick={handleChange} value={liked}>
-            </Button>
+            <button onClick={handleChange} value={liked} onSubmit={handleButtonSubmit}>
+                Favorite
+            </button>
             {error && <div>Something went wrong...</div>}
         </div>
     )
