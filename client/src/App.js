@@ -50,10 +50,7 @@ function App() {
                     <div className="container">
                         <Routes>
                             <Route path="/login" element={<Login/>} />
-                            <Route
-                                path="/shop"
-                                element={<Shop />}
-                            />
+                            <Route path="/shop" element={<Shop />} />
                             <Route path="/home" element={<Home/>} />
                             <Route path="/profile" element={<Profile />} />
                         </Routes>
