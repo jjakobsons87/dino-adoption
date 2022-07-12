@@ -2,6 +2,9 @@
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 
+const SelectedDino = (props) => {
+
+    const { dino, onAdd } = props;
 // const SelectedDino = () => {
 
 //     const [isCardOpen, setIsCardOpen] = useState(false);
@@ -15,6 +18,15 @@
 //     if (loading) return 'Loading...';
 //     if (error) return `Error! ${error.message}`;
 
+    return (
+        <div>
+            {/* button to add the dino to the cart/basket */}
+            <div>
+                <button onClick={()=> onAdd(dino)} >Add to Cart</button>
+            </div>
+        </div>
+    )
+};
 //     return (
 
 //         <div onClick={() => {toggleCard}}
@@ -36,4 +48,4 @@
 // };
                 
 
-// export default SelectedDino;
+export default SelectedDino;

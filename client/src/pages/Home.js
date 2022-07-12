@@ -7,7 +7,7 @@ import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
 import AdoptionPage from '../components/AdoptionPage';
 import Login from '../components/Login/index';
-import SignUp from '../components/SignUp/signup'
+import SignUp from '../components/SignUp/signup';
 
 const Home = () => {
     return (

@@ -32,7 +32,7 @@ function Adoption() {
                 </div>
             </div>
             <div>
-         
+            <DinoCard />
             </div>
         </main>
     );
