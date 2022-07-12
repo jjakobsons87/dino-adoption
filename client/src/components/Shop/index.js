@@ -1,20 +1,20 @@
 import React from 'react';
 
-import Harness from "../../assets/accessories/harness.jpg"
-import Blanket from "../../assets/accessories/blanket.jpeg"
-import ChewToy from "../../assets/accessories/chewtoy.jpg"
-import BoyHat from "../../assets/accessories/boyhat.jpeg"
-import GirlHat from "../../assets/accessories/girlhat.jpg"
-import Sword from "../../assets/accessories/dinosword.jpg"
-import LeashCollar from "../../assets/accessories/leashcollar.jpg"
-import Muzzle from "../../assets/accessories/muzzle.jpg"
-import Pillow from "../../assets/accessories/pillow.jpg"
-import Treats from "../../assets/accessories/dinotreats.jpg"
-import FoodBowl from "../../assets/accessories/foodbowl.jpg"
-import Leaves from "../../assets/accessories/leaves.jpg"
-import Meat from "../../assets/accessories/meat.jpg"
-import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
-import WaterBowl from "../../assets/accessories/waterbowl.jpg"
+// import Harness from "../../assets/accessories/harness.jpg"
+// import Blanket from "../../assets/accessories/blanket.jpeg"
+// import ChewToy from "../../assets/accessories/chewtoy.jpg"
+// import BoyHat from "../../assets/accessories/boyhat.jpeg"
+// import GirlHat from "../../assets/accessories/girlhat.jpg"
+// import Sword from "../../assets/accessories/dinosword.jpg"
+// import LeashCollar from "../../assets/accessories/leashcollar.jpg"
+// import Muzzle from "../../assets/accessories/muzzle.jpg"
+// import Pillow from "../../assets/accessories/pillow.jpg"
+// import Treats from "../../assets/accessories/dinotreats.jpg"
+// import FoodBowl from "../../assets/accessories/foodbowl.jpg"
+// import Leaves from "../../assets/accessories/leaves.jpg"
+// import Meat from "../../assets/accessories/meat.jpg"
+// import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
+// import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
 function ShopPage() {
     return (
@@ -34,7 +34,7 @@ function ShopPage() {
             <p className="text-white text-center">Style your dinosaur in both a cute and safe way. Harness and Muzzle HIGHLY recommended to avoid any... unpleasant situations, especially for Carnivores!</p>
 
 
-            <div id= "accessoriesPart1" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+            {/* <div id= "accessoriesPart1" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
 
                 <div className="col">
                     <div className="card">
@@ -276,7 +276,7 @@ function ShopPage() {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
         </main>
             )
