@@ -52,11 +52,21 @@ const Cart = (accessory) => {
                 </Basket>
             </div>
             <div className="icons">
-                <SiVisa></SiVisa>
+                <div className="cart-icons">
+                    <SiVisa></SiVisa>
+                </div>
+                <div className="cart-icons">
                 <SiMastercard></SiMastercard>
+                </div>
+                <div className="cart-icons">
                 <SiDiscover></SiDiscover>
+                </div>
+                <div className="cart-icons">
                 <SiAmericanexpress></SiAmericanexpress>
+                </div>
+                <div className="cart-icons">
                 <SiBitcoin></SiBitcoin>
+                </div>
             </div>
         </div>
     )
