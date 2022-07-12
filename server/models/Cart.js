@@ -15,12 +15,6 @@ const cartSchema = new Schema (
                 ref: 'Accessory'
             }
         ],
-        dinos: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: 'Dino'
-            }
-        ],
     },
     {
         toJSON: {
