@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import Basket from '../components/Basket';
 import CartHero from '../components/CartHero';
 
+// icons
+import { SiVisa, SiMastercard, SiDiscover, SiAmericanexpress, SiBitcoin } from "react-icons/si";
+
 const Cart = (accessory) => {
 
     const [cartItems, setCartItems] = useState([]);
@@ -47,6 +50,13 @@ const Cart = (accessory) => {
                     onRemove={onRemove}
                     cartItems={cartItems}>
                 </Basket>
+            </div>
+            <div className="icons">
+                <SiVisa></SiVisa>
+                <SiMastercard></SiMastercard>
+                <SiDiscover></SiDiscover>
+                <SiAmericanexpress></SiAmericanexpress>
+                <SiBitcoin></SiBitcoin>
             </div>
         </div>
     )
