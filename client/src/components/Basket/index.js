@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Basket = (props) => {
 
 const {cartItems, onAdd, onRemove } = props;

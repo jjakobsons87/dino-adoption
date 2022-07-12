@@ -1,7 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useMutation } from 'react';
 import Auth from '../../utils/auth';
 // import { useQuery, useLazyQuery } from "@apollo/client"
 // import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
+import { ADD_FAVORITE } from "../../utils/mutations";
 
 //import components
 import LikeButton from '../LikeButton';
@@ -9,6 +10,8 @@ import LikeButton from '../LikeButton';
 const SelectedDino = (props) => {
 
     // needed for likes
+    // const { user } = useContext(Auth.loggedIn());
+    // const { addFavorite } = useMutation(ADD_FAVORITE);
     // needed for cart
     const { dino, onAdd } = props;
     
@@ -32,7 +35,7 @@ const SelectedDino = (props) => {
                 <button onClick={()=> onAdd(dino)} >Add to Cart</button>
             </div>
             <div>
-                {/* <LikeButton user={user} dino={{ id, likes, likeCount }} /> */}
+                <LikeButton />
             </div>
         </div>
     )

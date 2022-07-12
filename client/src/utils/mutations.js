@@ -73,15 +73,16 @@ export const ADD_ACCESSORY = gql`
     }
 `;
 
-export const LIKE_DINO_MUTATION = gql`
-    mutation likedDino($dinoId: ID!) {
-        likedDino(dinoId: $dinoId) {
-            id
-            likes {
-                id
-                username
+export const ADD_FAVORITE = gql`
+    mutation AddToFavorites($dinoId: ID!) {
+        addToFavorites(dinoId: $dinoId) {
+            _id
+            username
+            savedDinos {
+            _id
+            name
+            species
             }
-            likeCount
         }
     }
 `;

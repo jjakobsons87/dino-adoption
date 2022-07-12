@@ -1,48 +1,46 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { LIKE_DINO_MUTATION } from '../../utils/mutations';
+import { ADD_FAVORITE } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
-import { Button, Label, Icon } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 
-const LikeButton = ({ user, dino: { id, likeCount, likes}}) => {
+const LikeButton = ({ dinoId, user }) => {
     const [liked, setLiked] = useState(false);
+    const [addLike, { error }] = useMutation(ADD_FAVORITE);
 
-    useEffect(() => {
-        if(user && likes.find(like => like.username === user.username)){
-            setLiked(true)
-        } else setLiked(false)
-    }, [user, likes]);
-
-    const [likeDino] = useMutation(LIKE_DINO_MUTATION, {
-        variables: { dinoId: id}
-    });
-
-    const likeButton = user ? (
-        liked ? (
-            // if liked, filled
-            <Button color="teal">
+    const handleChange = (event) => {
+        if (event) {
+            // if liked, fill
+            setLiked();
+            addLike({
+                variables: { dinoId }
+            });
+            <Button color ="teal">
                 <Icon name="heart" />
             </Button>
-        ) : (
-            // if not liked, unfilled
-            <Button color="teal" basic>
+        } else {
+            // if not liked, empty
+            <Button color = "teal" basic>
                 <Icon name="heart" />
             </Button>
-        )
-    ) : (
-        // if no user show unfilled & back to route back to login
-        <Button as={Link} to="/login" color="teal" basic>
-            <Icon name="heart" />
-        </Button>
-    )
+        }
+
+        // if (!user?.username) {
+        //     return (
+        //     // if no user show unfilled & back to route back to login
+        //     <Button as={Link} to="/login" color="teal" basic>
+        //         <Icon name="heart" />
+        //     </Button>
+        //     );
+        //   }
+    };
 
     return(
-        <Button as="div" onClick={likeDino}>
-            {likeButton}
-            <Label>
-                {likeCount}
-            </Label>
-        </Button>
+        <div>
+            <Button onClick={handleChange} value={liked}>
+            </Button>
+            {error && <div>Something went wrong...</div>}
+        </div>
     )
 }
 
