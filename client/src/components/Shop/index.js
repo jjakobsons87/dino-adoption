@@ -31,7 +31,7 @@ function ShopPage() {
             </div>
 
             <h2 className="sectTitle text-center">Hats, Toys and Accessories</h2>
-            <p className="text-white text-center">Style your dinosaur in both a cute and safe way. Harness and Muzzle HIGHLY recommended to avoid any... unpleasant situations, especially for Carnivores!</p>
+            <p className="text-center">Style your dinosaur in both a cute and safe way. Harness and Muzzle HIGHLY recommended to avoid any... unpleasant situations, especially for Carnivores!</p>
 
 
             <div id= "accessoriesPart1" className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
