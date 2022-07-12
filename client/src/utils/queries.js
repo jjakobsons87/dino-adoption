@@ -79,21 +79,49 @@ export const QUERY_ACCESSORY = gql`
 `;
 
 export const QUERY_USER = gql`
-  query user($username: String!) {
-    user(username: $username) {
-      _id
-      username
-      email
+    query user($username: String!) {
+        user(username: $username) {
+            _id
+            username
+            email
+            dinoQuiz
+            imageURL
+            savedDinos {
+                _id
+                name
+                species
+                bio
+            }
+            cart {
+                _id
+                name
+                price
+                imageURL
+            }
+        }
     }
-  }
 `;
 
 export const QUERY_ME = gql`
-  {
-    me {
-      _id
-      username
-      email
+    {
+        me {
+            _id
+            username
+            email
+            dinoQuiz
+            imageURL
+            savedDinos {
+                _id
+                name
+                species
+                bio
+            }
+            cart {
+                _id
+                name
+                price
+                imageURL
+            }
+        }
     }
-  }
 `;

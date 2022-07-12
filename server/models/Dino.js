@@ -46,6 +46,11 @@ const dinoSchema = new Schema(
         type: Number,
         required: true
     },
+    price: {
+      type: Number,
+      required: true
+    },
+  
     addedAt: {
       type: Date,
       default: Date.now,

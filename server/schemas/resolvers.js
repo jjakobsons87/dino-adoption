@@ -106,12 +106,12 @@ const resolvers = {
         //     }
         // }, 
 
-        // add dino to cart 
-        addToCart: async ( parent, { dinoId }, context) => {
+        // add accessory to cart 
+        addToCart: async ( parent, { accId }, context) => {
             if (context.user) {
                 const updatedCart = await User.findOneAndUpdate(
                     { _id: context.user._id},
-                    { $addToSet: { cart: dinoId } },
+                    { $addToSet: { cart: accId } },
                     { new: true }
                 ).populate('cart');
             
