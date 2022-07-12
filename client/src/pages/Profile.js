@@ -37,9 +37,10 @@ const Profile = (props) => {
 
     return (
         <div className="profile-container">
-            <UserHero
-                username={user.username}
-            />
+            <h2 className="bg-dark text-secondary p-3 display-inline-block">
+                Welcome {`${user.username}`}!
+            </h2>
+            <UserHero/>
             <LikedDinos></LikedDinos>
         </div>
     )
