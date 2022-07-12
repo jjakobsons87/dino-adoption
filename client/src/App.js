@@ -14,13 +14,13 @@ import { setContext } from '@apollo/client/link/context';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-import Login from '../src/components/Login';
-import Adoption from './pages/Adoption';
+import Cart from './pages/Cart';
 
 // component imports
 import Footer from "./components/Footer/index.js";
 import Header from "./components/Header/Header.js";
-import Cart from './pages/Cart';
+import Login from '../src/components/Login';
+
 
 const httpLink = createHttpLink({
     uri: "/graphql",

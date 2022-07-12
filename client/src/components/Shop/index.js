@@ -178,7 +178,7 @@ function ShopPage(props) {
                             <button className="adoptBtn">Add To Cart</button>
                         </div>
                     </div>
-                </div> ru
+                </div>
 
             </div>
 
