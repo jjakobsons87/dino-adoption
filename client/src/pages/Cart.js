@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Navigate, useParams } from 'react-router-dom';
 
 //components
 import Basket from '../components/Basket';
