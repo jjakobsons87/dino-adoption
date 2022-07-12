@@ -83,9 +83,7 @@ const Signup = () => {
                 value={formState.password}
                 onChange={handleChange}
               />
-              <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur" target="_blank">
-                <button>Dino Quiz</button>
-              </a>
+              <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur" target="_blank">Dino Quiz</a>
               <DropdownButton title="What Dino Are You?" id="dropdown-menu-align-right" onSelect={handleSelect}>
                 <Dropdown.Item eventKey="Tyrannasaurus Rex">Tyrannasaurus Rex</Dropdown.Item>
                 <Dropdown.Item eventKey="Spinosaurus">Spinosaurus</Dropdown.Item>
