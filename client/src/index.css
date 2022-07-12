@@ -184,3 +184,11 @@ footer {
   width: 50%;
   opacity: .4;
 }
+
+.signin {
+  background-color: aqua;
+}
+
+.signup {
+  background-color: aquamarine;
+}

@@ -7,6 +7,7 @@ import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
  import Profile from "../../pages/Profile";
  import Shop from "../Shop/index";
+ import Example from '../Modal/index';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState("Home");
@@ -26,6 +27,9 @@ export default function Header() {
          if (currentPage === "Shop") {
              return <Shop />;
          }
+        //  if (currentPage === "Login") {
+        //     return <Example />;
+        //  }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

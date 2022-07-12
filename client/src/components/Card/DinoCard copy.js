@@ -26,7 +26,6 @@ import {
 
 
 export default function DinoCard() {
-    
 
     const [currentDino, setCurrentDino] = useState();
 
@@ -88,10 +87,23 @@ export default function DinoCard() {
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
         {dinos &&
-            dinos.map((dino,key) => (
-           <SelectedDino
-           key={key}
-           dino={dino} />
+            dinos.map(dino => (
+            <CCard style={{ width: "18rem" }}>
+                <CCardImage orientation="top" src={dino.source} />
+                <CCardBody>
+                    <CCardTitle>{dino.name}</CCardTitle>
+                    <CCardText>
+                        Some quick example text to build on the card title and make
+                        up the bulk of the card's content.
+                    </CCardText>
+                </CCardBody>
+                <CCardBody>
+                    <CButton onClick={() => setCurrentDino(dino.name)}>View Dino</CButton>
+                    {currentDino === dino.name && 
+                    <SelectedDino/>
+                    }   
+                </CCardBody>
+            </CCard>
         ))}
         </div>
     );
