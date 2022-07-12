@@ -6,7 +6,7 @@ import background from "../../assets/images/hero-image.jpg";
 import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
-import Shop from "../Shop/index";
+import Shop from "../../pages/Shop"
 import Login from "../Login/index";
 
 export default function Header() {
