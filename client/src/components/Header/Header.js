@@ -7,6 +7,7 @@ import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
 import Shop from "../../pages/Shop"
+import Cart from "../../pages/Cart";
 import Example from '../Modal/index';
 
 export default function Header(props) {
@@ -24,6 +25,9 @@ export default function Header(props) {
         }
         if (currentPage === "Shop") {
             return <Shop toCart={props.toCart} setToCart={props.setToCart}/>;
+        }
+        if (currentPage === "Cart") {
+            return <Cart toCart={props.toCart} setToCart={props.setToCart}/>;
         }
     };
 

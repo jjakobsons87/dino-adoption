@@ -56,12 +56,12 @@ function App() {
                 />
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
-                        <Routes>
+                        {/* <Routes>
                             <Route path="/shop" element={<Shop />} />
                             <Route path="/home" element={<Home />} />
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/cart" element={<Cart />} />
-                        </Routes>
+                        </Routes> */}
                     </div>
                     <Footer />
                 </div>
