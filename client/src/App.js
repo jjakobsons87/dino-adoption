@@ -45,11 +45,15 @@ const client = new ApolloClient({
 function App() {
 
     const [likedDinos, setLikedDinos] = useState(null);
+    const [toCart, setToCart] = useState(null);
 
     return (
         <ApolloProvider client={client}>
             <Router>
-                <Header likedDinos={likedDinos} setLikedDinos={setLikedDinos} />
+                <Header 
+                  likedDinos={likedDinos} setLikedDinos={setLikedDinos}
+                  toCart={toCart} setToCart={setToCart} 
+                />
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         <Routes>

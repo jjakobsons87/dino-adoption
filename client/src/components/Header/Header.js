@@ -23,7 +23,7 @@ export default function Header(props) {
             return <Profile likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Shop") {
-            return <Shop />;
+            return <Shop toCart={props.toCart} setToCart={props.setToCart}/>;
         }
     };
 
