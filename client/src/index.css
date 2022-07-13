@@ -1,4 +1,7 @@
 /*MainCSS*/
+:root {
+  background-color: rgb(19, 19, 19);
+}
 
 body {
   font-family: 'PT Serif', serif;
@@ -388,4 +391,11 @@ h5 {
   .aboutPro {
     flex-direction: column;
   }
+
+  
 }
+
+root {
+  background-color: rgb(19, 19, 19);
+}
+

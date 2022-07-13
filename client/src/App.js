@@ -8,6 +8,7 @@ import {
     createHttpLink,
 } from "@apollo/client";
 import "./App.css";
+import '../public.
 import { setContext } from '@apollo/client/link/context';
 
 // route imports

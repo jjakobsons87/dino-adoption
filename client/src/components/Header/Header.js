@@ -2,13 +2,10 @@ import React, { useState, Fragment } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
 import Home from "../../pages/Home";
-import background from "../../assets/images/hero-image.jpg";
-import logo2 from "../../assets/images/logocreamcropped2.png";
-import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
 import Shop from "../../pages/Shop"
 import Cart from "../../pages/Cart";
-import Example from '../Modal/index';
+import HeroImage from "./HeroImage";
 
 export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
@@ -40,21 +37,8 @@ export default function Header(props) {
                 handlePageChange={handlePageChange}
                 style={{overflowY:"scroll", height:"800px"}}
             />
-            <div className="border">
-                <img
-                    src={background}
-                    alt="background of a forest"
-                    className="hero"
-                />
-                <div className="logobox">
-                    <img
-                        src={logo2}
-                        className="herotitle2"
-                        alt="dinosaur logo"
-                    />
-                    <img src={logo} className="herotitle" alt="dinosaur logo" />
-                </div>
-            </div>
+            <HeroImage 
+            currentPage={Home}/>
             {renderPage()}
         </Fragment>
     );
