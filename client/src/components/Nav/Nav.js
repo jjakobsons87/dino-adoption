@@ -22,11 +22,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             {Auth.loggedIn() ? (
                 <Navbar className="navbar container-fluid" expand="lg">
                     <Container className="navbar-internal">
-<<<<<<< HEAD
-                        <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
-=======
                         <Navbar.Brand className="super-internal">Home</Navbar.Brand>
->>>>>>> develop
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -44,11 +40,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             ) : (
                 <Navbar className="navbar" expand="lg">
                     <Container className="navbar-internal">
-<<<<<<< HEAD
-                    <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
-=======
                         <Navbar.Brand className="super-internal">Home</Navbar.Brand>
->>>>>>> develop
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
