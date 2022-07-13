@@ -39,33 +39,35 @@ const Cart = (accessory) => {
     };
 
     return (
-        <div className="cart-container">
-            <div className="cart-hero">
-                <CartHero></CartHero>
-            </div>
-            <div className="basket">
-                {/* onAdd adds items to cart */}
-                <Basket 
-                    onAdd={onAdd}
-                    onRemove={onRemove}
-                    cartItems={cartItems}>
-                </Basket>
-            </div>
-            <div className="icons">
-                <div className="cart-icons">
-                    <SiVisa></SiVisa>
+        <div className="cartBody">
+            <div className="cart-container">
+                <div className="cart-hero">
+                    <CartHero></CartHero>
                 </div>
-                <div className="cart-icons">
-                <SiMastercard></SiMastercard>
+                <div className="basket">
+                    {/* onAdd adds items to cart */}
+                    <Basket 
+                        onAdd={onAdd}
+                        onRemove={onRemove}
+                        cartItems={cartItems}>
+                    </Basket>
                 </div>
-                <div className="cart-icons">
-                <SiDiscover></SiDiscover>
-                </div>
-                <div className="cart-icons">
-                <SiAmericanexpress></SiAmericanexpress>
-                </div>
-                <div className="cart-icons">
-                <SiBitcoin></SiBitcoin>
+                <div className="icons ">
+                    <div className="cart-icons">
+                        <SiVisa></SiVisa>
+                    </div>
+                    <div className="cart-icons">
+                    <SiMastercard></SiMastercard>
+                    </div>
+                    <div className="cart-icons">
+                    <SiDiscover></SiDiscover>
+                    </div>
+                    <div className="cart-icons">
+                    <SiAmericanexpress></SiAmericanexpress>
+                    </div>
+                    <div className="cart-icons">
+                    <SiBitcoin></SiBitcoin>
+                    </div>
                 </div>
             </div>
         </div>
