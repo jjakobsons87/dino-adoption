@@ -21,12 +21,12 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
-    dinoQuiz: {
-      type: String
-    },
-    imageURL: {
-      type: String
-    },
+    // dinoQuiz: {
+    //   type: String
+    // },
+    // imageURL: {
+    //   type: String
+    // },
     savedDinos: [
       {
         type: Schema.Types.ObjectId,

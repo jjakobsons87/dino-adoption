@@ -3,7 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
 import Example from '../Modal';
-import Hamburger from '../Hamburger'
+import Hamburger from '../Hamburger';
+import Signup from '../SignUp/signup';
 export default function Navigation({ currentPage, handlePageChange }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -30,6 +31,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Profile")}>My Profile</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</Nav.Link>
+                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Cart")}>Cart</Nav.Link>
                                 <a href="/" onClick={logout}>
                                     Logout
                                 </a>
@@ -47,6 +49,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Login")}><Example /></Nav.Link>
+                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Sign Up")}><Signup /></Nav.Link>
 
                             </Nav>
                         </Navbar.Collapse>
@@ -67,12 +70,6 @@ export default function Navigation({ currentPage, handlePageChange }) {
                     .dynamic-nav {
                         padding-top: ${hamburgerOpen ? '40px' : '20px'};
                         padding-bottom: ${hamburgerOpen ? '20px' : '20px'};
-                }
-                    .portfolio-pic, .title {
-                        display: ${hamburgerOpen ? 'inline' : 'none'};
-                }
-                    footer p {
-                        display: ${hamburgerOpen ? 'inline' : 'none'};
                 }
                 `}</style> */}
         </nav>
