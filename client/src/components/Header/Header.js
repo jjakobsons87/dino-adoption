@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
 import Home from "../../pages/Home";
@@ -8,6 +8,7 @@ import logo from "../../assets/images/logotransparent.png";
  import Profile from "../../pages/Profile";
  import Shop from "../Shop/index";
  import Example from '../Modal/index';
+
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState("Home");
@@ -31,11 +32,12 @@ export default function Header() {
 
     const handlePageChange = (page) => setCurrentPage(page);
     return (
-        <div>
+        <Fragment>
             <Navigation
                 sticky="top"
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
+                style={{overflowY:"scroll", height:"800px"}}
             />
             <div className="border">
                 <img
@@ -53,6 +55,6 @@ export default function Header() {
                 </div>
             </div>
             {renderPage()}
-        </div>
+        </Fragment>
     );
 }

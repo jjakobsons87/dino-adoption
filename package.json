@@ -16,6 +16,8 @@
     "jsonwebtoken": "^8.5.1",
     "mdb-react-ui-kit": "^4.1.0",
     "mongoose": "^6.4.4",
-    "react-router-dom": "^6.3.0"
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5"
   }
 }
