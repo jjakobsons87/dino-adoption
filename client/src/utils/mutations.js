@@ -13,14 +13,13 @@ export const LOGIN_USER = gql`
 `;
 
 export const ADD_USER = gql`
-    mutation addUser($username: String!, $email: String!, $password: String!, $dinoQuiz: String, $imageURL: String) {
-        addUser(username: $username, email: $email, password: $password, dinoQuiz: $dinoQuiz) {
+    mutation addUser($username: String!, $email: String!, $password: String!) {
+        addUser(username: $username, email: $email, password: $password) {
             token
             user {
                 _id
                 username
-                dinoQuiz
-                imageURL
+              
             }
         }
     }
@@ -54,7 +53,6 @@ export const ADD_DINO = gql`
             humanCasualties
             fenceRequirement
             name
-            savedCount
             age
             imageURL
             inventory

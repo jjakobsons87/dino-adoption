@@ -3,7 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
 import Example from '../Modal';
-import Hamburger from '../Hamburger'
+import Hamburger from '../Hamburger';
+import Signup from '../SignUp/signup';
 export default function Navigation({ currentPage, handlePageChange }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -48,6 +49,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Login")}><Example /></Nav.Link>
+                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Sign Up")}><Signup /></Nav.Link>
 
                             </Nav>
                         </Navbar.Collapse>

@@ -1,19 +1,55 @@
+
+//     CButton
+// } from "@coreui/react";
+
+
+// export default function DinoCard() {
+
+//     const [currentDino, setCurrentDino] = useState();
+//     const handleClose = () => setShow(false);
+//     const [show, setShow] = useState(false);
+//     const handleShow = () => setShow(true);
+
+//     const { loading, error, data } = useQuery(QUERY_DINOS);
+
+//     if (loading) return 'Loading...';
+//     if (error) return `Error! ${error.message}`;
+
+//     return (
+//         <div>
+//         {data.dinos.map(dino => (
+//             <CCard style={{ width: "18rem" }}>
+//                 <CCardImage orientation="top" src={dino.imageURL} />
+//                 <CCardBody>
+//                     <CCardTitle>{dino.species}</CCardTitle>
+//                     <CCardText>
+//                         Will you be my mommy?
+//                     </CCardText>
+//                 </CCardBody>
+//                 <CCardBody>
+//                 <CButton  onClick={handleShow}>View Dino</CButton>
+//              {currentDino === dino.name &&
+//     
+//             }   
+//              {/* <Modal show={show} onHide={handleClose}>
+//                 <DinoModel
+//                 show ={show}
+//                 handleClose={handleClose}
+//                 name={dino.name}
+//                 source={dino._id}/>
+//              </Modal> */}
+//                 </CCardBody>
+//             </CCard>
+//         ))}
+//         </div>
+//     );
+// }
+
 import React, {useState} from "react";
-// import DinoList from "../DinoList";
-import SelectedDino from "../SelectedDino";
-import TRexImage from "../../assets/images/trex.jpg";
-import SpinoImage from "../../assets/images/spinosaurus.png";
-import RaptorImage from "../../assets/images/raptor.jpg";
-import DilophImage from "../../assets/images/dilophosaurus.png";
-import AlloImage from "../../assets/images/allosaurus.jpg";
-import AnkylImage from "../../assets/images/ankylosaurus.jpg";
-import BrontoImage from "../../assets/images/brontosaurus.jpg";
-import ParaImage from "../../assets/images/parasaurilophus.jpg";
-import StegaImage from "../../assets/images/stegasaurus.jpg";
-import TriImage from "../../assets/images/Triceratops.jpg";
-import PteroImage from "../../assets/images/pterandon.jpg";
-import PachyImage from "../../assets/images/pachy.jpg";
-// import { Link } from 'react-router-dom';
+import { useQuery } from "@apollo/client"
+import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
+import Modal from 'react-bootstrap/Modal';
+import DinoModel from "../Card/DinoModel";
 import {
     CCard,
     CCardImage,
@@ -25,7 +61,14 @@ import {
 import { useQuery } from "@apollo/client";
 import { QUERY_DINOS } from "../../utils/queries";
 
+
 export default function DinoCard(props) {
+
+    
+    const handleClose = () => setShow(false);
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const [isCardOpen, setIsCardOpen] = useState(false);
 
     const [currentDino, setCurrentDino] = useState();
     const { loading, error, data } = useQuery(QUERY_DINOS);
@@ -33,21 +76,26 @@ export default function DinoCard(props) {
     if (error) return `Error! ${error.message}`;
 
     return (
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+        <div>
         {data.dinos.map(dino => (
             <CCard style={{ width: "18rem" }}>
                 <CCardImage orientation="top" src={dino.imageURL} />
                 <CCardBody>
-                    <CCardTitle>{dino.species}</CCardTitle>
+                    <CCardTitle>{dino.name}</CCardTitle>
                     <CCardText>
                         Will you be my mommy?
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={() => setCurrentDino(dino)}>View Dino</CButton>
-                    {currentDino === dino && 
-                    <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
-                    }   
+                <CButton  onClick={handleShow}>View Dino</CButton>
+                    <Modal show={show} onHide={handleClose}>
+                        <DinoModel
+                        show ={show}
+                        handleClose={handleClose}
+                        name={dino.name}
+                        source={dino._id}/>
+                        <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+                    </Modal>
                 </CCardBody>
             </CCard>
         ))}

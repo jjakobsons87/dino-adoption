@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
 import Home from "../../pages/Home";
@@ -29,11 +29,12 @@ export default function Header(props) {
 
     const handlePageChange = (page) => setCurrentPage(page);
     return (
-        <div>
+        <Fragment>
             <Navigation
                 sticky="top"
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
+                style={{overflowY:"scroll", height:"800px"}}
             />
             <div className="border">
                 <img
@@ -51,6 +52,6 @@ export default function Header(props) {
                 </div>
             </div>
             {renderPage()}
-        </div>
+        </Fragment>
     );
 }
