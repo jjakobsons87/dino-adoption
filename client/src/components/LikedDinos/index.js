@@ -27,10 +27,7 @@ export default function LikedDinos(props) {
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={() => setCurrentDino(dino)}>View Dino</CButton>
-                    {currentDino === dino && 
-                    <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
-                    }   
+                    <CButton onClick={() => setCurrentDino(dino)}>View Dino</CButton> 
                 </CCardBody>
             </CCard>
         ))}
