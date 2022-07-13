@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
+<<<<<<< HEAD
+=======
+import Example from '../Modal';
+>>>>>>> develop
 import Hamburger from '../Hamburger'
-
 export default function Navigation({ currentPage, handlePageChange }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -20,7 +23,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav>
             {Auth.loggedIn() ? (
-                <Navbar className="navbar navbar-fixed-top container-fluid" expand="lg">
+                <Navbar className="navbar container-fluid" expand="lg">
                     <Container className="navbar-internal">
                         <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,8 +47,8 @@ export default function Navigation({ currentPage, handlePageChange }) {
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Login")}>Login</Nav.Link>
+                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Login")}><Example /></Nav.Link>
+
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

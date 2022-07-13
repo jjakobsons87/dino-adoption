@@ -5,9 +5,9 @@ import Home from "../../pages/Home";
 import background from "../../assets/images/hero-image.jpg";
 import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
-import Profile from "../../pages/Profile";
-import Shop from "../Shop/index";
-import Login from "../Login/index";
+ import Profile from "../../pages/Profile";
+ import Shop from "../Shop/index";
+ import Example from '../Modal/index';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState("Home");
@@ -22,14 +22,14 @@ export default function Header() {
             return <Adoption />;
         }
         if (currentPage === "Profile") {
-            return <Profile />;
-        }
-        if (currentPage === "Shop") {
-            return <Shop />;
-        }
-        if (currentPage === "Login") {
-            return <Login />;
-        }
+             return <Profile />;
+         }
+         if (currentPage === "Shop") {
+             return <Shop />;
+         }
+        //  if (currentPage === "Login") {
+        //     return <Example />;
+        //  }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

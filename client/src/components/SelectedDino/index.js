@@ -1,51 +1,55 @@
-// import React, { useState } from 'react';
-// import { useQuery, useLazyQuery } from "@apollo/client"
-// import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
-
-const SelectedDino = (props) => {
-
-    const { dino, onAdd } = props;
-// const SelectedDino = () => {
-
-//     const [isCardOpen, setIsCardOpen] = useState(false);
-
-//     const toggleCard = (image, i) => {
-//         setIsCardOpen(!isCardOpen);
-//     }
-
-//     // const [getDino, { loading, error, data }] = useLazyQuery(QUERY_DINO);
-
-//     if (loading) return 'Loading...';
-//     if (error) return `Error! ${error.message}`;
-
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import DinoModel from "../Card/DinoModel";
+import {
+    CCard,
+    CCardImage,
+    CCardBody,
+    CCardTitle,
+    CCardText,
+    CButton
+} from "@coreui/react";
+const SelectedDino = ({dino}) => {
+    const handleClose = () => setShow(false);
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const [isCardOpen, setIsCardOpen] = useState(false);
+    const toggleCard = (image, i) => {
+        setIsCardOpen(!isCardOpen);
+    }
     return (
-        <div>
-            {/* button to add the dino to the cart/basket */}
-            <div>
-                <button onClick={()=> onAdd(dino)} >Add to Cart</button>
-            </div>
-        </div>
+        <CCard style={{ width: "18rem" }}>
+        <CCardImage orientation="top" src={dino.source} />
+        <CCardBody>
+            <CCardTitle>{dino.name}</CCardTitle>
+            <CCardText>
+                Some quick example text to build on the card title and make
+                up the bulk of the card's content.
+            </CCardText>
+        </CCardBody>
+        <CCardBody>
+            <CButton  onClick={handleShow}>View Dino</CButton>
+            {/* {currentDino === dino.name &&
+            <SelectedDino/>
+            }    */}
+             <Modal show={show} onHide={handleClose}>
+                <DinoModel
+                show ={show}
+                handleClose={handleClose}
+                name={dino.name}
+                source={dino.source}/>
+             </Modal>
+        </CCardBody>
+    </CCard>
     )
 };
-//     return (
-
-//         <div onClick={() => {toggleCard}}
-//             ClassName = "selected-container">
-//             Species: {data.dinos.species}
-//             Name: {data.dinos.name}
-//             Bio: {data.dinos.bio}
-//             Diet: {data.dinos.diet}
-//             Gender: {data.dinos.gender}
-//             Age: {data.dinos.age}
-//             Aggressiveness: {data.dinos.aggressiveness}
-//             Human Casualties: {data.dinos.humanCasualties}
-//             Fence Requirement: {data.dinos.fenceRequirement}
-//             Inventory: {data.dinos.inventory}
-//             # of Times Saved: {data.dinos.savedCount}
-
-//         </div>
-//     )
-// };
-                
-
 export default SelectedDino;
+
+
+
+
+
+
+
+
+
