@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
-
 import Hamburger from '../Hamburger'
 
 export default function Navigation({ currentPage, handlePageChange }) {
@@ -23,7 +22,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             {Auth.loggedIn() ? (
                 <Navbar className="navbar navbar-fixed-top container-fluid" expand="lg">
                     <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal" href="#home">Home</Navbar.Brand>
+                        <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -40,7 +39,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             ) : (
                 <Navbar className="navbar" expand="lg">
                     <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal" href="#home">Home</Navbar.Brand>
+                    <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
