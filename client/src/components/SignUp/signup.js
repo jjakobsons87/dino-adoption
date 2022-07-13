@@ -47,7 +47,7 @@ export default function Signup (props) {
 
   return (
     <>
-    <Button variant="primary" onClick={handleShow}>Sign Up</Button>
+    <Button variant="signupnavbtn" onClick={handleShow}>Sign Up</Button>
     
     <Modal
         show={show}
