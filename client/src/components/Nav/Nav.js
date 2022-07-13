@@ -30,6 +30,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Profile")}>My Profile</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</Nav.Link>
+                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Cart")}>Cart</Nav.Link>
                                 <a href="/" onClick={logout}>
                                     Logout
                                 </a>
@@ -67,12 +68,6 @@ export default function Navigation({ currentPage, handlePageChange }) {
                     .dynamic-nav {
                         padding-top: ${hamburgerOpen ? '40px' : '20px'};
                         padding-bottom: ${hamburgerOpen ? '20px' : '20px'};
-                }
-                    .portfolio-pic, .title {
-                        display: ${hamburgerOpen ? 'inline' : 'none'};
-                }
-                    footer p {
-                        display: ${hamburgerOpen ? 'inline' : 'none'};
                 }
                 `}</style> */}
         </nav>

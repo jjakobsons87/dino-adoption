@@ -1,7 +1,7 @@
 import React from "react";
 import DinoCard from "../Card/DinoCard";
 
-function Adoption() {
+function Adoption(props) {
     return (
         <main id="dinoSale">
             <div id="siteDesc">
@@ -32,7 +32,7 @@ function Adoption() {
                 </div>
             </div>
             <div>
-            <DinoCard />
+            <DinoCard likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
             </div>
         </main>
     );

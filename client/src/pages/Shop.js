@@ -2,7 +2,7 @@ import React from 'react';
 import AccessoryCard from "../components/Card/AccessoryCard";
 
 
-const  Shop = () => {
+const Shop = () => {
     return (
         <main id="dinoSale">
             <div id="accessDesc">
