@@ -51,109 +51,17 @@ const Profile = (props) => {
                     <div className="profile">
                       <UserPhoto/>
                       <br></br>
-                      <h4 className="text-white">Username: {`${user.username}`}</h4>
+                      <h4 className="text-white">Welcome {`${user.username}`}</h4>
                       <br></br>
-                      <h4 className="text-white">Owned Dinosaurs:</h4>
                     </div>
                   </div>
                 </div>
-
                 <div className="col">
                   <div><h5 className="text-white align-top">Liked Dinosaurs</h5>
                   <LikedDinos likedDinos={props.likedDinos} />
                   </div>
                 </div>
-              
               </div>
-
-              <h2 className="sectTitle text-center">Owned Dinosaurs</h2>
-
-              <div className="ownedDinos row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
-
-                <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                      <ul className="ownDinoInfo">
-                        <li>Species:</li>
-                        <li>Diet:</li>
-                        <li>Fence Requirement:</li>
-                        <li>Gender:</li>
-                        <li>Aggressiveness:</li>
-                        <li>Human Casualties:</li>
-                      </ul>
-                </div>
-              </div>
-              <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                    <ul className="ownDinoInfo">
-                      <li>Species:</li>
-                      <li>Diet:</li>
-                      <li>Fence Requirement:</li>
-                      <li>Gender:</li>
-                      <li>Aggressiveness:</li>
-                      <li>Human Casualties:</li>
-                    </ul>
-                </div>
-              </div>
-              <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                    <ul className="ownDinoInfo">
-                      <li>Species:</li>
-                      <li>Diet:</li>
-                      <li>Fence Requirement:</li>
-                      <li>Gender:</li>
-                      <li>Aggressiveness:</li>
-                      <li>Human Casualties:</li>
-                    </ul>
-                  </div>
-                </div>
-              <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                    <ul className="ownDinoInfo">
-                      <li>Species:</li>
-                      <li>Diet:</li>
-                      <li>Fence Requirement:</li>
-                      <li>Gender:</li>
-                      <li>Aggressiveness:</li>
-                      <li>Human Casualties:</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                      <ul className="ownDinoInfo">
-                        <li>Species:</li>
-                        <li>Diet:</li>
-                        <li>Fence Requirement:</li>
-                        <li>Gender:</li>
-                        <li>Aggressiveness:</li>
-                        <li>Human Casualties:</li>
-                      </ul>
-                </div>
-              </div>
-
-              <div className="col">
-                  <div className="profileCard">
-                    <div className ="profilePics"></div>
-                      <ul className="ownDinoInfo">
-                        <li>Species:</li>
-                        <li>Diet:</li>
-                        <li>Fence Requirement:</li>
-                        <li>Gender:</li>
-                        <li>Aggressiveness:</li>
-                        <li>Human Casualties:</li>
-                      </ul>
-                </div>
-              </div>
-          </div>
-
-      </div>
-    )
 };
 
 export default Profile;
