@@ -51,8 +51,8 @@ function App() {
         <ApolloProvider client={client}>
             <Router>
                 <Header 
-                  likedDinos={likedDinos} setLikedDinos={setLikedDinos}
-                  toCart={toCart} setToCart={setToCart} 
+                    likedDinos={likedDinos} setLikedDinos={setLikedDinos}
+                    toCart={toCart} setToCart={setToCart} 
                 />
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">

@@ -7,13 +7,13 @@ function Adoption(props) {
             <div id="siteDesc">
                 <div className="description imageDivs">
                     <h2 className="text-center sectTitle">
-                        The DDAA is here to fullfill all of your Dino-Related
+                        The DDAA is here to fulfill all of your Dino-Related
                         needs!
                     </h2>
                     <p className="text-center">
                         The DDAA, after much work and toil, has finally acquired
                         the much sought after Dino-DNA, and, with the
-                        aquisition, we have also gained the ability to
+                        acquisition, we have also gained the ability to
                         successfully clone our very own Dinosaurs! Who hasn't
                         dreamed of riding a Triceratops to work, or having a
                         Raptor rip your school bully to shreds? ...not that we

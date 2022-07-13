@@ -38,30 +38,27 @@ const Profile = (props) => {
 
     return (
       <div className="profileContainer">
-
-            <div className="profileHeader text-center sectTitle imageDivs">Welcome to the Delusion Dinosaur Adoption Agency! 
-            </div>
-
-            <h2 className="sectTitle text-center">Profile</h2>
-
-              <div className="aboutPro">
-
-                <div className="col">
-                  <div className="profileMainCard">
-                    <div className="profile">
-                      <UserPhoto/>
-                      <br></br>
-                      <h4 className="text-white">Welcome {`${user.username}`}</h4>
-                      <br></br>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div><h5 className="text-white align-top">Liked Dinosaurs</h5>
-                  <LikedDinos likedDinos={props.likedDinos} />
-                  </div>
+        <div className="profileHeader text-center sectTitle imageDivs">Welcome to the Delusion Dinosaur Adoption Agency! 
+        </div>
+        <h2 className="sectTitle text-center">Profile</h2>
+          <div className="aboutPro">
+            <div className="col">
+              <div className="profileMainCard">
+                <div className="profile">
+                  <UserPhoto/>
+                  <br></br>
+                  <h4 className="text-white">Welcome {`${user.username}`}</h4>
+                  <br></br>
                 </div>
               </div>
-};
+            </div>
+            <div className="col">
+              <div><h5 className="text-white align-top">Liked Dinosaurs</h5>
+              <LikedDinos likedDinos={props.likedDinos} />
+            </div>
+          </div>
+        </div>
+      </div>
+)};
 
 export default Profile;
