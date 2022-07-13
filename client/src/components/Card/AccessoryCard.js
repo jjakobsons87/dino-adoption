@@ -14,22 +14,23 @@ import {
 export default function AccessoryCard(props) {
 
     const { loading, error, data } = useQuery(QUERY_ACCESSORIES);
-    const [inCart, setCart] = useState(false);
 
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
     // handle transfer to cart
-    const handleButtonSubmit = async (event) => {
+    const handleButtonSubmit = async (event, accessoryObj) => {
         event.preventDefault();
+        console.log(accessoryObj)
         if (props.toCart && props.toCart.length !== 0) {
             let cart = [...props.toCart]
-            cart.push(props.accessoryId)
+            cart.push(accessoryObj)
             props.setToCart(cart)
         } else {
-            props.setToCart([props.accessoryId])
+            props.setToCart([accessoryObj])
         }
     };
+    console.log(props.toCart)
 
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
@@ -42,7 +43,7 @@ export default function AccessoryCard(props) {
                     <CCardText>{accessory.description}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={handleButtonSubmit} value={inCart}>Add To Cart</CButton>
+                    <CButton onClick={(e) => handleButtonSubmit(e, accessory) } >Add To Cart</CButton>
                 </CCardBody>
             </CCard>
         ))}
