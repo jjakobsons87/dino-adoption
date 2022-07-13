@@ -5,14 +5,13 @@ import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
 import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
-import Login from '../components/Login/index';
+import AdoptionPage from '../components/AdoptionPage';
 import SignUp from '../components/SignUp/signup';
 import Example from '../components/Modal/index';
 
 const Home = () => {
     return (
         <div id="home">
-        <Login />
         <SignUp />
         <main>
             <Example />

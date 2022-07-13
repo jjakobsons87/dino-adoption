@@ -7,13 +7,10 @@ import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
 import Shop from "../../pages/Shop"
-import Login from "../Login/index";
 import Example from '../Modal/index';
 
 export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
-    //   const navigate = useNavigate();
-    //   const authToken = localStorage.getItem(AUTH_TOKEN);
 
     const renderPage = () => {
         if (currentPage === "Home") {
@@ -27,9 +24,6 @@ export default function Header(props) {
         }
         if (currentPage === "Shop") {
             return <Shop />;
-        }
-        if (currentPage === "Login") {
-            return <Login />;
         }
     };
 
