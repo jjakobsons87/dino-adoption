@@ -77,15 +77,10 @@ export const ADD_ACCESSORY = gql`
 `;
 
 export const ADD_FAVORITE = gql`
-    mutation AddToFavorites($dinoId: ID!) {
+    mutation AddToFavorites($id: ID!) {
         addToFavorites(dinoId: $dinoId) {
             _id
-            username
-            savedDinos {
-                _id
-                name
-                species
-            }
+            dinoId
         }
     }
 `;

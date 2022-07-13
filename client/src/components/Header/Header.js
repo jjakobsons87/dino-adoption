@@ -9,7 +9,7 @@ import Profile from "../../pages/Profile";
 import Shop from "../../pages/Shop"
 import Example from '../Modal/index';
 
-export default function Header() {
+export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
 
     const renderPage = () => {
@@ -17,10 +17,10 @@ export default function Header() {
             return <Home />;
         }
         if (currentPage === "Adoption") {
-            return <Adoption />;
+            return <Adoption likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Profile") {
-            return <Profile />;
+            return <Profile likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Shop") {
             return <Shop />;

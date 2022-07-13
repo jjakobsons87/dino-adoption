@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
@@ -14,7 +14,8 @@ const Profile = (props) => {
     const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
       variables: { username: userParam },
     });
-  
+    console.log(data)
+
     const user = data?.me || data?.user || {};
   
     // navigate to personal profile page if username is yours
@@ -45,7 +46,7 @@ const Profile = (props) => {
                     <UserPhoto/>
                 </div>
             </div>
-            <LikedDinos></LikedDinos>
+            <LikedDinos likedDinos={props.likedDinos} />
         </div>
     )
 };
