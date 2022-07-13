@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { QUERY_ACCESSORIES } from "../../../src/utils/queries";
+import { QUERY_ACCESSORIES } from "../../utils/queries";
 
 import {
     CCard,
@@ -31,7 +31,7 @@ export default function AccessoryCard() {
                     <CCardText>{accessory.description}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={() => addToCart }>Add To Cart</CButton>
+                    <CButton>Add To Cart</CButton>
                 </CCardBody>
             </CCard>
         ))}
