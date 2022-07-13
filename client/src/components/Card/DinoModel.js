@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { useQuery } from "@apollo/client"
 //import DinoModelCard from '../Card/DinoModelCard';
 import { MDBCardImage, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
+import { QUERY_DINOS, QUERY_DINO } from "../../utils/queries";
 
 function DinoModel({show, handleClose,name,source}) {
 
+  const [currentDino, setCurrentDino] = useState();
+  const { loading, error, data } = useQuery(QUERY_DINOS);
+
+  if (loading) return 'Loading...';
+  if (error) return `Error! ${error.message}`;
 
   return (
     <>

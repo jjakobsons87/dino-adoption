@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import DinoModel from "../Card/DinoModel";
+import { QUERY_DINOS, QUERY_DINO } from "../../utils/queries";
+import { useQuery } from "@apollo/client"
 
 import {
     CCard,
@@ -11,7 +13,7 @@ import {
     CButton
 } from "@coreui/react";
 
-const SelectedDino = ({dino}) => {
+const SelectedDino = ({dino, source}) => {
 
     const handleClose = () => setShow(false);
     const [show, setShow] = useState(false);
@@ -22,8 +24,16 @@ const SelectedDino = ({dino}) => {
         setIsCardOpen(!isCardOpen);
     }
 
-    return (
+    const [currentDino, setCurrentDino] = useState();
+    const { loading, error, data } = useQuery(QUERY_DINOS);
+  
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+  
 
+    return (
+        <div>
+            {/* {data.dinos.map(dino => ( */}
         <CCard style={{ width: "18rem" }}>
         <CCardImage orientation="top" src={dino.source} />
         <CCardBody>
@@ -47,6 +57,8 @@ const SelectedDino = ({dino}) => {
              </Modal>
         </CCardBody>
     </CCard>
+            {/* ))} */}
+    </div>
     )
 };
                 
