@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_ACCESSORIES } from "../../utils/queries";
 
+
+
 import {
     CCard,
     CCardImage,
@@ -24,10 +26,10 @@ export default function AccessoryCard(props) {
         console.log(accessoryObj)
         if (props.toCart && props.toCart.length !== 0) {
             let cart = [...props.toCart]
-            cart.push(accessoryObj)
+            cart.push([accessoryObj, 1])
             props.setToCart(cart)
         } else {
-            props.setToCart([accessoryObj])
+            props.setToCart([[accessoryObj, 1]])
         }
     };
     console.log(props.toCart)
@@ -43,7 +45,7 @@ export default function AccessoryCard(props) {
                     <CCardText>{accessory.description}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={(e) => handleButtonSubmit(e, accessory) } >Add To Cart</CButton>
+                    <CButton onClick={(e) => handleButtonSubmit(e, accessory) } value={props.toCart}>Add To Cart</CButton>
                 </CCardBody>
             </CCard>
         ))}
