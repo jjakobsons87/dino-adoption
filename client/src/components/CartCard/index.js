@@ -4,6 +4,7 @@ const CartCard = (props) => {
 
     const { toCart, setToCart, item } = props;
     const [quantity, setQuantity] = useState(item[1])
+    let itemValue = parseFloat(item[0].price).toFixed(2)
 
     const onAdd = (accessory) => {
         if (toCart) {
@@ -35,7 +36,13 @@ const CartCard = (props) => {
     return (
         <div key={item._id} className="row">
         <div>
+            {item[0].imageURL}
+        </div>
+        <div>
             {item[0].name}
+        </div>
+        <div>
+            {item[0].description}
         </div>
         <div>
             <button onClick={()=> onAdd(item)} className="add">
@@ -49,7 +56,7 @@ const CartCard = (props) => {
             {quantity}
         </div>
         <div>
-            {quantity * item[0].price.toFixed(2)}
+                ${quantity * itemValue}
         </div>
     </div>
     )
