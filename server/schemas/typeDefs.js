@@ -6,6 +6,8 @@ const typeDefs = gql`
         username: String
         email: String
         dinoCount: Int
+        dinoQuiz: String
+        imageURL: String
         savedDinos: [Dino]
         cart: [Accessory] 
     }
@@ -42,6 +44,7 @@ const typeDefs = gql`
         price: Int
         description: String
         inventory: Int
+        imageURL: String
     }
 
     type Cart {

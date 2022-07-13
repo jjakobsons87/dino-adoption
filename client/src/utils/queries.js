@@ -88,6 +88,7 @@ export const QUERY_USER = gql`
             email
             dinoQuiz
             imageURL
+            dinoCount
             savedDinos {
                 _id
                 name

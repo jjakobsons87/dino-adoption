@@ -7,14 +7,15 @@ import DeadDino from "../../src/assets/homepage/deaddino.webp"
 
 import Login from '../components/Login/index';
 import SignUp from '../components/SignUp/signup';
+import Example from '../components/Modal/index';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
         <Login />
         <SignUp />
         <main>
-
+            <Example />
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
             <nav>

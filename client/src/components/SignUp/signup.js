@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import Auth from '../../utils/auth';
 
@@ -10,6 +13,9 @@ const Signup = () => {
     email: '',
     password: '',
   });
+
+  const [value, setValue] = useState('');
+
   const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
@@ -37,13 +43,19 @@ const Signup = () => {
     }
   };
 
+  const handleSelect=(e)=>{
+    console.log(e);
+    setValue(e);
+  }
+
+
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-md-6">
-        <div className="card">
+        <div className="signup card">
           <h4 className="card-header">Sign Up</h4>
           <div className="card-body">
-            <form onSubmit={handleFormSubmit}>
+            <form className="signup" onSubmit={handleFormSubmit}>
               <input
                 className="form-input"
                 placeholder="Your username"
@@ -71,6 +83,16 @@ const Signup = () => {
                 value={formState.password}
                 onChange={handleChange}
               />
+              <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur" target="_blank">Dino Quiz</a>
+              <DropdownButton title="What Dino Are You?" id="dropdown-menu-align-right" onSelect={handleSelect}>
+                <Dropdown.Item eventKey="Tyrannasaurus Rex">Tyrannasaurus Rex</Dropdown.Item>
+                <Dropdown.Item eventKey="Spinosaurus">Spinosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Apatosaurus">Apatosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Velociraptor">Velociraptor</Dropdown.Item>
+                <Dropdown.Item eventKey="Stegosaurus">Stegosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Triceratops">Triceratops</Dropdown.Item>
+              </DropdownButton>
+              <h4>You selected {value}</h4>
               <button className="btn d-block w-100" type="submit">
                 Submit
               </button>
