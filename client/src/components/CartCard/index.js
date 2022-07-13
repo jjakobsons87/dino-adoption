@@ -35,9 +35,9 @@ const CartCard = (props) => {
 
     return (
         <div key={item._id} className="row">
-        <div>
-            {item[0].imageURL}
-        </div>
+        <img 
+            src={item[0].imageURL} alt={item.name}
+        />
         <div>
             {item[0].name}
         </div>
@@ -56,7 +56,10 @@ const CartCard = (props) => {
             {quantity}
         </div>
         <div>
-                ${quantity * itemValue}
+  
+        </div>
+        <div>
+            <strong>${quantity * itemValue}</strong>
         </div>
     </div>
     )
