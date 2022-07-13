@@ -21,22 +21,22 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
+    // dinoQuiz: {
+    //   type: String
+    // },
+    // imageURL: {
+    //   type: String
+    // },
     savedDinos: [
       {
         type: Schema.Types.ObjectId,
         ref: 'Dino'
       }
     ],
-    // comments: [
-    //   {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Comment'
-    //   }
-    // ],
     cart: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Dino'
+        ref: 'Accessory'
       }
     ]
   },

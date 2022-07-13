@@ -11,25 +11,22 @@ import logo from "../../assets/images/logotransparent.png";
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState("Home");
-//     const navigate = useNavigate();
-//   const authToken = localStorage.getItem(AUTH_TOKEN);
+    //   const navigate = useNavigate();
+    //   const authToken = localStorage.getItem(AUTH_TOKEN);
 
     const renderPage = () => {
         if (currentPage === "Home") {
             return <Home />;
         }
-         if (currentPage === "Adoption") {
-             return <Adoption />;
-         }
+        if (currentPage === "Adoption") {
+            return <Adoption />;
+        }
         if (currentPage === "Profile") {
              return <Profile />;
          }
          if (currentPage === "Shop") {
              return <Shop />;
          }
-        //  if (currentPage === "Login") {
-        //     return <Example />;
-        //  }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -41,12 +38,20 @@ export default function Header() {
                 handlePageChange={handlePageChange}
             />
             <div className="border">
-             <img src={background} alt="background of a forest" className="hero"/>
-             <div className="logobox">
-             <img src= {logo2}className="herotitle2" alt="dinosaur logo"/>
-             <img src= {logo}className="herotitle" alt="dinosaur logo"/>
-             </div>
-             </div>
+                <img
+                    src={background}
+                    alt="background of a forest"
+                    className="hero"
+                />
+                <div className="logobox">
+                    <img
+                        src={logo2}
+                        className="herotitle2"
+                        alt="dinosaur logo"
+                    />
+                    <img src={logo} className="herotitle" alt="dinosaur logo" />
+                </div>
+            </div>
             {renderPage()}
         </div>
     );

@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
 import Example from '../Modal';
+import Hamburger from '../Hamburger'
 export default function Navigation({ currentPage, handlePageChange }) {
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen)
+    }
+    
     const logout = event => {
         event.preventDefault();
         Auth.logout();
@@ -43,6 +51,28 @@ export default function Navigation({ currentPage, handlePageChange }) {
                     </Container>
                 </Navbar>
             )}
+
+            <div className="hamburger" onClick={toggleHamburger}>
+                    <Hamburger isOpen={hamburgerOpen}/>
+                </div>
+                
+                {/* add any additional nav styles here */}
+                {/* <style jsx>{`
+                @media screen and (max-width: 980px) {
+                    .nav-row ul {
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                }
+                    .dynamic-nav {
+                        padding-top: ${hamburgerOpen ? '40px' : '20px'};
+                        padding-bottom: ${hamburgerOpen ? '20px' : '20px'};
+                }
+                    .portfolio-pic, .title {
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                }
+                    footer p {
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                }
+                `}</style> */}
         </nav>
 
     )

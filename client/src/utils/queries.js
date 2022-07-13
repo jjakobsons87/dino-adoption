@@ -15,6 +15,7 @@ export const QUERY_DINOS = gql`
             fenceRequirement
             inventory
             imageURL
+            savedCount
             comments {
                 _id
                 commentBody
@@ -39,6 +40,7 @@ export const QUERY_DINO = gql`
             fenceRequirement
             inventory
             imageURL
+            savedCount
             comments {
                 _id
                 commentBody
@@ -74,6 +76,41 @@ export const QUERY_ACCESSORY = gql`
             description
             inventory
             imageURL
+        }
+    }
+`;
+
+export const QUERY_USER = gql`
+    query user($username: String!) {
+        user(username: $username) {
+            _id
+            username
+            email
+            dinoQuiz
+            imageURL
+            dinoCount
+            savedDinos {
+                _id
+                name
+                species
+                bio
+            }
+            cart {
+                _id
+                name
+                price
+                imageURL
+            }
+        }
+    }
+`;
+
+export const QUERY_ME = gql`
+    {
+        me {
+            _id
+            username
+            email
         }
     }
 `;

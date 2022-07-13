@@ -1,13 +1,13 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const LOGIN_USER = gql`
     mutation login($email: String!, $password: String!) {
         login(email: $email, password: $password) {
-        token
-        user {
-            _id
-            username
-        }
+            token
+            user {
+                _id
+                username
+            }
         }
     }
 `;
@@ -19,6 +19,7 @@ export const ADD_USER = gql`
             user {
                 _id
                 username
+              
             }
         }
     }
@@ -41,8 +42,8 @@ export const ADD_COMMENT = gql`
 `;
 
 export const ADD_DINO = gql`
-    mutation AddDino($bio: String!, $species: String!, $diet: String!, $gender: String!, $aggressiveness: Int!, $humanCasualties: Int!, $fenceRequirement: Int!, $name: String!, $savedCount: Int!, $age: Int!, $inventory: Int!, $imageURL: String!) {
-        addDino(bio: $bio, species: $species, diet: $diet, gender: $gender, aggressiveness: $aggressiveness, humanCasualties: $humanCasualties, fenceRequirement: $fenceRequirement, name: $name, savedCount: $savedCount, age: $age, inventory: $inventory, imageURL: $imageURL) {
+    mutation AddDino($bio: String!, $species: String!, $diet: String!, $gender: String!, $aggressiveness: Int!, $humanCasualties: Int!, $fenceRequirement: Int!, $name: String!,  $age: Int!, $inventory: Int!, $price: Int!, $imageURL: String!) {
+        addDino(bio: $bio, species: $species, diet: $diet, gender: $gender, aggressiveness: $aggressiveness, humanCasualties: $humanCasualties, fenceRequirement: $fenceRequirement, name: $name, age: $age, inventory: $inventory, price: $price, imageURL: $imageURL) {
             _id
             bio
             species
@@ -56,6 +57,7 @@ export const ADD_DINO = gql`
             age
             imageURL
             inventory
+            price
         }
     }
 `;
@@ -69,6 +71,20 @@ export const ADD_ACCESSORY = gql`
             price
             description
             inventory
+        }
+    }
+`;
+
+export const ADD_FAVORITE = gql`
+    mutation AddToFavorites($dinoId: ID!) {
+        addToFavorites(dinoId: $dinoId) {
+            _id
+            username
+            savedDinos {
+                _id
+                name
+                species
+            }
         }
     }
 `;

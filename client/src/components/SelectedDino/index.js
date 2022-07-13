@@ -19,7 +19,6 @@ const SelectedDino = ({dino, source}) => {
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
     const [isCardOpen, setIsCardOpen] = useState(false);
-
     const toggleCard = (image, i) => {
         setIsCardOpen(!isCardOpen);
     }
@@ -35,7 +34,7 @@ const SelectedDino = ({dino, source}) => {
         <div>
             {/* {data.dinos.map(dino => ( */}
         <CCard style={{ width: "18rem" }}>
-        <CCardImage orientation="top" src={dino.source} />
+        <CCardImage orientation="top" src={dino.imageURL} />
         <CCardBody>
             <CCardTitle>{dino.name}</CCardTitle>
             <CCardText>
@@ -45,15 +44,15 @@ const SelectedDino = ({dino, source}) => {
         </CCardBody>
         <CCardBody>
             <CButton  onClick={handleShow}>View Dino</CButton>
-            {/* {currentDino === dino.name && 
+             {currentDino === dino.name &&
             <SelectedDino/>
-            }    */}
+            }   
              <Modal show={show} onHide={handleClose}>
                 <DinoModel
                 show ={show}
                 handleClose={handleClose}
                 name={dino.name}
-                source={dino.source}/>
+                source={dino._id}/>
              </Modal>
         </CCardBody>
     </CCard>
@@ -61,6 +60,13 @@ const SelectedDino = ({dino, source}) => {
     </div>
     )
 };
-                
-
 export default SelectedDino;
+
+
+
+
+
+
+
+
+
