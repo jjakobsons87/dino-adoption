@@ -42,6 +42,7 @@ const typeDefs = gql`
         price: Int
         description: String
         inventory: Int
+        imageURL: String
     }
 
     type Cart {
