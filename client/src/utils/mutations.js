@@ -53,7 +53,6 @@ export const ADD_DINO = gql`
             humanCasualties
             fenceRequirement
             name
-            savedCount
             age
             imageURL
             inventory

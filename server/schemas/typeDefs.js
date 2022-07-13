@@ -29,7 +29,7 @@ const typeDefs = gql`
         humanCasualties: Int
         fenceRequirement: Int
         name: String
-        savedCount: Int
+        price: Int
         age: Int
         inventory: Int
         addedAt: String

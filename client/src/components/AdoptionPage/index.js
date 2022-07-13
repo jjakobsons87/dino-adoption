@@ -1,5 +1,5 @@
 import React from "react";
-import DinoCard from "../Card/DinoCard";
+import DinoCard from "../SelectedDino/index";
 
 function Adoption() {
     return (
