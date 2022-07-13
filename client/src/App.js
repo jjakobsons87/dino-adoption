@@ -14,12 +14,8 @@ import { setContext } from '@apollo/client/link/context';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-<<<<<<< HEAD
-//import Login from '../src/components/Login';
-=======
 import Modal from '../src/components/Modal';
 import Cart from './pages/Cart';
->>>>>>> develop
 import Adoption from './pages/Adoption';
 
 // component imports
