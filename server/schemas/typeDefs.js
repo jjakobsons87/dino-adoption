@@ -71,7 +71,7 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         addComment(dinoId: ID!, commentBody: String!): Dino
         addDino(bio: String!, species: String!, diet: String!, gender: String!, aggressiveness: Int!, humanCasualties: Int!, fenceRequirement: Int!, name: String!, age: Int!, inventory: Int!, price: Int!, imageURL: String!): Dino
-        addAccessory(name: String!, category: String!, price: Int!, description: String!, inventory: Int!): Accessory
+        addAccessory(name: String!, category: String!, price: Int!, description: String!, inventory: Int!, imageURL: String!): Accessory
         addToCart(accId: ID!): User
         addToFavorites(dinoId: ID!): User
     }

@@ -130,7 +130,13 @@ const resolvers = {
                 return updatedUser;
             }
             throw new AuthenticationError('You need to be logged in!');
-        }
+        }, 
+        // remove from cart
+        // removeFromCart: async ( parent, { accId }, context) => {
+        //     if (context.user) {
+        //         const updatedCart = await User.findOne
+        //     }
+        // }
     }
 };
 
