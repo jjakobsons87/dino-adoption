@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
 import Auth from "../../utils/auth";
-<<<<<<< HEAD
-=======
 import Example from '../Modal';
->>>>>>> develop
 import Hamburger from '../Hamburger'
 export default function Navigation({ currentPage, handlePageChange }) {
 
