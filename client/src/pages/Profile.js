@@ -37,17 +37,124 @@ const Profile = (props) => {
     }
 
     return (
-        <div className="profile-container">
-            <div className="user-hero">
-                <h2 className="user-welcome">
-                    Welcome {`${user.username}`}!
-                </h2>
-                <div className="user-photo">
-                    <UserPhoto/>
-                </div>
+      <div className="profileContainer">
+
+            <div className="profileHeader">Welcome to the Delusion Dinosaur Adoption Agency! 
             </div>
-            <LikedDinos likedDinos={props.likedDinos} />
-        </div>
+
+            <h2 className="sectTitle text-center">Profile</h2>
+
+              <div className="aboutPro imageDivs">
+
+                <div className="col">
+                  <div className="profileMainCard">
+                    <div className="profile">
+                      <div className ="profilePics aboutPic">
+                      <UserPhoto/>
+                      </div>
+                      <br></br>
+                      <h4 className="text-white">Username: {`${user.username}`}</h4>
+                      <br></br>
+                      <h4 className="text-white">Owned Dinosaurs:</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col">
+                  <div><h5 className="text-white text-center">Liked Dinosaurs</h5>
+                  <LikedDinos likedDinos={props.likedDinos} />
+                  </div>
+                </div>
+              
+              </div>
+
+              <h2 className="sectTitle text-center">Owned Dinosaurs</h2>
+
+              <div className="ownedDinos row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                      <ul>
+                        <li>Species:</li>
+                        <li>Diet:</li>
+                        <li>Fence Requirement:</li>
+                        <li>Gender:</li>
+                        <li>Aggressiveness:</li>
+                        <li>Human Casualties:</li>
+                      </ul>
+                </div>
+              </div>
+              <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                    <ul>
+                      <li>Species:</li>
+                      <li>Diet:</li>
+                      <li>Fence Requirement:</li>
+                      <li>Gender:</li>
+                      <li>Aggressiveness:</li>
+                      <li>Human Casualties:</li>
+                    </ul>
+                </div>
+              </div>
+              <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                    <ul>
+                      <li>Species:</li>
+                      <li>Diet:</li>
+                      <li>Fence Requirement:</li>
+                      <li>Gender:</li>
+                      <li>Aggressiveness:</li>
+                      <li>Human Casualties:</li>
+                    </ul>
+                  </div>
+                </div>
+              <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                    <ul>
+                      <li>Species:</li>
+                      <li>Diet:</li>
+                      <li>Fence Requirement:</li>
+                      <li>Gender:</li>
+                      <li>Aggressiveness:</li>
+                      <li>Human Casualties:</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                      <ul>
+                        <li>Species:</li>
+                        <li>Diet:</li>
+                        <li>Fence Requirement:</li>
+                        <li>Gender:</li>
+                        <li>Aggressiveness:</li>
+                        <li>Human Casualties:</li>
+                      </ul>
+                </div>
+              </div>
+
+              <div className="col">
+                  <div className="profileCard">
+                    <div className ="profilePics"></div>
+                      <ul>
+                        <li>Species:</li>
+                        <li>Diet:</li>
+                        <li>Fence Requirement:</li>
+                        <li>Gender:</li>
+                        <li>Aggressiveness:</li>
+                        <li>Human Casualties:</li>
+                      </ul>
+                </div>
+              </div>
+          </div>
+
+      </div>
     )
 };
 

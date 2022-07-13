@@ -1,3 +1,5 @@
+/*MainCSS*/
+
 body {
   font-family: 'PT Serif', serif;
   margin: 0;
@@ -133,6 +135,93 @@ footer {
 .adoptBtn[disabled] {
   cursor: default;
   opacity: .8;
+}
+
+/*Profile CSS*/
+.aboutPro {
+  border: 3px solid snow;
+  margin-top: 30;
+  margin-bottom: 30;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+}
+
+.profile {
+  width: 20%
+}
+
+.profileMainCard {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: black;
+  width: 80%;
+  height: 100%;
+}
+
+.profileCard {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: black;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  border: 3px solid snow;
+}
+
+.userWelcome h2 {
+  font-family: 'Graduate', cursive;
+}
+
+.userWelcome h3 {
+  font-family: 'Graduate', cursive;
+}
+
+.profileContainer {
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  border: 5px solid snow;
+}
+
+.profileHeader {
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: rgb(205, 205, 205);
+  height: 5%;
+}
+
+.likedDinos {
+  display: flex;
+  width: 100%;
+}
+
+.likedList {
+  background-color: rgb(205, 205, 205);
+  width: 100%;
+}
+
+.likedText {
+  justify-content: space-around;
+  color: black;
+}
+
+.profilePics {
+    position: relative;
+    left: 95px;
+    background: rgb(205, 205, 205);
+    border-radius: 50%;
+    width: 40%;
+    height: 35%;
+}
+
+h5 {
+  background-color: black;
+  text-align: center;
 }
 
 
