@@ -21,7 +21,6 @@ import Adoption from './pages/Adoption';
 // component imports
 import Footer from "./components/Footer/index.js";
 import Header from "./components/Header/Header.js";
-import Login from '../src/components/Login';
 
 
 const httpLink = createHttpLink({

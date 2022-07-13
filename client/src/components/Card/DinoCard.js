@@ -22,64 +22,16 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-
+import { useQuery } from "@apollo/client";
+import { QUERY_DINOS } from "../../utils/queries";
 
 export default function DinoCard(props) {
 
     const [currentDino, setCurrentDino] = useState();
-    const [dinos] = useState([
-        {
-            name: "Tyrannasaurus Rex",
-            source: TRexImage,
-        },
-        {
-            name: "Spinosaurus",
-            source: SpinoImage,
-        },
-        {
-            name: "Utahraptor",
-            source: RaptorImage,
-        },
-        {
-            name: "Dilophosaurus",
-            source: DilophImage,
-        },
-        {
-            name: "Allosaurus",
-            source: AlloImage,
-        },
-        {
-            name: "Ankylosaurus",
-            source: AnkylImage,
-        },
-        {
-            name: "Brachiosaurus",
-            source: BrontoImage,
-        },
-        {
-            name: "Parasaurilophus",
-            source: ParaImage,
-        },
-        {
-            name: "Stegasaurus",
-            source: StegaImage,
-        },
-        {
-            name: "Triceratops",
-            source: TriImage,
-        },
-        {
-            name: "Pterandon",
-            source: PteroImage,
-        },
-        {
-            name: "Pachycepalosaurus",
-            source: PachyImage,
-        },
-    ]);
-    if(!dinos.length) {
-        return <h3>No Dinos Available</h3>
-    }
+    const { loading, error, data } = useQuery(QUERY_DINOS);
+    if (loading) return "Loading...";
+    if (error) return `Error! ${error.message}`;
+
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
         {data.dinos.map(dino => (
