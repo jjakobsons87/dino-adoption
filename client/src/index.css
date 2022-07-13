@@ -324,18 +324,19 @@ h5 {
   transition-duration: .5s;
 }
 
-/* cart icons */
+/* Cart CSS */
+
 .icons {
   display: flex;
-  
+  background-color: #101010;
+  justify-content: baseline;
+  flex-wrap: wrap;
 }
 .cart-icons {
   font-size: 40px;
   padding-right: 30px;
   color: white;
 }
-
-/* Cart CSS */
 
 .cartBody {
   margin: 0;
