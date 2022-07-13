@@ -1,9 +1,9 @@
 import React from 'react';
-import RaptorBaby from '../../src/assets/homepage/raptorbaby.webp'
+import RaptorBaby from '../../src/assets/homepage/babyraptor.jpg'
 import CaptiveDinos from "../../src/assets/homepage/captivedinos.jpg"
 import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
-import DeadDino from "../../src/assets/homepage/deaddino.webp"
+import DeadDino from "../../src/assets/homepage/deaddino.jpg"
 
 import AdoptionPage from '../components/AdoptionPage';
 import SignUp from '../components/SignUp/signup';

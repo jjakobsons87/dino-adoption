@@ -20,6 +20,7 @@ const Cart = (props) => {
     }
 
     return (
+      <div className="cartBody">
         <div className="cart-container">
             <div className="cart-hero">
                 <CartHero></CartHero>
@@ -72,6 +73,7 @@ const Cart = (props) => {
                 </div>
                 <div className="cart-icons">
                     <SiBitcoin></SiBitcoin>
+              </div>
                 </div>
             </div>
         </div>
