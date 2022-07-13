@@ -5,6 +5,7 @@ const CartCard = (props) => {
     const { toCart, setToCart, item } = props;
     const [quantity, setQuantity] = useState(item[1])
     let itemValue = parseFloat(item[0].price).toFixed(2)
+    let shipping = 5;
 
     const onAdd = (accessory) => {
         if (toCart) {
@@ -35,9 +36,9 @@ const CartCard = (props) => {
 
     return (
         <div key={item._id} className="row">
-        <div>
-            {item[0].imageURL}
-        </div>
+        <img 
+            src={item[0].imageURL} alt={item.name}
+        />
         <div>
             {item[0].name}
         </div>
@@ -53,10 +54,17 @@ const CartCard = (props) => {
             </button>
         </div>
         <div className="quantity">
-            {quantity}
+            Quantity: {quantity}
         </div>
         <div>
-                ${quantity * itemValue}
+            Item Cost: ${quantity * itemValue}
+        </div>
+        <div>
+            
+            Shipping: ${shipping}
+        </div>
+        <div>
+            <strong>Due At Checkout: ${quantity * itemValue + shipping}</strong>
         </div>
     </div>
     )
