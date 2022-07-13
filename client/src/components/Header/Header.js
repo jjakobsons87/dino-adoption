@@ -5,29 +5,26 @@ import Home from "../../pages/Home";
 import background from "../../assets/images/hero-image.jpg";
 import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
- import Profile from "../../pages/Profile";
- import Shop from "../Shop/index";
- import Example from '../Modal/index';
+import Profile from "../../pages/Profile";
+import Shop from "../../pages/Shop"
+import Example from '../Modal/index';
 
-
-export default function Header() {
+export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
-    //   const navigate = useNavigate();
-    //   const authToken = localStorage.getItem(AUTH_TOKEN);
 
     const renderPage = () => {
         if (currentPage === "Home") {
             return <Home />;
         }
         if (currentPage === "Adoption") {
-            return <Adoption />;
+            return <Adoption likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Profile") {
-             return <Profile />;
-         }
-         if (currentPage === "Shop") {
-             return <Shop />;
-         }
+            return <Profile likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
+        }
+        if (currentPage === "Shop") {
+            return <Shop />;
+        }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

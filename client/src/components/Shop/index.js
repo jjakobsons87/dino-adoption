@@ -16,14 +16,17 @@ import Meat from "../../assets/accessories/meat.jpg"
 import TreatBoxes from "../../assets/accessories/treatboxes.jpg"
 import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
-function ShopPage() {
+function ShopPage(props) {
+
+    const { accessory, onAdd } = props;
+
     return (
 
         <main id="dinoSale">
-             <div id="accessDesc">
+            <div id="accessDesc">
                 <div className="description imageDivs">
                     <h2 className="text-center sectTitle">Accessories for your dinosaur</h2>
-                    <p className="text-center">The DDAA also supplies many different "accessories" to help you both maintain and keep total control over your dinosaur. These are dangerous animals; afterall- it would be ashame if these got out and hurt somebody. These will help you avoid any unpleasant circumstances that could be brought on by these animals. 
+                    <p className="text-center">The DDAA also supplies many different "accessories" to help you both maintain and keep total control over your dinosaur. These are dangerous animals; after all- it would be a shame if these got out and hurt somebody. These will help you avoid any unpleasant circumstances that could be brought on by these animals. 
                     <br></br><br></br>
                     Sizes may vary.
                     </p>
@@ -45,8 +48,9 @@ function ShopPage() {
                             />
                 
                         <div className="card-body">
-                            <h3 className="dinoName">Dino Harness $129.99</h3>    
-                            <button className="adoptBtn">Add To Cart</button>
+                            <h3 className="dinoName">Dino Harness $129.99</h3>  
+                            {/* button to add the dino to the cart/basket */}
+                            <button className="adoptBtn" onClick={()=> onAdd(accessory)} >Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +178,7 @@ function ShopPage() {
                             <button className="adoptBtn">Add To Cart</button>
                         </div>
                     </div>
-                </div> ru
+                </div>
 
             </div>
 

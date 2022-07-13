@@ -4,6 +4,9 @@ import Modal from 'react-bootstrap/Modal';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import Form from 'react-bootstrap/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import Auth from '../../utils/auth';
 
@@ -18,6 +21,9 @@ export default function Signup (props) {
     email: '',
     password: '',
   });
+
+  const [value, setValue] = useState('');
+
   const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
@@ -44,6 +50,12 @@ export default function Signup (props) {
       console.error(e);
     }
   };
+
+  const handleSelect=(e)=>{
+    console.log(e);
+    setValue(e);
+  }
+
 
   return (
     <>
@@ -105,6 +117,21 @@ export default function Signup (props) {
                 autoFocus
                 />
             </Form.Group>
+            <form>
+              <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur" target="_blank">Dino Quiz</a>
+              <DropdownButton title="What Dino Are You?" id="dropdown-menu-align-right" onSelect={handleSelect}>
+                <Dropdown.Item eventKey="Tyrannasaurus Rex">Tyrannasaurus Rex</Dropdown.Item>
+                <Dropdown.Item eventKey="Spinosaurus">Spinosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Apatosaurus">Apatosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Velociraptor">Velociraptor</Dropdown.Item>
+                <Dropdown.Item eventKey="Stegosaurus">Stegosaurus</Dropdown.Item>
+                <Dropdown.Item eventKey="Triceratops">Triceratops</Dropdown.Item>
+              </DropdownButton>
+              <h4>You selected {value}</h4>
+              <button className="btn d-block w-100" type="submit">
+                Submit
+              </button>
+            </form>
 
           <Button variant="secondary" onClick={handleClose}>
             Close

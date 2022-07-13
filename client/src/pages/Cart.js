@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
-import { Navigate, useParams } from 'react-router-dom';
 
 //components
 import Basket from '../components/Basket';
 import CartHero from '../components/CartHero';
 
-const Cart = (props) => {
+// icons
+import { SiVisa, SiMastercard, SiDiscover, SiAmericanexpress, SiBitcoin } from "react-icons/si";
+
+const Cart = (accessory) => {
 
     const [cartItems, setCartItems] = useState([]);
-    const onAdd = (dino) => {
-        const exist = cartItems.find(x=> x.id === dino.id);
+    const onAdd = (accessory) => {
+        const exist = cartItems.find(x=> x.id === accessory.id);
         if(exist) {
             setCartItems(
                 cartItems.map((x) =>
-                    x.id === dino.id ? {...exist, qty: exist.qty + 1} : x
+                    x.id === accessory.id ? {...exist, qty: exist.qty + 1} : x
                 )
             );
         } else {
-            setCartItems([...cartItems, {...dino, qty: 1 }]);
+            setCartItems([...cartItems, {...accessory, qty: 1 }]);
         }
     };
 
-    const onRemove = ( dino ) => {
-        const exist = cartItems.find((x) => x.id === dino.id);
+    const onRemove = ( accessory ) => {
+        const exist = cartItems.find((x) => x.id === accessory.id);
         // if 1 remove it from the list
         if(exist.qty === 1) {
-            setCartItems(cartItems.filter((x) => x.id !== dino.id))
+            setCartItems(cartItems.filter((x) => x.id !== accessory.id))
             // if greater than 1 decrease the quantity
         } else {
             setCartItems(
                 cartItems.map((x) =>
-                    x.id === dino.id ? {...exist, qty: exist.qty - 1} : x
+                    x.id === accessory.id ? {...exist, qty: exist.qty - 1} : x
                 )
             );
         }
@@ -48,6 +50,23 @@ const Cart = (props) => {
                     onRemove={onRemove}
                     cartItems={cartItems}>
                 </Basket>
+            </div>
+            <div className="icons">
+                <div className="cart-icons">
+                    <SiVisa></SiVisa>
+                </div>
+                <div className="cart-icons">
+                <SiMastercard></SiMastercard>
+                </div>
+                <div className="cart-icons">
+                <SiDiscover></SiDiscover>
+                </div>
+                <div className="cart-icons">
+                <SiAmericanexpress></SiAmericanexpress>
+                </div>
+                <div className="cart-icons">
+                <SiBitcoin></SiBitcoin>
+                </div>
             </div>
         </div>
     )

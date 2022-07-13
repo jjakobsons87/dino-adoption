@@ -50,7 +50,6 @@ import { useQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 import Modal from 'react-bootstrap/Modal';
 import DinoModel from "../Card/DinoModel";
-
 import {
     CCard,
     CCardImage,
@@ -59,9 +58,11 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
+import { useQuery } from "@apollo/client";
+import { QUERY_DINOS } from "../../utils/queries";
 
 
-export default function DinoCard() {
+export default function DinoCard(props) {
 
     
     const handleClose = () => setShow(false);
@@ -70,10 +71,8 @@ export default function DinoCard() {
     const [isCardOpen, setIsCardOpen] = useState(false);
 
     const [currentDino, setCurrentDino] = useState();
-
     const { loading, error, data } = useQuery(QUERY_DINOS);
-
-    if (loading) return 'Loading...';
+    if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
     return (
@@ -89,14 +88,14 @@ export default function DinoCard() {
                 </CCardBody>
                 <CCardBody>
                 <CButton  onClick={handleShow}>View Dino</CButton>
-             
-             <Modal show={show} onHide={handleClose}>
-                <DinoModel
-                show ={show}
-                handleClose={handleClose}
-                name={dino.name}
-                source={dino._id}/>
-             </Modal>
+                    <Modal show={show} onHide={handleClose}>
+                        <DinoModel
+                        show ={show}
+                        handleClose={handleClose}
+                        name={dino.name}
+                        source={dino._id}/>
+                        <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+                    </Modal>
                 </CCardBody>
             </CCard>
         ))}

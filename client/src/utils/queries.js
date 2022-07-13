@@ -111,6 +111,12 @@ export const QUERY_ME = gql`
             _id
             username
             email
+            savedDinos {
+                _id
+                name
+                species
+                bio
+            }
         }
     }
 `;
