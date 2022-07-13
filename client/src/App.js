@@ -46,7 +46,7 @@ function App() {
 
     const [likedDinos, setLikedDinos] = useState(null);
     const [toCart, setToCart] = useState(null);
-
+    console.log(toCart)
     return (
         <ApolloProvider client={client}>
             <Router>
