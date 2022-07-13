@@ -39,12 +39,12 @@ const Profile = (props) => {
     return (
       <div className="profileContainer">
 
-            <div className="profileHeader">Welcome to the Delusion Dinosaur Adoption Agency! 
+            <div className="profileHeader text-center sectTitle imageDivs">Welcome to the Delusion Dinosaur Adoption Agency! 
             </div>
 
             <h2 className="sectTitle text-center">Profile</h2>
 
-              <div className="aboutPro imageDivs">
+              <div className="aboutPro">
 
                 <div className="col">
                   <div className="profileMainCard">
