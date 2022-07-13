@@ -8,8 +8,6 @@ const LikeButton = ({ dinoId, user, likedDinos, setLikedDinos }) => {
     const [liked, setLiked] = useState(false);
     const [addLike, { error }] = useMutation(ADD_FAVORITE);
 
-    console.log(likedDinos)
-
     const handleButtonSubmit = async (event) => {
         event.preventDefault();
 
