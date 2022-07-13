@@ -7,7 +7,7 @@ import CartHero from '../components/CartHero';
 // icons
 import { SiVisa, SiMastercard, SiDiscover, SiAmericanexpress, SiBitcoin } from "react-icons/si";
 
-const Cart = (accessory) => {
+const Cart = (props) => {
 
     const [cartItems, setCartItems] = useState([]);
     const onAdd = (accessory) => {
@@ -39,35 +39,35 @@ const Cart = (accessory) => {
     };
 
     return (
-        <div className="cartBody">
-            <div className="cart-container">
-                <div className="cart-hero">
-                    <CartHero></CartHero>
+      <div className="cartBody">
+        <div className="cart-container">
+            <div className="cart-hero">
+                <CartHero></CartHero>
+            </div>
+            <div className="basket">
+                {/* onAdd adds items to cart */}
+                {props.toCart &&
+                    <Basket
+                        toCart={props.toCart}
+                    />
+                }
+            </div>
+            <div className="icons">
+                <div className="cart-icons">
+                    <SiVisa></SiVisa>
                 </div>
-                <div className="basket">
-                    {/* onAdd adds items to cart */}
-                    <Basket 
-                        onAdd={onAdd}
-                        onRemove={onRemove}
-                        cartItems={cartItems}>
-                    </Basket>
-                </div>
-                <div className="icons ">
-                    <div className="cart-icons">
-                        <SiVisa></SiVisa>
-                    </div>
-                    <div className="cart-icons">
+                <div className="cart-icons">
                     <SiMastercard></SiMastercard>
-                    </div>
-                    <div className="cart-icons">
+                </div>
+                <div className="cart-icons">
                     <SiDiscover></SiDiscover>
-                    </div>
-                    <div className="cart-icons">
+                </div>
+                <div className="cart-icons">
                     <SiAmericanexpress></SiAmericanexpress>
-                    </div>
-                    <div className="cart-icons">
+                </div>
+                <div className="cart-icons">
                     <SiBitcoin></SiBitcoin>
-                    </div>
+              </div>
                 </div>
             </div>
         </div>
