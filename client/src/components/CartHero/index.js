@@ -5,6 +5,7 @@ const CartHero = () => {
         <header>
             <div>
                 <h1>Shopping Cart</h1>
+                <hr></hr>
             </div>
             <div></div>
         </header>
