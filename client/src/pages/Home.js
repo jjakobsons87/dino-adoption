@@ -12,7 +12,7 @@ import Example from '../components/Modal/index';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
         <Login />
         <SignUp />
         <main>
