@@ -139,7 +139,6 @@ footer {
 
 /*Profile CSS*/
 .aboutPro {
-  border: 3px solid snow;
   margin-top: 30;
   margin-bottom: 30;
   display: flex;
@@ -187,7 +186,6 @@ footer {
   width: 90%;
   margin: auto;
   background-color: black;
-  border: 5px solid snow;
 }
 
 .profileHeader {
