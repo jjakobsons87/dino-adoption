@@ -329,8 +329,10 @@ h5 {
 .icons {
   display: flex;
   background-color: #101010;
-  justify-content: baseline;
+  justify-content: space-around;
   flex-wrap: wrap;
+  border-radius: 5%;
+  
 }
 .cart-icons {
   font-size: 40px;
