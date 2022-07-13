@@ -58,8 +58,7 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-import { useQuery } from "@apollo/client";
-import { QUERY_DINOS } from "../../utils/queries";
+import SelectedDino from "../SelectedDino";
 
 
 export default function DinoCard(props) {
