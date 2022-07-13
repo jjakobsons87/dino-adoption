@@ -18,7 +18,6 @@ import WaterBowl from "../../assets/accessories/waterbowl.jpg"
 
 function ShopPage(props) {
 
-    const { accessory, onAdd } = props;
 
     return (
 
@@ -50,7 +49,7 @@ function ShopPage(props) {
                         <div className="card-body">
                             <h3 className="dinoName">Dino Harness $129.99</h3>  
                             {/* button to add the dino to the cart/basket */}
-                            <button className="adoptBtn" onClick={()=> onAdd(accessory)} >Add to Cart</button>
+                            <button className="adoptBtn">Add to Cart</button>
                         </div>
                     </div>
                 </div>
