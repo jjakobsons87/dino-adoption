@@ -195,21 +195,6 @@ footer {
   height: 5%;
 }
 
-.likedDinos {
-  display: flex;
-  width: 100%;
-}
-
-.likedList {
-  background-color: rgb(205, 205, 205);
-  width: 100%;
-}
-
-.likedText {
-  justify-content: space-around;
-  color: black;
-}
-
 .profilePics {
     position: relative;
     left: 95px;
@@ -217,6 +202,14 @@ footer {
     border-radius: 50%;
     width: 40%;
     height: 35%;
+}
+
+.ownDinoInfo {
+  float: left;
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 15px;
+  color: silver;
 }
 
 h5 {
@@ -309,18 +302,6 @@ h5 {
 }
 
 /* user welcome styles */
-.user-hero {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.user-welcome {
-  margin-left: 2.5%;
-  padding-top: 4%;
-  padding-right: 25%;
-  color: white;
-}
 
 .avatar {
   position: relative;
@@ -372,6 +353,10 @@ h5 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .aboutPro {
+    flex-direction: column;
   }
 
 }

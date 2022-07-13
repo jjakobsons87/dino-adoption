@@ -49,9 +49,7 @@ const Profile = (props) => {
                 <div className="col">
                   <div className="profileMainCard">
                     <div className="profile">
-                      <div className ="profilePics aboutPic">
                       <UserPhoto/>
-                      </div>
                       <br></br>
                       <h4 className="text-white">Username: {`${user.username}`}</h4>
                       <br></br>
@@ -61,7 +59,7 @@ const Profile = (props) => {
                 </div>
 
                 <div className="col">
-                  <div><h5 className="text-white text-center">Liked Dinosaurs</h5>
+                  <div><h5 className="text-white align-top">Liked Dinosaurs</h5>
                   <LikedDinos likedDinos={props.likedDinos} />
                   </div>
                 </div>
@@ -75,7 +73,7 @@ const Profile = (props) => {
                 <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                      <ul>
+                      <ul className="ownDinoInfo">
                         <li>Species:</li>
                         <li>Diet:</li>
                         <li>Fence Requirement:</li>
@@ -88,7 +86,7 @@ const Profile = (props) => {
               <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                    <ul>
+                    <ul className="ownDinoInfo">
                       <li>Species:</li>
                       <li>Diet:</li>
                       <li>Fence Requirement:</li>
@@ -101,7 +99,7 @@ const Profile = (props) => {
               <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                    <ul>
+                    <ul className="ownDinoInfo">
                       <li>Species:</li>
                       <li>Diet:</li>
                       <li>Fence Requirement:</li>
@@ -114,7 +112,7 @@ const Profile = (props) => {
               <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                    <ul>
+                    <ul className="ownDinoInfo">
                       <li>Species:</li>
                       <li>Diet:</li>
                       <li>Fence Requirement:</li>
@@ -128,7 +126,7 @@ const Profile = (props) => {
                 <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                      <ul>
+                      <ul className="ownDinoInfo">
                         <li>Species:</li>
                         <li>Diet:</li>
                         <li>Fence Requirement:</li>
@@ -142,7 +140,7 @@ const Profile = (props) => {
               <div className="col">
                   <div className="profileCard">
                     <div className ="profilePics"></div>
-                      <ul>
+                      <ul className="ownDinoInfo">
                         <li>Species:</li>
                         <li>Diet:</li>
                         <li>Fence Requirement:</li>
