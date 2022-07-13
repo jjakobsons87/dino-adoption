@@ -4,22 +4,21 @@ import { ADD_FAVORITE } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 import { Button, Icon } from 'semantic-ui-react'
 
-const LikeButton = ({ dinoId, user }) => {
+const LikeButton = ({ dinoId, user, likedDinos, setLikedDinos }) => {
     const [liked, setLiked] = useState(false);
     const [addLike, { error }] = useMutation(ADD_FAVORITE);
 
-    const handleChange = (event) => {
-        if (event) {
-            setLiked();
-            // if liked, fill
-            <button>
-                <Icon name="heart" />
-            </button>
+    console.log(likedDinos)
+
+    const handleButtonSubmit = async (event) => {
+        event.preventDefault();
+
+        if (likedDinos && likedDinos.length !== 0) {
+            let favorites = [...likedDinos]
+            favorites.push(dinoId)
+            setLikedDinos(favorites)
         } else {
-            // if not liked, empty
-            <button>
-                <Icon name="heart" />
-            </button>
+            setLikedDinos([dinoId])
         }
 
         if (!user?.username) {
@@ -29,12 +28,8 @@ const LikeButton = ({ dinoId, user }) => {
                 <Icon name="heart" />
             </Button>
             );
-          }
-    };
+        }
 
-    const handleButtonSubmit = async (event) => {
-        event.preventDefault();
-        
         try {
             await addLike({
                 variables: { dinoId }
@@ -46,7 +41,7 @@ const LikeButton = ({ dinoId, user }) => {
 
     return(
         <div>
-            <button onClick={handleChange} value={liked} onSubmit={handleButtonSubmit}>
+            <button onClick={handleButtonSubmit} value={liked}>
                 Favorite
             </button>
             {error && <div>Something went wrong...</div>}

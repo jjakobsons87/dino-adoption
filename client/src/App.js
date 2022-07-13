@@ -15,6 +15,7 @@ import Profile from './pages/Profile';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
+import Adoption from './pages/Adoption';
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -42,18 +43,21 @@ const client = new ApolloClient({
 });
 
 function App() {
+
+  const [likedDinos, setLikedDinos] = useState(null);
+
     return (
         <ApolloProvider client={client}>
             <Router>
-                <Header />
+                <Header likedDinos={likedDinos} setLikedDinos={setLikedDinos} />
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         <Routes>
                             <Route path="/login" element={<Login/>} />
-                            <Route path="/shop" element={<Shop />} />
+                            <Route path="/shop" element={<Shop/>} />
                             <Route path="/home" element={<Home/>} />
                             <Route path="/profile" element={<Profile />} />
-                            <Route path="/cart" element={<Cart />} />
+                            <Route path="/cart" element={<Cart/>} />
                         </Routes>
                     </div>
                     <Footer />

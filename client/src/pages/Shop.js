@@ -2,7 +2,7 @@ import React from 'react';
 
 import ShopPage from "../components/Shop/index";
 
-const  Shop = () => {
+const Shop = () => {
     return (
         <div>
             <main>

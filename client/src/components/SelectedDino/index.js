@@ -6,7 +6,7 @@ import React, { useContext, useState, useMutation } from 'react';
 //import components
 import LikeButton from '../LikeButton';
 
-const SelectedDino = () => {
+const SelectedDino = (props) => {
 
 
     
@@ -26,7 +26,7 @@ const SelectedDino = () => {
     return (
         <div>
             <div>
-                <LikeButton />
+                <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
             </div>
         </div>
     )

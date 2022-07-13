@@ -110,19 +110,11 @@ export const QUERY_ME = gql`
             _id
             username
             email
-            dinoQuiz
-            imageURL
             savedDinos {
                 _id
                 name
                 species
                 bio
-            }
-            cart {
-                _id
-                name
-                price
-                imageURL
             }
         }
     }

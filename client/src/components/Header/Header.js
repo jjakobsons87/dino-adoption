@@ -9,7 +9,7 @@ import Profile from "../../pages/Profile";
 import Shop from "../Shop/index";
 import Login from "../Login/index";
 
-export default function Header() {
+export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
     //   const navigate = useNavigate();
     //   const authToken = localStorage.getItem(AUTH_TOKEN);
@@ -19,10 +19,10 @@ export default function Header() {
             return <Home />;
         }
         if (currentPage === "Adoption") {
-            return <Adoption />;
+            return <Adoption likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Profile") {
-            return <Profile />;
+            return <Profile likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Shop") {
             return <Shop />;

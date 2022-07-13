@@ -13,7 +13,7 @@ import {
 } from "@coreui/react";
 
 
-export default function DinoCard() {
+export default function DinoCard(props) {
 
     const [currentDino, setCurrentDino] = useState();
 
@@ -34,9 +34,9 @@ export default function DinoCard() {
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <CButton onClick={() => setCurrentDino(dino._id)}>View Dino</CButton>
-                    {currentDino === dino._id && 
-                    <SelectedDino/>
+                    <CButton onClick={() => setCurrentDino(dino)}>View Dino</CButton>
+                    {currentDino === dino && 
+                    <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
                     }   
                 </CCardBody>
             </CCard>
