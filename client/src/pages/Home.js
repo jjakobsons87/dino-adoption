@@ -12,7 +12,6 @@ import Example from '../components/Modal/index';
 const Home = () => {
     return (
         <div id="home">
-        <SignUp />
         <main>
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
