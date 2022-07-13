@@ -15,7 +15,7 @@ function DinoModel({show, handleClose,name,source, dinos}) {
   if (error) return `Error! ${error.message}`;
 
   return (
-    <>
+    <div>
         <Modal.Header closeButton>
         <MDBCardTitle></MDBCardTitle>
         </Modal.Header>
@@ -40,7 +40,7 @@ function DinoModel({show, handleClose,name,source, dinos}) {
           </Button>
         </Modal.Footer>
       {/* </Modal> */}
-    </>
+    </div>
   );
 }
 

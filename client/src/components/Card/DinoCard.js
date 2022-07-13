@@ -1,16 +1,4 @@
-// import React, {useState} from "react";
-// import SelectedDino from "../SelectedDino";
-// import { useQuery } from "@apollo/client"
-// import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
-// import Modal from 'react-bootstrap/Modal';
-// import DinoModel from "../Card/DinoModel";
 
-// import {
-//     CCard,
-//     CCardImage,
-//     CCardBody,
-//     CCardTitle,
-//     CCardText,
 //     CButton
 // } from "@coreui/react";
 
@@ -41,7 +29,7 @@
 //                 <CCardBody>
 //                 <CButton  onClick={handleShow}>View Dino</CButton>
 //              {currentDino === dino.name &&
-//             <SelectedDino/>
+//     
 //             }   
 //              {/* <Modal show={show} onHide={handleClose}>
 //                 <DinoModel
@@ -58,7 +46,6 @@
 // }
 
 import React, {useState} from "react";
-import SelectedDino from "../SelectedDino";
 import { useQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 import Modal from 'react-bootstrap/Modal';
@@ -95,16 +82,14 @@ export default function DinoCard() {
             <CCard style={{ width: "18rem" }}>
                 <CCardImage orientation="top" src={dino.imageURL} />
                 <CCardBody>
-                    <CCardTitle>{dino.species}</CCardTitle>
+                    <CCardTitle>{dino.name}</CCardTitle>
                     <CCardText>
                         Will you be my mommy?
                     </CCardText>
                 </CCardBody>
                 <CCardBody>
                 <CButton  onClick={handleShow}>View Dino</CButton>
-             {currentDino === dino.name &&
-            <SelectedDino/>
-            }   
+             
              <Modal show={show} onHide={handleClose}>
                 <DinoModel
                 show ={show}

@@ -13,7 +13,9 @@ export default function Login (props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ 
+    email: '',
+    password: '' });
   const [login, { error }] = useMutation(LOGIN_USER);
 
   const handleChange = (event) => {
