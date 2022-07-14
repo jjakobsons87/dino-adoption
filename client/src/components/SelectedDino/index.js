@@ -33,14 +33,14 @@ const SelectedDino = (props) => {
             {/* {currentDino === dino.name &&
             <SelectedDino/>
             }    */}
-            <Modal show={show} onHide={handleClose}>
+            {/* <Modal show={show} onHide={handleClose}>
                 <DinoModel
                 show ={show}
                 handleClose={handleClose}
                 name={props.dino.name}
                 source={props.dino.source}/>
                 <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
-            </Modal>
+            </Modal> */}
         </CCardBody>
     </CCard>
     )
