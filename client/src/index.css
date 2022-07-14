@@ -269,6 +269,10 @@ h5 {
   background-color: rgb(205, 205, 205);
 }
 
+.nav-link {
+  
+}
+
 
 .hero {
   background-repeat: no-repeat;
@@ -281,6 +285,10 @@ h5 {
   height: 20%;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0 95%);
+}
+
+.relative {
+  position: relative;
 }
 
 .border {
@@ -525,7 +533,6 @@ root {
 .navbar {
 background-color: transparent;
 background: transparent;
-height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -537,23 +544,31 @@ top:0;
 z-index: 10;
 }
 
- /* @media screen and (max-width: 960px) {
-	.navbar {
-    transition: 0.8s all ease
-  }
-};  */
-
 .cardbody {
   background-color: purple;
 }
 
-.log {
-    margin-left: 750px;
+.login {
+    margin-left: 75%;
 }
 
-.login {
-    margin-left: 800px;
+.log {
+  position: sticky;
+  float: right;
+  margin-top: 8px;
 }
+
+@media screen and (max-width: 1200px) {
+  .login {
+    margin-left: 0;
+  }
+}; 
+
+@media screen and (max-width: 990) {
+  .log {
+    margin-left: 0;
+  }
+}; 
 
 .signup {
     position: right;
