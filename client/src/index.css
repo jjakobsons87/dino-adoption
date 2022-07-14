@@ -585,9 +585,13 @@ z-index: 10;
 }
 
 .dinoh1 {
-  background-color: white;
   text-decoration: none;
   font-style: normal;
+}
+
+.card-title {
+  margin-top: 10px;
+  color: white;
 }
 
 .infodino {

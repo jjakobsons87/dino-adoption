@@ -36,7 +36,7 @@ export default function AccessoryCard(props) {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 dinodiv">
         {data.accessories.map(accessory => (
             <CCard style={{ width: "18rem" }} className="dinocard">
-                 <CCardTitle><h2 className="dinoh1">{accessory.name}</h2></CCardTitle>
+                 <CCardTitle><h2 className="dinoh2">{accessory.name}</h2></CCardTitle>
                 <CCardImage orientation="top" className="dinoimage" src={accessory.imageURL} />
                 <CCardBody>
                 <CCardText><p className="dinospecifictitle">Price</p> {accessory.price}</CCardText>
