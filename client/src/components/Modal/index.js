@@ -50,7 +50,7 @@ export default function Login (props) {
 
   return (
     <>
-      <Button variant="loginnavbtn" onClick={handleShow}>
+      <Button className="login" variant="loginnavbtn" onClick={handleShow}>
        Login
       </Button>
 

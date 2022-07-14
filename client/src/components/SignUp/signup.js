@@ -59,7 +59,7 @@ export default function Signup (props) {
 
   return (
     <>
-    <Button variant="signupnavbtn" onClick={handleShow}>Sign Up</Button>
+    <Button className="signup" variant="signupnavbtn" onClick={handleShow}>Sign Up</Button>
     
     <Modal
         show={show}
