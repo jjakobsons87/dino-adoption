@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 import DinoModel from "../Card/DinoModel";
 import LikeButton from '../LikeButton';
 import {
@@ -8,7 +8,7 @@ import {
     CCardBody,
     CCardTitle,
     CCardText,
-    CButton
+    CButton,
 } from "@coreui/react";
 const SelectedDino = (props) => {
     const handleClose = () => setShow(false);
@@ -17,7 +17,7 @@ const SelectedDino = (props) => {
     const [isCardOpen, setIsCardOpen] = useState(false);
     const toggleCard = (image, i) => {
         setIsCardOpen(!isCardOpen);
-    }
+    };
     return (
         <CCard style={{ width: "18rem" }}>
         <CCardImage orientation="top" src={props.dino.source} />
@@ -33,25 +33,16 @@ const SelectedDino = (props) => {
             {/* {currentDino === dino.name &&
             <SelectedDino/>
             }    */}
-            <Modal show={show} onHide={handleClose}>
+            {/* <Modal show={show} onHide={handleClose}>
                 <DinoModel
                 show ={show}
                 handleClose={handleClose}
                 name={props.dino.name}
                 source={props.dino.source}/>
-                {/* <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/> */}
-            </Modal>
+                <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+            </Modal> */}
         </CCardBody>
     </CCard>
     )
 };
 export default SelectedDino;
-
-
-
-
-
-
-
-
-
