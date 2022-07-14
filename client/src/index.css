@@ -476,3 +476,29 @@ z-index: 10;
   background-color: white;
   text-decoration: none;
 }
+
+.infodino {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.h4species {
+  padding: 0px;
+  margin: 0px;
+}
+
+.age {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dinoimage {
+  padding: 10px;
+}
+
+.dinospecifictitle {
+  font-weight: bold;
+  padding:0%;
+  margin: 0px;
+}
