@@ -27,11 +27,15 @@ p {
 ul {
   font-family: graduate, cursive;
   list-style: none;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 18px;
   font-weight: bolder;
-  background-color: #676767;
+  background-color: #142B0A;
   border: 2px solid black;
+}
+
+li {
+  color: silver;
 }
 
 footer {
@@ -81,7 +85,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  background-color: #2b2c2d;
+  background-color: #142B0A;
   border: 30px solid rgb(0, 0, 0);
   box-shadow: 10px 10px 7px #cdcdcd;
 }
