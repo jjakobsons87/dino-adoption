@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { ADD_FAVORITE } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
-import { Button, Icon } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react';
+import { CButton } from '@coreui/react'
 
 const LikeButton = ({ dinoId, user, likedDinos, setLikedDinos }) => {
     const [liked, setLiked] = useState(false);
@@ -38,10 +39,11 @@ const LikeButton = ({ dinoId, user, likedDinos, setLikedDinos }) => {
     }
 
     return(
+        
         <div>
-            <button onClick={handleButtonSubmit} value={liked}>
+            <CButton color="success" variant="outline" onClick={handleButtonSubmit} value={liked}>
                 Favorite
-            </button>
+            </CButton>
             {error && <div>Something went wrong...</div>}
         </div>
     )

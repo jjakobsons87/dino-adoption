@@ -101,6 +101,7 @@ export default function Login (props) {
             <br></br>
             <Button
               className="btn d-block w-100"
+              variant="success"
               type="submit"
               onClick={handleFormSubmit}
             >
