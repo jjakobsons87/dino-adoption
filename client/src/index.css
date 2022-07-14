@@ -32,8 +32,9 @@ footer {
   flex: 1;
   align-items: center;
   margin-top: 50px;
-  background-color: black;
-  border: 5px solid whitesmoke;
+  background-color: whitesmoke;
+  color: black;
+
 }
 
 .mainPageTitle {
