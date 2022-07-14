@@ -7,7 +7,7 @@ import {
     InMemoryCache,
     createHttpLink,
 } from "@apollo/client";
-import "./App.css";
+import '../src/index.css';
 import { setContext } from '@apollo/client/link/context';
 
 // route imports
@@ -46,7 +46,6 @@ function App() {
 
     const [likedDinos, setLikedDinos] = useState(null);
     const [toCart, setToCart] = useState(null);
-
     return (
         <ApolloProvider client={client}>
             <Router>

@@ -1,4 +1,7 @@
 /*MainCSS*/
+:root {
+  background-color: rgb(19, 19, 19);
+}
 
 body {
   font-family: 'PT Serif', serif;
@@ -35,7 +38,18 @@ footer {
 
 .mainPageTitle {
   font-family: 'Graduate', cursive;
-  color: lightgrey;
+  color: black;
+}
+
+.removeBlue {
+    color: black;
+    text-decoration: none;
+}
+
+.removeBlue:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 .sectTitle {
@@ -56,7 +70,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  background-color: black;
+  background-color: #142B0A;
   border: 1px solid snow;
 }
 
@@ -65,7 +79,7 @@ footer {
   margin: auto;
   margin-top: 70px;
   border: 1px solid whitesmoke;
-  background-color: black;
+  background-color: #142B0A;
 }
 
 .imageDivs {
@@ -224,7 +238,7 @@ h5 {
   background-color: white;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -237,12 +251,7 @@ h5 {
   margin: auto;
   top: 0;
   /* background-color: rgb(205, 205, 205); */
-}
 
-.navbar scrolled{
-  background-color: aqua;
-  transform: inherit;
-}
 
 .hero {
   height: 35%;
@@ -388,4 +397,82 @@ h5 {
   .aboutPro {
     flex-direction: column;
   }
+
+  
+}
+
+root {
+  background-color: rgb(19, 19, 19);
+}
+
+
+.navbar{
+  background-color: transparent;
+}
+
+.navbar.colorChange{
+  background-color: rgb(205, 205, 205);
+}
+
+.navbar {
+background-color: transparent;
+background: transparent;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+/* Fix your navbar by using below two lines of code */
+position: sticky;
+top:0;
+/* Fix your navbar by using above two lines of code */
+z-index: 10;
+}
+
+ /* @media screen and (max-width: 960px) {
+	.navbar {
+    transition: 0.8s all ease
+  }
+};  */
+
+.cardbody {
+  background-color: purple;
+}
+
+.log {
+    margin-left: 750px;
+}
+
+.login {
+    margin-left: 800px;
+}
+
+.signup {
+    position: right;
+}
+
+.dinocardparent {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.dinodiv {
+  margin: 10px;
+  width: 70%;
+  
+}
+
+.dinocard {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
+  box-shadow: 10px 10px 7px #676767;
+}
+
+.dinoh1 {
+  background-color: white;
+  text-decoration: wavy;
 }

@@ -31,7 +31,7 @@ function Adoption(props) {
                     </p>
                 </div>
             </div>
-            <div>
+            <div className="dinocardparent">
             <DinoCard likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
             </div>
         </main>

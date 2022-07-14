@@ -32,7 +32,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</Nav.Link>
                                 <Nav.Link className="super-internal" onClick={() => handlePageChange("Cart")}>Cart</Nav.Link>
-                                <a href="/" onClick={logout}>
+                                <a className="removeBlue log" href="/" onClick={logout}>
                                     Logout
                                 </a>
                             </Nav>
@@ -75,16 +75,4 @@ export default function Navigation({ currentPage, handlePageChange }) {
         </nav>
 
     )
-}
-
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
-        document.getElementById("navbar").style.background = "#501e27";
-    } else {
-
-        document.getElementById("navbar").style.background = "none";
-    }
 }

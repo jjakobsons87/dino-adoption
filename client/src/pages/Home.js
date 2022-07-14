@@ -1,29 +1,26 @@
 import React from 'react';
+import '../index.css';
 import RaptorBaby from '../../src/assets/homepage/babyraptor.jpg'
 import CaptiveDinos from "../../src/assets/homepage/captivedinos.jpg"
 import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
 import DeadDino from "../../src/assets/homepage/deaddino.jpg"
 
-import AdoptionPage from '../components/AdoptionPage';
-import SignUp from '../components/SignUp/signup';
-import Example from '../components/Modal/index';
 
 const Home = () => {
     return (
         <div id="home">
-        <SignUp />
         <main>
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
             <nav>
                 <ul className="nav flex-row justify-content-center justify-content-around">
-                    <li className="nav-item"><a href="#siteDesc">The DDAA</a></li>
-                    <li className="nav-item"><a href="#infantAdopt">Infant Adoption</a></li>
-                    <li className="nav-item"><a href="#captDinos">Captivity and Breeding</a></li>
-                    <li className="nav-item"><a href="#dinoVar">Dino Variety</a></li>
-                    <li className="nav-item"><a href="#escape">Escape Protocol</a></li>
-                    <li className="nav-item"><a href="#future">The Future</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#siteDesc">The DDAA</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#infantAdopt">Infant Adoption</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#captDinos">Captivity and Breeding</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#dinoVar">Dino Variety</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#escape">Escape Protocol</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#future">The Future</a></li>
                 </ul>
             </nav>
 
