@@ -359,6 +359,8 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
+  width: 100%;
 }
 
 .cart-hero h1 {
