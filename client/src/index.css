@@ -25,6 +25,7 @@ p {
 }
 
 ul {
+  font-family: graduate, cursive;
   list-style: none;
   text-decoration: underline;
   font-size: 18px;
