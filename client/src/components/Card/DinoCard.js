@@ -12,7 +12,6 @@ import {
     CCardText,
     CButton,
 } from "@coreui/react";
-import SelectedDino from "../SelectedDino";
 
 
 export default function DinoCard(props) {
