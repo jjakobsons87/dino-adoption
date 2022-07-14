@@ -34,38 +34,43 @@ const CartCard = (props) => {
     };
 
     return (
-        <div key={item._id} className="row">
-        <img 
-            src={item[0].imageURL} alt={item.name}
-        />
-        <div>
-            {item[0].name}
+        <div key={item._id} className="cart-flex">
+            <div className="cart-img">
+                <img 
+                    src={item[0].imageURL} alt={item.name}
+                />
+            </div>
+
+            <div className="cart-data">
+                <div className="cart-item-name">
+                    {item[0].name}
+                </div>
+                <div>
+                    {item[0].description}
+                </div>
+                <div>
+                    <button onClick={()=> onAdd(item)} className="add">
+                        +
+                    </button>
+                    <button onClick={()=> onRemove(item)} className="remove">
+                        -
+                    </button>
+                </div>
+                <div className="quantity">
+                    Quantity: {quantity}
+                </div>
+                <div>
+                    Item Cost: ${quantity * itemValue}
+                </div>
+                <div>
+                    
+                    Shipping: ${shipping}
+                </div>
+                <div>
+                    <strong>Due At Checkout: ${quantity * itemValue + shipping}</strong>
+                </div>
+            </div>
         </div>
-        <div>
-            {item[0].description}
-        </div>
-        <div>
-            <button onClick={()=> onAdd(item)} className="add">
-                +
-            </button>
-            <button onClick={()=> onRemove(item)} className="remove">
-                -
-            </button>
-        </div>
-        <div className="quantity">
-            Quantity: {quantity}
-        </div>
-        <div>
-            Item Cost: ${quantity * itemValue}
-        </div>
-        <div>
-            
-            Shipping: ${shipping}
-        </div>
-        <div>
-            <strong>Due At Checkout: ${quantity * itemValue + shipping}</strong>
-        </div>
-    </div>
     )
 };
 
