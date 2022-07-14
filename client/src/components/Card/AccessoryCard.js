@@ -33,14 +33,14 @@ export default function AccessoryCard(props) {
     };
 
     return (
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 dinodiv">
         {data.accessories.map(accessory => (
-            <CCard style={{ width: "18rem" }}>
-                <CCardImage orientation="top" src={accessory.imageURL} />
+            <CCard style={{ width: "18rem" }} className="dinocard">
+                 <CCardTitle><h2 className="dinoh1">{accessory.name}</h2></CCardTitle>
+                <CCardImage orientation="top" className="dinoimage" src={accessory.imageURL} />
                 <CCardBody>
-                    <CCardTitle>{accessory.name}</CCardTitle>
-                    <CCardText>{accessory.price}</CCardText>
-                    <CCardText>{accessory.description}</CCardText>
+                <CCardText><p className="dinospecifictitle">Price</p> {accessory.price}</CCardText>
+                <CCardText><p className="dinospecifictitle">Item Description</p> {accessory.description}</CCardText>
                 </CCardBody>
                 <CCardBody>
                     <CButton onClick={(e) => handleButtonSubmit(e, accessory) } value={props.toCart}>Add To Cart</CButton>

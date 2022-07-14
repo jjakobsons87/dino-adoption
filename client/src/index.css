@@ -464,20 +464,23 @@ z-index: 10;
   display: flex;
   flex-wrap: flex;
   justify-content: space-around;
-  margin: 10px;
+  margin: 10px;  
 }
 
 .dinodiv {
   margin: 20px;
-  width: 70%;
+  text-align: center;
+  width: 100%;
   padding: 20px;
+  background-color: rgb(239, 240, 239);
+  border-radius: 50px;
 }
 
 .dinocard {
   display: flex;
   flex-wrap: wrap;
   margin: 15px;
-  align-items: center;
+
   box-shadow: 10px 10px 7px #676767;
 }
 
