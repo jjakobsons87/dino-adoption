@@ -450,3 +450,29 @@ z-index: 10;
 .signup {
     position: right;
 }
+
+.dinocardparent {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.dinodiv {
+  margin: 10px;
+  width: 70%;
+  
+}
+
+.dinocard {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
+  box-shadow: 10px 10px 7px #676767;
+}
+
+.dinoh1 {
+  background-color: white;
+  text-decoration: wavy;
+}

@@ -19,20 +19,26 @@ export default function DinoCard(props) {
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
+
     return (
-        
-        <div className="row row-cols-lg-3 g-5">
+        <div className="row row-cols-6 dinodiv">
             {data.dinos.map((dino) => (
-            <CCard style={{ width: "18rem" }}>
+            <CCard style={{ width: "25rem" }} className="dinocard">
+                <CCardTitle><h1 className="dinoh1">{dino.name}</h1></CCardTitle>
+                <CCardText>{dino.species}</CCardText>
+                <CCardText>Age: {dino.age} Years</CCardText>
                 <CCardImage orientation="top" src={dino.imageURL} />
-                    <CCardBody>
-                    <CCardTitle>{dino.name}</CCardTitle>
-                    <CCardText>About me: {dino.bio}</CCardText>
-                    <CCardText>Age: {dino.age}</CCardText>
-                    <CCardText>Species: {dino.species}</CCardText>
-                    <CCardText>Diet: {dino.diet}</CCardText>
-                    <CCardText></CCardText>
-                    <CCardText></CCardText>
+                <CCardBody>
+                <CCardText>Gender: {dino.gender}</CCardText>
+                <CCardText>Aggressiveness: {dino.aggressiveness}</CCardText>
+                <CCardText>Diet: {dino.diet}</CCardText>
+                <CCardText>Fence Requirement: {dino.fenceRequirement}</CCardText>
+                <CCardText>Human's Casualities: {dino.humanCasualties} in lifespan</CCardText>
+                <CCardText></CCardText>
+                <CCardText>About me</CCardText>
+                <CCardText>{dino.bio}</CCardText>
+                </CCardBody>
+                <CCardBody>
                     <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
                 </CCardBody>
             </CCard>
