@@ -283,6 +283,10 @@ h5 {
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0 95%);
 }
 
+.relative {
+  position: relative;
+}
+
 .border {
   background-color: rgb(49, 49, 49);
   opacity: 0.75;
@@ -525,7 +529,6 @@ root {
 .navbar {
 background-color: transparent;
 background: transparent;
-height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -536,12 +539,6 @@ top:0;
 /* Fix your navbar by using above two lines of code */
 z-index: 10;
 }
-
- /* @media screen and (max-width: 960px) {
-	.navbar {
-    transition: 0.8s all ease
-  }
-};  */
 
 .cardbody {
   background-color: purple;
@@ -554,6 +551,12 @@ z-index: 10;
 .login {
     margin-left: 800px;
 }
+
+@media screen and (max-width: 1200px) {
+  .login {
+    margin-left: 0;
+}
+}; 
 
 .signup {
     position: right;

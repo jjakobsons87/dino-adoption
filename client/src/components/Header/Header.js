@@ -36,8 +36,10 @@ export default function Header(props) {
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
-            <HeroImage 
-            currentPage={Home}/>
+            <div className="relative">
+                <HeroImage 
+                currentPage={Home}/>
+            </div>
             {renderPage()}
         </Fragment>
     );
