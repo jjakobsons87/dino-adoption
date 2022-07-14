@@ -24,7 +24,7 @@ export default function DinoCard(props) {
         <div className="row row-cols-6 dinodiv">
             {data.dinos.map((dino) => (
             <CCard style={{ width: "23rem" }} className="dinocard">
-                <CCardTitle><h1 className="dinoh1">{dino.name}</h1></CCardTitle>
+                <CCardTitle><h2 className="dinoh1">{dino.name}</h2></CCardTitle>
                 <CCardText className="h4species"><h4>{dino.species}</h4></CCardText>
                 <CCardText className="age">{dino.age} Years Old</CCardText>
                 <CCardImage orientation="top" className="dinoimage" src={dino.imageURL} />
@@ -33,14 +33,13 @@ export default function DinoCard(props) {
                 <CCardText><p className="dinospecifictitle">Aggression</p> {dino.aggressiveness}</CCardText>
                 <CCardText><p className="dinospecifictitle">Diet</p>{dino.diet}</CCardText>
                 </CCardBody>
-                <CCardBody>
-                <CCardText><p className="dinospecifictitle">Fence Strength</p> {dino.fenceRequirement}</CCardText>
+                <CCardBody className="row row-cols-2 infodino">
+                <CCardText><p className="dinospecifictitle">Fence Strength</p> {dino.fenceRequirement} out of 10</CCardText>
                 <CCardText><p className="dinospecifictitle">Human Casualities:</p>{dino.humanCasualties} in lifespan</CCardText>
                 </CCardBody>
                 <CCardBody>
-                <CCardText></CCardText>
-                <CCardText>About me</CCardText>
-                <CCardText>{dino.bio}</CCardText>
+                <CCardText><p className="dinospecifictitle">About Me</p></CCardText>
+                <CCardText className="dinobio">{dino.bio}</CCardText>
                 </CCardBody>
                 <CCardBody>
                     <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
