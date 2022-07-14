@@ -26,14 +26,15 @@ p {
 
 ul {
   list-style: none;
+  text-decoration: underline;
 }
 
 footer {
   flex: 1;
   align-items: center;
   margin-top: 50px;
-  background-color: black;
-  border: 5px solid whitesmoke;
+  background-color: #2b2c2d;
+  border: 5px solid rgb(0, 0, 0);
 }
 
 .mainPageTitle {
@@ -66,20 +67,20 @@ footer {
 }
 
 .aboutSect {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  background-color: #142B0A;
-  border: 1px solid snow;
+  background-color: #2b2c2d;
+  border: 10px solid rgb(18, 18, 18);
 }
 
 .description {
-  width: 85%;
+  width: 90%;
   margin: auto;
   margin-top: 70px;
-  border: 1px solid whitesmoke;
-  background-color: #142B0A;
+  border: 10px solid rgb(18, 18, 18);
+  background-color: #2b2c2d;
 }
 
 .imageDivs {
@@ -170,7 +171,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  background-color: black;
+  background-color: #2b2c2d;
   width: 80%;
 }
 
@@ -179,7 +180,7 @@ footer {
   margin-right: auto;
   margin-bottom: 30px;
   display: block;
-  background-color: black;
+  background-color: #2b2c2d;
   width: 230px;
   height: 350px;
   text-align: center;
@@ -197,7 +198,7 @@ footer {
 .profileContainer {
   width: 90%;
   margin: auto;
-  background-color: black;
+  background-color: #2b2c2d;
 }
 
 .profileHeader {
