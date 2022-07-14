@@ -15,6 +15,8 @@ const Profile = (props) => {
       variables: { username: userParam },
     });
 
+    console.log(props.likedDinos)
+
     const user = data?.me || data?.user || {};
   
     // navigate to personal profile page if username is yours
@@ -61,7 +63,11 @@ const Profile = (props) => {
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
               </div>
+=======
+            </div>
+>>>>>>> develop
 )};
 
 export default Profile;
