@@ -35,7 +35,18 @@ footer {
 
 .mainPageTitle {
   font-family: 'Graduate', cursive;
-  color: lightgrey;
+  color: black;
+}
+
+.removeBlue {
+    color: black;
+    text-decoration: none;
+}
+
+.removeBlue:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 .sectTitle {
@@ -56,7 +67,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  background-color: black;
+  background-color: #142B0A;
   border: 1px solid snow;
 }
 
@@ -65,7 +76,7 @@ footer {
   margin: auto;
   margin-top: 70px;
   border: 1px solid whitesmoke;
-  background-color: black;
+  background-color: #142B0A;
 }
 
 .imageDivs {
