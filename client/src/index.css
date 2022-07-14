@@ -459,9 +459,9 @@ z-index: 10;
 }
 
 .dinodiv {
-  margin: 10px;
+  margin: 20px;
   width: 70%;
-  
+  padding: 20px;
 }
 
 .dinocard {
@@ -474,5 +474,5 @@ z-index: 10;
 
 .dinoh1 {
   background-color: white;
-  text-decoration: wavy;
+  text-decoration: none;
 }
