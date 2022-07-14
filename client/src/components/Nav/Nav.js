@@ -1,14 +1,34 @@
-import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import { Container, Nav } from 'react-bootstrap';
+import React, { useState, Fragment } from 'react';
 import Auth from "../../utils/auth";
 import Example from '../Modal';
 import Hamburger from '../Hamburger';
 import Signup from '../SignUp/signup';
 import logo from '../../assets/images/logotransparentmini.png';
+import {FaBars} from 'react-icons/fa';
+import {
+    Nav,
+    NavContainer,
+    NavLogo,
+    NavItem,
+    NavLinks,
+    NavMenu
+} from './NavStyle';
+import '../../index.css';
+
+
 export default function Navigation({ currentPage, handlePageChange }) {
 
+    const [colorChange, setColorchange] = useState(false);
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const changeNavbarColor = () =>{
+        if(window.scrollY >= 80){
+            setColorchange(true);
+        } 
+        else{
+            setColorchange(false);
+        }
+    };
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen)
@@ -18,44 +38,45 @@ export default function Navigation({ currentPage, handlePageChange }) {
         event.preventDefault();
         Auth.logout();
     };
+    window.addEventListener('scroll', changeNavbarColor);
 
     return (
         <nav>
             {Auth.loggedIn() ? (
-                <Navbar className="navbar container-fluid" expand="lg">
-                    <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal"><img src={logo}></img></Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Profile")}>My Profile</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Cart")}>Cart</Nav.Link>
+                <Nav className={colorChange ? 'navbar colorChange':  'navbar'} expand="lg">
+                    <NavContainer className="navbar-internal">
+                        <NavLogo className="super-internal"><img src={logo}></img></NavLogo>
+                        <Nav.Toggle aria-controls="basic-navbar-nav" />
+                        <Nav.Collapse className="super-internal" id="basic-navbar-nav">
+                            <NavMenu className="me-auto">
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Home")}>Home</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Profile")}>My Profile</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Shop")}>Shop</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Cart")}>Cart</NavLinks>
                                 <a href="/" onClick={logout}>
                                     Logout
                                 </a>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
+                            </NavMenu>
+                        </Nav.Collapse>
+                    </NavContainer>
+                </Nav>
             ) : (
-                <Navbar className="navbar" expand="lg">
-                    <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal">Home</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Home")}>Home</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Login")}><Example /></Nav.Link>
-                                <Nav.Link className="super-internal" onClick={() => handlePageChange("Sign Up")}><Signup /></Nav.Link>
+                <Nav className="navbar" expand="lg">
+                    <NavContainer className="navbar-internal">
+                        <NavLogo className="super-internal">Home</NavLogo>
+                        <Nav.Toggle aria-controls="basic-navbar-nav" />
+                        <Nav.Collapse className="super-internal" id="basic-navbar-nav">
+                            <NavMenu className="me-auto">
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Home")}>Home</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Adoption")}>Adoptable Dinosaurs</NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Login")}><Example /></NavLinks>
+                                <NavLinks className="super-internal" onClick={() => handlePageChange("Sign Up")}><Signup /></NavLinks>
 
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
+                            </NavMenu>
+                        </Nav.Collapse>
+                    </NavContainer>
+                </Nav>
             )}
 
             <div className="hamburger" onClick={toggleHamburger}>

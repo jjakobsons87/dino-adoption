@@ -35,8 +35,8 @@ export default function Header(props) {
                 sticky="top"
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
-                style={{overflowY:"scroll", height:"800px"}}
             />
+            <div style={{overflowY:"scroll", height:"800px"}}></div>
             <HeroImage 
             currentPage={Home}/>
             {renderPage()}

@@ -227,7 +227,7 @@ h5 {
   background-color: white;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -240,12 +240,7 @@ h5 {
   margin: auto;
   top: 0;
   /* background-color: rgb(205, 205, 205); */
-}
 
-.navbar scrolled{
-  background-color: aqua;
-  transform: inherit;
-}
 
 .hero {
   height: 35%;
@@ -399,3 +394,11 @@ root {
   background-color: rgb(19, 19, 19);
 }
 
+
+.navbar{
+  background-color: transparent;
+}
+
+.navbar.colorChange{
+  background-color: #000;
+}
