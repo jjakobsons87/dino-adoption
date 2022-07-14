@@ -439,6 +439,14 @@ z-index: 10;
   background-color: purple;
 }
 
-.logout {
+.log {
     margin-left: 750px;
+}
+
+.login {
+    margin-left: 800px;
+}
+
+.signup {
+    position: right;
 }
