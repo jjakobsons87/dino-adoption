@@ -269,10 +269,9 @@ h5 {
   background-color: rgb(205, 205, 205);
 }
 
-.nav-link {
-  
+.removeBlue {
+  padding-left: 5px;
 }
-
 
 .hero {
   background-repeat: no-repeat;
@@ -558,10 +557,26 @@ z-index: 10;
   margin-top: 8px;
 }
 
+.signup {
+  position: right;
+}
+
+.btn-signupnavbtn {
+  margin-left: 20px;
+}
+
+.btn {
+  padding-top: 0 !important;
+}
+
 @media screen and (max-width: 1200px) {
   .login {
     margin-left: 0;
   }
+  .btn-signupnavbtn {
+    margin-left: 0;
+  }
+  
 }; 
 
 @media screen and (max-width: 990) {
@@ -570,9 +585,7 @@ z-index: 10;
   }
 }; 
 
-.signup {
-    position: right;
-}
+
 
 .dinocardparent {
   display: flex;
