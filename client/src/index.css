@@ -73,6 +73,7 @@ footer {
   margin-top: 70px;
   background-color: #142B0A;
   border: 1px solid snow;
+  box-shadow: 10px 10px 7px #cdcdcd;
 }
 
 .description {
@@ -514,4 +515,16 @@ z-index: 10;
 .dinobio {
   padding: 0px;
   margin: 0px;
+}
+
+.mainmenu {
+box-shadow: 10px 10px 10px #e1e1e1;
+}
+
+#captDinos,
+#dinoVar,
+#infantAdopt,
+#escape,
+#future {
+  box-shadow: 10px 10px 10px #e1e1e1;
 }
