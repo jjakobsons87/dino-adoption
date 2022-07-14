@@ -438,3 +438,7 @@ z-index: 10;
 .cardbody {
   background-color: purple;
 }
+
+.logout {
+    margin-left: 750px;
+}
