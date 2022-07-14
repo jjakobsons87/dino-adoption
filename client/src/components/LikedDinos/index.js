@@ -1,17 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 
 import {
     CCard,
     CCardImage,
     CCardBody,
-    CCardTitle,
-    CCardText,
-    CButton
+    CCardTitle
 } from "@coreui/react";
 
 export default function LikedDinos(props) {
-
-    const [currentDino, setCurrentDino] = useState();
 
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
