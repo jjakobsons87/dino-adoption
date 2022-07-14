@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_ACCESSORIES } from "../../utils/queries";
 
@@ -23,7 +23,6 @@ export default function AccessoryCard(props) {
     // handle transfer to cart
     const handleButtonSubmit = async (event, accessoryObj) => {
         event.preventDefault();
-        console.log(accessoryObj)
         if (props.toCart && props.toCart.length !== 0) {
             let cart = [...props.toCart]
             cart.push([accessoryObj, 1])
@@ -32,7 +31,6 @@ export default function AccessoryCard(props) {
             props.setToCart([[accessoryObj, 1]])
         }
     };
-    console.log(props.toCart)
 
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">

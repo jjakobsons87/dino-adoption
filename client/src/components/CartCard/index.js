@@ -17,7 +17,6 @@ const CartCard = (props) => {
             setQuantity(prev => prev + 1);
         }
     };
-    console.log(toCart)
 
     const onRemove = ( accessory ) => {
         // if 1 remove it from the list
