@@ -1,4 +1,7 @@
 /*MainCSS*/
+:root {
+  background-color: rgb(19, 19, 19);
+}
 
 body {
   font-family: 'PT Serif', serif;
@@ -235,7 +238,7 @@ h5 {
   background-color: white;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -248,12 +251,7 @@ h5 {
   margin: auto;
   top: 0;
   /* background-color: rgb(205, 205, 205); */
-}
 
-.navbar scrolled{
-  background-color: aqua;
-  transform: inherit;
-}
 
 .hero {
   height: 35%;
@@ -399,4 +397,44 @@ h5 {
   .aboutPro {
     flex-direction: column;
   }
+
+  
+}
+
+root {
+  background-color: rgb(19, 19, 19);
+}
+
+
+.navbar{
+  background-color: transparent;
+}
+
+.navbar.colorChange{
+  background-color: rgb(205, 205, 205);
+}
+
+.navbar {
+background-color: transparent;
+background: transparent;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+/* Fix your navbar by using below two lines of code */
+position: sticky;
+top:0;
+/* Fix your navbar by using above two lines of code */
+z-index: 10;
+}
+
+ /* @media screen and (max-width: 960px) {
+	.navbar {
+    transition: 0.8s all ease
+  }
+};  */
+
+.cardbody {
+  background-color: purple;
 }
