@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import { useQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
 import LikeButton from "../LikeButton";
-import Modal from 'react-bootstrap/Modal';
-import DinoModel from "../Card/DinoModel";
 import {
     CCard,
     CCardImage,

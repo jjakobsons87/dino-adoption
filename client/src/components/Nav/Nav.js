@@ -5,6 +5,7 @@ import Auth from "../../utils/auth";
 import Example from '../Modal';
 import Hamburger from '../Hamburger';
 import Signup from '../SignUp/signup';
+import logo from '../../assets/images/logotransparentmini.png';
 export default function Navigation({ currentPage, handlePageChange }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             {Auth.loggedIn() ? (
                 <Navbar className="navbar container-fluid" expand="lg">
                     <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal">Home</Navbar.Brand>
+                        <Navbar.Brand className="super-internal"><img src={logo} alt="dino logo"/></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -42,7 +43,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
             ) : (
                 <Navbar className="navbar" expand="lg">
                     <Container className="navbar-internal">
-                        <Navbar.Brand className="super-internal">Home</Navbar.Brand>
+                        <Navbar.Brand className="super-internal"><img src={logo} alt="dino logo"/></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="super-internal" id="basic-navbar-nav">
                             <Nav className="me-auto">

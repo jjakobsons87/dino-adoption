@@ -238,8 +238,8 @@ h5 {
   background-color: white;
 }
 
-/* .navbar {
-  position: fixed;
+.navbar {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,7 +250,8 @@ h5 {
   width: 100%;
   margin: auto;
   top: 0;
-  /* background-color: rgb(205, 205, 205); */
+  background-color: rgb(205, 205, 205);
+}
 
 
 .hero {
