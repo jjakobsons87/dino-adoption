@@ -327,9 +327,30 @@ h5 {
 }
 
 /* user welcome styles */
+.profile {
+  margin: auto;
+  width: 50%;
+}
+
+.profile-photo {
+  margin: auto;
+  width: 40%;
+}
+
+.personal-container {
+  align-items: center;
+}
+
+/* profile username */
+h4 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
 
 .avatar {
   position: relative;
+  margin: auto;
 }
 
 .upload-photo {
@@ -348,6 +369,10 @@ h5 {
 .upload-photo:hover {
   background-color: silver;
   transition-duration: .5s;
+}
+
+.extra-margin {
+  margin-bottom: 20px;
 }
 
 /* Cart CSS */
@@ -620,7 +645,6 @@ box-shadow: 10px 10px 10px #e1e1e1;
 .form-control {
   background-color: #876f49;
 }
-
 
 
 @media screen and (max-width: 768px) {
