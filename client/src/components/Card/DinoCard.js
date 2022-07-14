@@ -11,7 +11,6 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-import SingleDino from '../../pages/SingleDino';
 
 
 export default function DinoCard(props) {
@@ -19,23 +18,26 @@ export default function DinoCard(props) {
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
+
     return (
         
-        <div className="row row-cols-lg-3 g-5">
+        <div className="row row-cols-6">
             {data.dinos.map((dino) => (
-            <CCard style={{ width: "18rem" }}>
+            <CCard style={{ width: "23rem" }}>
+                <CCardTitle><h1>{dino.name}</h1></CCardTitle>
+                <CCardText>{dino.species}</CCardText>
+                <CCardText>Age: {dino.age} Years</CCardText>
                 <CCardImage orientation="top" src={dino.imageURL} />
                 <CCardBody>
-                <CCardTitle>{dino.name}</CCardTitle>
-                <CCardText>About me: {dino.bio}</CCardText>
-                <CCardText>Age: {dino.age}</CCardText>
-                <CCardText>Species: {dino.species}</CCardText>
+                <CCardText>Gender: {dino.gender}</CCardText>
+                <CCardText>Aggressiveness: {dino.aggressiveness}</CCardText>
                 <CCardText>Diet: {dino.diet}</CCardText>
+                <CCardText>Fence Requirement: {dino.fenceRequirement}</CCardText>
                 <CCardText></CCardText>
-                <CCardText></CCardText>
+                <CCardText>About me: {dino.bio}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                <Link to={SingleDino} >View Dino</Link>
+                <CButton>View Dino</CButton>
                 </CCardBody>
             </CCard>
             ))}
