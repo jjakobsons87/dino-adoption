@@ -13,7 +13,6 @@ export default function LikedDinos(props) {
 
     const [currentDino, setCurrentDino] = useState();
 
-    console.log(props.likedDinos)
     return (
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
         {props.likedDinos &&
