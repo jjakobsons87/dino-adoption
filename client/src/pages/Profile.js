@@ -63,11 +63,7 @@ const Profile = (props) => {
                   </div>
                 </div>
               </div>
-<<<<<<< HEAD
-              </div>
-=======
             </div>
->>>>>>> develop
 )};
 
 export default Profile;
