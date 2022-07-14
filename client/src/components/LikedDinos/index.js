@@ -13,7 +13,7 @@ export default function LikedDinos(props) {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
         {props.likedDinos &&
         props.likedDinos.map(dino => (
-            <CCard style={{ width: "18rem" }}>
+            <CCard className="extra-margin" style={{ width: "18rem" }}>
                 <CCardImage orientation="top" src={dino.imageURL}/>
                 <CCardBody>
                     <CCardTitle >Species: {dino.species}</CCardTitle>

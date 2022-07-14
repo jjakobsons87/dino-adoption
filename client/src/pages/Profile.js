@@ -47,12 +47,12 @@ const Profile = (props) => {
 
               <div className="aboutPro">
 
-                <div className="col">
+                <div className="col personal-container">
                   <div className="profileMainCard">
                     <div className="profile">
                       <UserPhoto/>
                       <br></br>
-                      <h4 className="text-white">Welcome {`${user.username}`}</h4>
+                      <h4 className="text-white welcome-text">Welcome {`${user.username}`}</h4>
                       <br></br>
                     </div>
                   </div>
