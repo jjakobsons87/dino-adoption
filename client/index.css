@@ -92,3 +92,11 @@ footer {
   cursor: default;
   opacity: .8;
 }
+
+.navbar{
+  background-color: transparent;
+}
+
+.navbar.colorChange{
+  background-color: #000;
+}

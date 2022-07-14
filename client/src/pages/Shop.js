@@ -2,7 +2,7 @@ import React from 'react';
 import AccessoryCard from "../components/Card/AccessoryCard";
 
 
-const  Shop = () => {
+const Shop = (props) => {
     return (
         <main id="dinoSale">
             <div id="accessDesc">
@@ -18,7 +18,7 @@ const  Shop = () => {
         <h2 className="sectTitle text-center">Hats, Toys and Accessories</h2>
         <p className="text-white text-center">Style your dinosaur in both a cute and safe way. Harness and Muzzle HIGHLY recommended to avoid any... unpleasant situations, especially for Carnivores!</p>
             <div>
-                <AccessoryCard />
+                <AccessoryCard toCart={props.toCart} setToCart={props.setToCart}/>
             </div>
         </main>
     )

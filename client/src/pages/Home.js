@@ -1,22 +1,19 @@
 import React from 'react';
-import RaptorBaby from '../../src/assets/homepage/raptorbaby.webp'
+import RaptorBaby from '../../src/assets/homepage/babyraptor.jpg'
 import CaptiveDinos from "../../src/assets/homepage/captivedinos.jpg"
 import DinoVariety from "../../src/assets/homepage/dinovariety.jpg"
 import TRex from "../../src/assets/homepage/TRex.jpg"
-import DeadDino from "../../src/assets/homepage/deaddino.webp"
+import DeadDino from "../../src/assets/homepage/deaddino.jpg"
 
 import AdoptionPage from '../components/AdoptionPage';
-import Login from '../components/Login/index';
 import SignUp from '../components/SignUp/signup';
 import Example from '../components/Modal/index';
 
 const Home = () => {
     return (
         <div id="home">
-        <Login />
         <SignUp />
         <main>
-            <Example />
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
             <nav>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Navigation from "../Nav/Nav";
 import Adoption from "../AdoptionPage";
 import Home from "../../pages/Home";
@@ -7,39 +7,38 @@ import logo2 from "../../assets/images/logocreamcropped2.png";
 import logo from "../../assets/images/logotransparent.png";
 import Profile from "../../pages/Profile";
 import Shop from "../../pages/Shop"
-import Login from "../Login/index";
+import Cart from "../../pages/Cart";
 import Example from '../Modal/index';
 
-export default function Header() {
+export default function Header(props) {
     const [currentPage, setCurrentPage] = useState("Home");
-    //   const navigate = useNavigate();
-    //   const authToken = localStorage.getItem(AUTH_TOKEN);
 
     const renderPage = () => {
         if (currentPage === "Home") {
             return <Home />;
         }
         if (currentPage === "Adoption") {
-            return <Adoption />;
+            return <Adoption likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
         }
         if (currentPage === "Profile") {
-             return <Profile />;
-         }
-         if (currentPage === "Shop") {
-             return <Shop />;
-         }
-        //  if (currentPage === "Login") {
-        //     return <Example />;
-        //  }
+            return <Profile likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>;
+        }
+        if (currentPage === "Shop") {
+            return <Shop toCart={props.toCart} setToCart={props.setToCart}/>;
+        }
+        if (currentPage === "Cart") {
+            return <Cart toCart={props.toCart} setToCart={props.setToCart}/>;
+        }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
     return (
-        <div>
+        <Fragment>
             <Navigation
                 sticky="top"
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
+                style={{overflowY:"scroll", height:"800px"}}
             />
             <div className="border">
                 <img
@@ -57,6 +56,6 @@ export default function Header() {
                 </div>
             </div>
             {renderPage()}
-        </div>
+        </Fragment>
     );
 }

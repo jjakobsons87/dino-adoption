@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import SelectedDino from "../SelectedDino";
 import { useQuery } from "@apollo/client";
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
-
+import Modal from 'react-bootstrap/Modal';
+import DinoModel from "../Card/DinoModel";
 import {
     CCard,
     CCardImage,
@@ -11,21 +12,46 @@ import {
     CCardText,
     CButton,
 } from "@coreui/react";
+import SelectedDino from "../SelectedDino";
 
-export default function DinoCard() {
+
+export default function DinoCard(props) {
+
+    
+    const handleClose = () => setShow(false);
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const [isCardOpen, setIsCardOpen] = useState(false);
+
     const [currentDino, setCurrentDino] = useState();
-
     const { loading, error, data } = useQuery(QUERY_DINOS);
-
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
     return (
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
-            {dinos &&
-                dinos.map((dino, key) => (
-                    <SelectedDino key={key} dino={dino} />
-                ))}
+        <div>
+        {data.dinos.map(dino => (
+            <CCard style={{ width: "18rem" }}>
+                <CCardImage orientation="top" src={dino.imageURL} />
+                <CCardBody>
+                    <CCardTitle>{dino.name}</CCardTitle>
+                    <CCardText>
+                        Will you be my mommy?
+                    </CCardText>
+                </CCardBody>
+                <CCardBody>
+                <CButton  onClick={handleShow}>View Dino</CButton>
+                    <Modal show={show} onHide={handleClose}>
+                        <DinoModel
+                        show ={show}
+                        handleClose={handleClose}
+                        name={dino.name}
+                        source={dino._id}/>
+                        <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+                    </Modal>
+                </CCardBody>
+            </CCard>
+        ))}
         </div>
     );
 }
