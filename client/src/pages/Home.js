@@ -14,7 +14,7 @@ const Home = () => {
             <h1 className="mainPageTitle text-center font-weight-bold">The Delusional Dinosaur Adoption Agency</h1>
 
             <nav>
-                <ul className="nav flex-row justify-content-center justify-content-around">
+                <ul className="nav flex-row justify-content-center justify-content-around mainmenu">
                     <li className="nav-item "><a className="removeBlue" href="#siteDesc">The DDAA</a></li>
                     <li className="nav-item "><a className="removeBlue" href="#infantAdopt">Infant Adoption</a></li>
                     <li className="nav-item "><a className="removeBlue" href="#captDinos">Captivity and Breeding</a></li>

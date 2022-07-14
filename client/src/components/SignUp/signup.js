@@ -75,11 +75,12 @@ export default function Signup (props) {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>User Name</Form.Label>
               <Form.Control
-                className="form-input"
+                className="form-control"
                 name="username"
                 id="username"
                 type="username"
                 placeholder="username"
+                variant="success"
                 value={formState.username}
                 onChange={handleChange}
                 autoFocus
@@ -125,6 +126,7 @@ export default function Signup (props) {
               <DropdownButton
                 title="What Dino Are You?"
                 id="dropdown-menu-align-right"
+                variant="outline-success"
                 onSelect={handleSelect}
               >
                 <Dropdown.Item eventKey="Tyrannasaurus Rex">
@@ -152,6 +154,7 @@ export default function Signup (props) {
             <br></br>
             <Button
               className="btn d-block w-100"
+              variant="success"
               type="submit"
               onClick={handleFormSubmit}
             >
