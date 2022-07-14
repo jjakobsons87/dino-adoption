@@ -1,4 +1,4 @@
-/*MainCSS*/
+
 :root {
   background-color: rgb(19, 19, 19);
 }
@@ -25,7 +25,17 @@ p {
 }
 
 ul {
+  font-family: graduate, cursive;
   list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: #142B0A;
+  border: 2px solid black;
+}
+
+li {
+  color: silver;
 }
 
 footer {
@@ -71,21 +81,21 @@ footer {
 }
 
 .aboutSect {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
   background-color: #142B0A;
-  border: 1px solid snow;
+  border: 30px solid rgb(0, 0, 0);
   box-shadow: 10px 10px 7px #cdcdcd;
 }
 
 .description {
-  width: 85%;
+  width: 90%;
   margin: auto;
   margin-top: 70px;
-  border: 1px solid whitesmoke;
-  background-color: #142B0A;
+  border: 30px solid rgb(18, 18, 18);
+  background-color: #2b2c2d;
 }
 
 .imageDivs {
@@ -176,7 +186,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  background-color: black;
+  background-color: #2b2c2d;
   width: 80%;
 }
 
@@ -185,7 +195,7 @@ footer {
   margin-right: auto;
   margin-bottom: 30px;
   display: block;
-  background-color: black;
+  background-color: #2b2c2d;
   width: 230px;
   height: 350px;
   text-align: center;
@@ -203,7 +213,7 @@ footer {
 .profileContainer {
   width: 90%;
   margin: auto;
-  background-color: black;
+  background-color: #2b2c2d;
 }
 
 .profileHeader {
@@ -533,6 +543,8 @@ z-index: 10;
 
 .dinodiv {
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   width: 100%;
   padding: 20px;
@@ -541,10 +553,9 @@ z-index: 10;
 }
 
 .dinocard {
-  display: flex;
-  flex-wrap: wrap;
   margin: 15px;
-
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 10px 10px 7px #676767;
 }
 
