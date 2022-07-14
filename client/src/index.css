@@ -61,6 +61,10 @@ footer {
   margin-top: 25px;
 }
 
+.SectTitleA {
+  box-shadow: 10px 10px 10px #e1e1e1;
+}
+
 #siteDesc {
   display: flex;
   flex-direction: column;
@@ -525,6 +529,12 @@ box-shadow: 10px 10px 10px #e1e1e1;
 #dinoVar,
 #infantAdopt,
 #escape,
-#future {
+#future
+ {
   box-shadow: 10px 10px 10px #e1e1e1;
+}
+
+
+.description {
+  box-shadow: 10px 10px 10px #cccccc;
 }

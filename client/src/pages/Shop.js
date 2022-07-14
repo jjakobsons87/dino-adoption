@@ -15,7 +15,7 @@ const Shop = (props) => {
             </div>
         </div>
 
-        <h2 className="sectTitle text-center">Hats, Toys and Accessories</h2>
+        <h2 className="sectTitle SectTitleA text-center">Hats, Toys and Accessories</h2>
         <p className="text-white text-center">Style your dinosaur in both a cute and safe way. Harness and Muzzle HIGHLY recommended to avoid any... unpleasant situations, especially for Carnivores!</p>
             <div>
                 <AccessoryCard toCart={props.toCart} setToCart={props.setToCart}/>
