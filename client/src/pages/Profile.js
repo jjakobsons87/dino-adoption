@@ -43,7 +43,7 @@ const Profile = (props) => {
             <div className="profileHeader text-center sectTitle imageDivs">Welcome to the Delusion Dinosaur Adoption Agency! 
             </div>
 
-            <h2 className="sectTitle text-center">Profile</h2>
+            <h2 className="sectTitle secTitleB text-center">Profile</h2>
 
               <div className="aboutPro">
 
