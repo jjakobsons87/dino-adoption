@@ -1,50 +1,3 @@
-
-//     CButton
-// } from "@coreui/react";
-
-
-// export default function DinoCard() {
-
-//     const [currentDino, setCurrentDino] = useState();
-//     const handleClose = () => setShow(false);
-//     const [show, setShow] = useState(false);
-//     const handleShow = () => setShow(true);
-
-//     const { loading, error, data } = useQuery(QUERY_DINOS);
-
-//     if (loading) return 'Loading...';
-//     if (error) return `Error! ${error.message}`;
-
-//     return (
-//         <div>
-//         {data.dinos.map(dino => (
-//             <CCard style={{ width: "18rem" }}>
-//                 <CCardImage orientation="top" src={dino.imageURL} />
-//                 <CCardBody>
-//                     <CCardTitle>{dino.species}</CCardTitle>
-//                     <CCardText>
-//                         Will you be my mommy?
-//                     </CCardText>
-//                 </CCardBody>
-//                 <CCardBody>
-//                 <CButton  onClick={handleShow}>View Dino</CButton>
-//              {currentDino === dino.name &&
-//     
-//             }   
-//              {/* <Modal show={show} onHide={handleClose}>
-//                 <DinoModel
-//                 show ={show}
-//                 handleClose={handleClose}
-//                 name={dino.name}
-//                 source={dino._id}/>
-//              </Modal> */}
-//                 </CCardBody>
-//             </CCard>
-//         ))}
-//         </div>
-//     );
-// }
-
 import React, {useState} from "react";
 import { useQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
@@ -58,46 +11,34 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-import SelectedDino from "../SelectedDino";
+import SingleDino from '../../pages/SingleDino';
 
 
 export default function DinoCard(props) {
-
-    
-    const handleClose = () => setShow(false);
-    const [show, setShow] = useState(false);
-    const handleShow = () => setShow(true);
-    const [isCardOpen, setIsCardOpen] = useState(false);
-
-    const [currentDino, setCurrentDino] = useState();
     const { loading, error, data } = useQuery(QUERY_DINOS);
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
     return (
-        <div>
-        {data.dinos.map(dino => (
+        
+        <div className="row row-cols-lg-3 g-5">
+            {data.dinos.map((dino) => (
             <CCard style={{ width: "18rem" }}>
                 <CCardImage orientation="top" src={dino.imageURL} />
                 <CCardBody>
-                    <CCardTitle>{dino.name}</CCardTitle>
-                    <CCardText>
-                        Will you be my mommy?
-                    </CCardText>
+                <CCardTitle>{dino.name}</CCardTitle>
+                <CCardText>About me: {dino.bio}</CCardText>
+                <CCardText>Age: {dino.age}</CCardText>
+                <CCardText>Species: {dino.species}</CCardText>
+                <CCardText>Diet: {dino.diet}</CCardText>
+                <CCardText></CCardText>
+                <CCardText></CCardText>
                 </CCardBody>
                 <CCardBody>
-                <CButton  onClick={handleShow}>View Dino</CButton>
-                    <Modal show={show} onHide={handleClose}>
-                        <DinoModel
-                        show ={show}
-                        handleClose={handleClose}
-                        name={dino.name}
-                        source={dino._id}/>
-                        <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
-                    </Modal>
+                <Link to={SingleDino} >View Dino</Link>
                 </CCardBody>
             </CCard>
-        ))}
+            ))}
         </div>
     );
 }
