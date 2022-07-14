@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import SelectedDino from "../SelectedDino";
 
 import {
     CCard,
@@ -22,10 +21,13 @@ export default function LikedDinos(props) {
             <CCard style={{ width: "18rem" }}>
                 <CCardImage orientation="top" src={dino.imageURL}/>
                 <CCardBody>
-                    <CCardTitle >{dino.species}</CCardTitle>
+                    <CCardTitle >Species: {dino.species}</CCardTitle>
                 </CCardBody>
                 <CCardBody>
-                    <CCardTitle>{dino.name}</CCardTitle>
+                    <CCardTitle>Name: {dino.name}</CCardTitle>
+                </CCardBody>
+                <CCardBody>
+                    <CCardTitle>Age: {dino.age}</CCardTitle>
                 </CCardBody>
             </CCard>
         ))}
