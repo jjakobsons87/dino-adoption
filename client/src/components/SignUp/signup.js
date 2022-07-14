@@ -59,20 +59,21 @@ export default function Signup (props) {
 
   return (
     <>
-    <Button variant="signupnavbtn" onClick={handleShow}>Sign Up</Button>
-    
-    <Modal
+      <Button variant="signupnavbtn" onClick={handleShow}>
+        Sign Up
+      </Button>
+
+      <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
       >
-    
-    <Modal.Header closeButton>
+        <Modal.Header closeButton>
           <Modal.Title>Sign Up</Modal.Title>
         </Modal.Header>
-        <Form onSubmit={handleFormSubmit}>
-
+        <Modal.Body>
+          <Form onSubmit={handleFormSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>User Name</Form.Label>
               <Form.Control
@@ -99,12 +100,9 @@ export default function Signup (props) {
                 onChange={handleChange}
                 autoFocus
               />
-              </Form.Group>
+            </Form.Group>
 
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlInput2"
-            >
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 className="form-input"
@@ -115,31 +113,61 @@ export default function Signup (props) {
                 value={formState.password}
                 onChange={handleChange}
                 autoFocus
-                />
+              />
             </Form.Group>
             <form>
-              <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur" target="_blank">Dino Quiz</a>
-              <DropdownButton title="What Dino Are You?" id="dropdown-menu-align-right" onSelect={handleSelect}>
-                <Dropdown.Item eventKey="Tyrannasaurus Rex">Tyrannasaurus Rex</Dropdown.Item>
-                <Dropdown.Item eventKey="Spinosaurus">Spinosaurus</Dropdown.Item>
-                <Dropdown.Item eventKey="Apatosaurus">Apatosaurus</Dropdown.Item>
-                <Dropdown.Item eventKey="Velociraptor">Velociraptor</Dropdown.Item>
-                <Dropdown.Item eventKey="Stegosaurus">Stegosaurus</Dropdown.Item>
-                <Dropdown.Item eventKey="Triceratops">Triceratops</Dropdown.Item>
+              <a
+                href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-dinosaur"
+                target="_blank"
+              >
+                Dino Quiz
+              </a>
+              <br></br>
+              <br></br>
+              <DropdownButton
+                title="What Dino Are You?"
+                id="dropdown-menu-align-right"
+                onSelect={handleSelect}
+              >
+                <Dropdown.Item eventKey="Tyrannasaurus Rex">
+                  Tyrannasaurus Rex
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Spinosaurus">
+                  Spinosaurus
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Apatosaurus">
+                  Apatosaurus
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Velociraptor">
+                  Velociraptor
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Stegosaurus">
+                  Stegosaurus
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Triceratops">
+                  Triceratops
+                </Dropdown.Item>
               </DropdownButton>
-              <h4>You selected {value}</h4>
-              <button className="btn d-block w-100" type="submit">
-                Submit
-              </button>
+              <br></br>
+              <h4>You selected: {value}</h4>
+              {/* <button className="btn d-block w-100" type="submit">
+          Submit
+        </button> */}
             </form>
-
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button className="btn d-block w-100" type="submit" onClick={handleFormSubmit}>
-                Submit</Button>
-                </Form>
-                {error && <div>Sign Up failed</div>}
+            <br></br>
+            {/* <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button> */}
+            <Button
+              className="btn d-block w-100"
+              type="submit"
+              onClick={handleFormSubmit}
+            >
+              Submit
+            </Button>
+          </Form>
+        </Modal.Body>
+        {error && <div>Sign Up failed</div>}
       </Modal>
     </>
   );

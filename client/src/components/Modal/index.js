@@ -51,7 +51,7 @@ export default function Login (props) {
   return (
     <>
       <Button variant="loginnavbtn" onClick={handleShow}>
-       Login
+        Login
       </Button>
 
       <Modal
@@ -63,11 +63,15 @@ export default function Login (props) {
         <Modal.Header closeButton>
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
-        <Form onSubmit={handleFormSubmit}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Modal.Body>
+          <Form onSubmit={handleFormSubmit}>
+            <Form.Group
+              dialogClassName="mb-3"
+              controlId="exampleForm.ControlInput1"
+            >
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                className="form-input"
+                dialogClassName="form-input"
                 name="email"
                 id="email"
                 type="email"
@@ -78,12 +82,12 @@ export default function Login (props) {
               />
             </Form.Group>
             <Form.Group
-              className="mb-3"
+              dialogClassName="mb-3"
               controlId="exampleForm.ControlInput2"
             >
               <Form.Label>Password</Form.Label>
               <Form.Control
-                className="form-input"
+                dialogClassName="form-input"
                 name="password"
                 id="password"
                 type="password"
@@ -91,15 +95,27 @@ export default function Login (props) {
                 value={formState.password}
                 onChange={handleChange}
                 autoFocus
-                />
+              />
             </Form.Group>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button className="btn d-block w-100" type="submit" onClick={handleFormSubmit}>
-                Submit</Button>
-                </Form>
-                {error && <div>Login failed</div>}
+
+            {/* <Button
+              dialogClassName="center"
+              variant="secondary"
+              onClick={handleClose}
+            >
+              Close
+            </Button> */}
+            <br></br>
+            <Button
+              className="btn d-block w-100"
+              type="submit"
+              onClick={handleFormSubmit}
+            >
+              Submit
+            </Button>
+          </Form>
+        </Modal.Body>
+        {error && <div>Login failed</div>}
       </Modal>
     </>
   );

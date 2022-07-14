@@ -11,7 +11,6 @@ import {
     CCardText,
     CButton
 } from "@coreui/react";
-import SingleDino from '../../pages/SingleDino';
 
 
 export default function DinoCard(props) {
@@ -33,9 +32,6 @@ export default function DinoCard(props) {
                 <CCardText>Diet: {dino.diet}</CCardText>
                 <CCardText></CCardText>
                 <CCardText></CCardText>
-                </CCardBody>
-                <CCardBody>
-                <Link to={SingleDino} >View Dino</Link>
                 </CCardBody>
             </CCard>
             ))}
