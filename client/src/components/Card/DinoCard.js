@@ -21,7 +21,7 @@ export default function DinoCard(props) {
     return (
         <div className="row row-cols-6 dinodiv">
             {data.dinos.map((dino) => (
-            <CCard style={{ width: "23rem" }} className="dinocard">
+            <CCard style={{ width: "26rem" }} className="dinocard">
                 <CCardTitle><h2 className="dinoh1">{dino.name}</h2></CCardTitle>
                 <CCardText className="h4species"><h4>{dino.species}</h4></CCardText>
                 <CCardText className="age">{dino.age} Years Old</CCardText>
