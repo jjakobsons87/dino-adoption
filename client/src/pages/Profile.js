@@ -15,6 +15,8 @@ const Profile = (props) => {
       variables: { username: userParam },
     });
 
+    console.log(props.likedDinos)
+
     const user = data?.me || data?.user || {};
   
     // navigate to personal profile page if username is yours
@@ -41,7 +43,7 @@ const Profile = (props) => {
             <div className="profileHeader text-center sectTitle imageDivs">Welcome to the Delusion Dinosaur Adoption Agency! 
             </div>
 
-            <h2 className="sectTitle text-center">Profile</h2>
+            <h2 className="sectTitle secTitleB text-center">Profile</h2>
 
               <div className="aboutPro">
 
@@ -61,7 +63,7 @@ const Profile = (props) => {
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
 )};
 
 export default Profile;
