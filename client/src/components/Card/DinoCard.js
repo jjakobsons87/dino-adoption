@@ -9,7 +9,7 @@ import {
     CCardBody,
     CCardTitle,
     CCardText,
-    CButton
+    CButton,
 } from "@coreui/react";
 
 

@@ -50,8 +50,8 @@ export default function Login (props) {
 
   return (
     <>
-      <Button variant="loginnavbtn" onClick={handleShow}>
-        Login
+      <Button className="login" variant="loginnavbtn" onClick={handleShow}>
+       Login
       </Button>
 
       <Modal
@@ -98,13 +98,6 @@ export default function Login (props) {
               />
             </Form.Group>
 
-            {/* <Button
-              dialogClassName="center"
-              variant="secondary"
-              onClick={handleClose}
-            >
-              Close
-            </Button> */}
             <br></br>
             <Button
               className="btn d-block w-100"

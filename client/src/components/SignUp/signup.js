@@ -59,11 +59,9 @@ export default function Signup (props) {
 
   return (
     <>
-      <Button variant="signupnavbtn" onClick={handleShow}>
-        Sign Up
-      </Button>
-
-      <Modal
+    <Button className="signup" variant="signupnavbtn" onClick={handleShow}>Sign Up</Button>
+    
+    <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -150,14 +148,8 @@ export default function Signup (props) {
               </DropdownButton>
               <br></br>
               <h4>You selected: {value}</h4>
-              {/* <button className="btn d-block w-100" type="submit">
-          Submit
-        </button> */}
             </form>
             <br></br>
-            {/* <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button> */}
             <Button
               className="btn d-block w-100"
               type="submit"
