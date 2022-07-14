@@ -39,7 +39,7 @@ const SelectedDino = (props) => {
                 handleClose={handleClose}
                 name={props.dino.name}
                 source={props.dino.source}/>
-                <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+                {/* <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/> */}
             </Modal>
         </CCardBody>
     </CCard>
