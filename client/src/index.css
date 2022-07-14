@@ -269,6 +269,10 @@ h5 {
   background-color: rgb(205, 205, 205);
 }
 
+.nav-link {
+  
+}
+
 
 .hero {
   background-repeat: no-repeat;
@@ -544,18 +548,26 @@ z-index: 10;
   background-color: purple;
 }
 
-.log {
-    margin-left: 750px;
+.login {
+    margin-left: 75%;
 }
 
-.login {
-    margin-left: 800px;
+.log {
+  position: sticky;
+  float: right;
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 1200px) {
   .login {
     margin-left: 0;
-}
+  }
+}; 
+
+@media screen and (max-width: 990) {
+  .log {
+    margin-left: 0;
+  }
 }; 
 
 .signup {
