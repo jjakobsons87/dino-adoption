@@ -342,6 +342,37 @@ h5 {
 
 /* Cart CSS */
 
+/* cart add & subtract button */
+.add, .remove {
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+.add:hover, .remove:hover {
+  font-weight: bold;
+  transition-duration: 1s;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.add:active, .remove:active {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.709);
+  background-color: black;
+}
+
+.add {
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: green;
+}
+
+.remove {
+  background-color: red;
+}
+
+
+
 .icons {
   display: flex;
   background-color: #101010;
