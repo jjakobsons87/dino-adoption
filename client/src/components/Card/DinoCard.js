@@ -21,21 +21,22 @@ export default function DinoCard(props) {
 
 
     return (
-        
         <div className="row row-cols-6">
             {data.dinos.map((dino) => (
-            <CCard style={{ width: "23rem" }}>
+            <CCard style={{ width: "35rem" }}>
                 <CCardTitle><h1>{dino.name}</h1></CCardTitle>
                 <CCardText>{dino.species}</CCardText>
                 <CCardText>Age: {dino.age} Years</CCardText>
-                <CCardImage orientation="top" src={dino.imageURL} />D
+                <CCardImage orientation="top" src={dino.imageURL} />
                 <CCardBody>
                 <CCardText>Gender: {dino.gender}</CCardText>
                 <CCardText>Aggressiveness: {dino.aggressiveness}</CCardText>
                 <CCardText>Diet: {dino.diet}</CCardText>
                 <CCardText>Fence Requirement: {dino.fenceRequirement}</CCardText>
+                <CCardText>Human's Casualities: {dino.humanCasualties} in lifespan</CCardText>
                 <CCardText></CCardText>
-                <CCardText>About me: {dino.bio}</CCardText>
+                <CCardText>About me</CCardText>
+                <CCardText>{dino.bio}</CCardText>
                 </CCardBody>
                 <CCardBody>
                     <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
