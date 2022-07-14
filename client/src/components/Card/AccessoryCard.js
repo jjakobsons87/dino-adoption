@@ -41,7 +41,7 @@ export default function AccessoryCard(props) {
                 <CCardImage orientation="top" src={accessory.imageURL} />
                 <CCardBody>
                     <CCardTitle>{accessory.name}</CCardTitle>
-                    <CCardText>{accessory.price}</CCardText>
+                    <CCardText>${accessory.price}</CCardText>
                     <CCardText>{accessory.description}</CCardText>
                 </CCardBody>
                 <CCardBody>

@@ -17,6 +17,7 @@ import Shop from './pages/Shop';
 import Modal from '../src/components/Modal';
 import Cart from './pages/Cart';
 import Adoption from './pages/Adoption';
+import SingleDino from './pages/SingleDino';
 
 // component imports
 import Footer from "./components/Footer/index.js";
@@ -54,6 +55,16 @@ function App() {
                     likedDinos={likedDinos} setLikedDinos={setLikedDinos}
                     toCart={toCart} setToCart={setToCart} 
                 />
+
+                {/* If when routes work, this would be to nav to a single dino */}
+                {/* <Routes>
+                    <Route path='/dino'>
+                    <Route path=":_id"
+                    element={<SingleDino />} />
+                    <Route path="" element={<Adoption />} />
+                </Route>
+                </Routes> */}
+
                 <div className="flex-column justify-flex-start min-100-vh">
                     <div className="container">
                         {/* <Routes>

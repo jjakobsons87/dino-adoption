@@ -29,7 +29,7 @@ const SingleDino = (props) => {
             </p>
             <div className="card-body">
             <p>{dino.bio}</p>
-            <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+            {/* <SelectedDino selectedDino={currentDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/> */}
             </div>
         </div>
 
