@@ -400,5 +400,26 @@ root {
 }
 
 .navbar.colorChange{
-  background-color: #000;
+  background-color: rgb(205, 205, 205);
 }
+
+.navbar {
+background-color: transparent;
+background: transparent;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+/* Fix your navbar by using below two lines of code */
+position: sticky;
+top:0;
+/* Fix your navbar by using above two lines of code */
+z-index: 10;
+}
+
+ /* @media screen and (max-width: 960px) {
+	.navbar {
+    transition: 0.8s all ease
+  }
+};  */
