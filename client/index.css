@@ -14,7 +14,7 @@ header {
   flex: 1;
   flex-direction: column;
   background-color: black;
-  color: white;
+
 }
 
 footer {
@@ -24,18 +24,18 @@ footer {
 }
 
 #mainAdoptTitle {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   color: bisque;
 }
 
 .sectTitle {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   color: bisque;
   text-decoration: underline;
   margin-top: 70px;
 }
 
-#description {
+.description {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -67,12 +67,12 @@ footer {
 
 .dinoName {
   color: azure;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   font-size: 24px;
 }
 
 .adoptBtn {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Graduate', cursive;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -92,3 +92,12 @@ footer {
   cursor: default;
   opacity: .8;
 }
+
+.navbar{
+  background-color: transparent;
+}
+
+.navbar.colorChange{
+  background-color: #000;
+}
+

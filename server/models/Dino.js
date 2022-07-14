@@ -36,7 +36,6 @@ const dinoSchema = new Schema(
     },
     savedCount: {
         type: Number,
-        required: true
     },
     age: {
         type: Number,
@@ -46,10 +45,19 @@ const dinoSchema = new Schema(
         type: Number,
         required: true
     },
+    price: {
+      type: Number,
+      required: true
+    },
+  
     addedAt: {
       type: Date,
       default: Date.now,
       get: timestamp => dateFormat(timestamp)
+    },
+    imageURL: {
+      type: String,
+      required: true
     },
     comments: [commentSchema]
   },
@@ -59,6 +67,10 @@ const dinoSchema = new Schema(
     }
   }
 );
+
+dinoSchema.virtual("favCount").get(function () {
+  return this.savedCount.length;
+});
 
 const Dino = model('Dino', dinoSchema);
 
