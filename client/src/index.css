@@ -81,8 +81,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  background-color: #142B0A;
-  border: 1px solid snow;
+  background-color: #2b2c2d;
+  border: 30px solid rgb(0, 0, 0);
   box-shadow: 10px 10px 7px #cdcdcd;
 }
 
@@ -90,7 +90,7 @@ footer {
   width: 90%;
   margin: auto;
   margin-top: 70px;
-  border: 10px solid rgb(18, 18, 18);
+  border: 30px solid rgb(18, 18, 18);
   background-color: #2b2c2d;
 }
 
