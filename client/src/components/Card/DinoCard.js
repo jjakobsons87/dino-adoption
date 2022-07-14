@@ -40,7 +40,7 @@ export default function DinoCard(props) {
                 <CCardText className="dinobio">{dino.bio}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                    <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
+                    <LikeButton dinoId={dino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
                 </CCardBody>
             </CCard>
             ))}

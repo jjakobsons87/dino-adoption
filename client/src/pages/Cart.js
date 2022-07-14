@@ -29,7 +29,7 @@ const Cart = (props) => {
                 {/* onAdd adds items to cart */}
                 {props.toCart &&
         <div className="basket-container">
-        <h2>Cart Items</h2>
+        <h2 className="cart-title">Cart Items</h2>
         <div>
             {toCart.length === 0 && <div>Cart is Empty</div>}
         </div>
