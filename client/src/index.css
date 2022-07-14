@@ -423,3 +423,7 @@ z-index: 10;
     transition: 0.8s all ease
   }
 };  */
+
+.cardbody {
+  background-color: purple;
+}
