@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { useQuery } from "@apollo/client"
 import { QUERY_DINOS, QUERY_DINO } from "../../../src/utils/queries";
+import LikeButton from "../LikeButton";
 import Modal from 'react-bootstrap/Modal';
 import DinoModel from "../Card/DinoModel";
 import {
@@ -9,7 +10,7 @@ import {
     CCardBody,
     CCardTitle,
     CCardText,
-    CButton
+    CButton,
 } from "@coreui/react";
 
 
@@ -27,7 +28,7 @@ export default function DinoCard(props) {
                 <CCardTitle><h1>{dino.name}</h1></CCardTitle>
                 <CCardText>{dino.species}</CCardText>
                 <CCardText>Age: {dino.age} Years</CCardText>
-                <CCardImage orientation="top" src={dino.imageURL} />
+                <CCardImage orientation="top" src={dino.imageURL} />D
                 <CCardBody>
                 <CCardText>Gender: {dino.gender}</CCardText>
                 <CCardText>Aggressiveness: {dino.aggressiveness}</CCardText>
@@ -37,7 +38,7 @@ export default function DinoCard(props) {
                 <CCardText>About me: {dino.bio}</CCardText>
                 </CCardBody>
                 <CCardBody>
-                <CButton>View Dino</CButton>
+                    <LikeButton dinoId={props.selectedDino} likedDinos={props.likedDinos} setLikedDinos={props.setLikedDinos}/>
                 </CCardBody>
             </CCard>
             ))}

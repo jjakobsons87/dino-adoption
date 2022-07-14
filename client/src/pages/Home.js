@@ -15,12 +15,12 @@ const Home = () => {
 
             <nav>
                 <ul className="nav flex-row justify-content-center justify-content-around">
-                    <li className="nav-item"><a href="#siteDesc">The DDAA</a></li>
-                    <li className="nav-item"><a href="#infantAdopt">Infant Adoption</a></li>
-                    <li className="nav-item"><a href="#captDinos">Captivity and Breeding</a></li>
-                    <li className="nav-item"><a href="#dinoVar">Dino Variety</a></li>
-                    <li className="nav-item"><a href="#escape">Escape Protocol</a></li>
-                    <li className="nav-item"><a href="#future">The Future</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#siteDesc">The DDAA</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#infantAdopt">Infant Adoption</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#captDinos">Captivity and Breeding</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#dinoVar">Dino Variety</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#escape">Escape Protocol</a></li>
+                    <li className="nav-item "><a className="removeBlue" href="#future">The Future</a></li>
                 </ul>
             </nav>
 
