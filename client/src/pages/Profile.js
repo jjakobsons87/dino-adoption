@@ -61,13 +61,7 @@ const Profile = (props) => {
                   </div>
                 </div>
               </div>
-<<<<<<< HEAD
-            </div>
-            )
-};
-=======
               </div>
 )};
->>>>>>> 6e053a7870a9a69440ba365454720ad3e4017f7e
 
 export default Profile;

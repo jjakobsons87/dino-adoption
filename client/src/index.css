@@ -469,6 +469,8 @@ z-index: 10;
 
 .dinodiv {
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   width: 100%;
   padding: 20px;
@@ -477,10 +479,9 @@ z-index: 10;
 }
 
 .dinocard {
-  display: flex;
-  flex-wrap: wrap;
   margin: 15px;
-
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 10px 10px 7px #676767;
 }
 
