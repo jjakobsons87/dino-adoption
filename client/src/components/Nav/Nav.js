@@ -6,6 +6,8 @@ import Example from '../Modal';
 import Hamburger from '../Hamburger';
 import Signup from '../SignUp/signup';
 import logo from '../../assets/images/logotransparentmini.png';
+
+
 export default function Navigation({ currentPage, handlePageChange }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -60,19 +62,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
 
             <div className="hamburger" onClick={toggleHamburger}>
                     <Hamburger isOpen={hamburgerOpen}/>
-                </div>
-                
-                {/* add any additional nav styles here */}
-                {/* <style jsx>{`
-                @media screen and (max-width: 980px) {
-                    .nav-row ul {
-                        display: ${hamburgerOpen ? 'inline' : 'none'};
-                }
-                    .dynamic-nav {
-                        padding-top: ${hamburgerOpen ? '40px' : '20px'};
-                        padding-bottom: ${hamburgerOpen ? '20px' : '20px'};
-                }
-                `}</style> */}
+            </div>
         </nav>
 
     )
